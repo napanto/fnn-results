@@ -1,0 +1,12 @@
+== ompnn: second epoch, rocprofv3 (B - A) vs in-library profile  [ms]
+family                          rocprof    profile   ratio
+act                               1.008      7.596    0.13
+biasgrad                          0.000      3.148    0.00
+biasgrad(gemv)                    0.459      3.148    0.15
+delta                             0.651      4.964    0.13
+gemm                              6.051     17.375    0.35
+loss                              0.488      4.276    0.11
+other                            -0.006      0.000       -
+update                            1.493      7.529    0.20
+memcpy (all)                      4.864      3.148
+kernels total                    10.145     44.887   epoch wall 49.4 ms, launches 642

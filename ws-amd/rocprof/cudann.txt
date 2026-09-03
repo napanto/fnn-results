@@ -1,0 +1,12 @@
+== cudann: second epoch, rocprofv3 (B - A) vs in-library profile  [ms]
+family                          rocprof    profile   ratio
+act                               0.231      0.993    0.23
+biasgrad                          0.000      1.276    0.00
+biasgrad(gemv)                    0.482      1.276    0.38
+delta                             0.153      0.679    0.23
+gemm                              6.732      9.041    0.74
+loss                              0.134      0.395    0.34
+other                             0.104      0.019    5.61
+update                            0.448      1.280    0.35
+memcpy (all)                      2.012     10.473
+kernels total                     8.285     13.683   epoch wall 28.3 ms, launches 676
