@@ -1,0 +1,14 @@
+== syclnn: second epoch, rocprofv3 (B - A) vs in-library profile  [ms]
+family                          rocprof    profile   ratio
+act                               0.000      1.493    0.00
+biasgrad                          0.000      3.730    0.00
+biasgrad(gemv)                    0.445      3.730    0.12
+delta                             0.159      1.033    0.15
+gemm                              6.179     18.753    0.33
+loss                              0.087      0.462    0.19
+other                             0.036      0.072    0.50
+other:_Z18__acpp_sscp_kernelIN7hipsycl4glue15__sscp_disp      0.178      0.000       -
+other:void __acpp_sscp_kernel<hipsycl::glue::__sscp_disp      0.093      0.000       -
+update                            0.450      1.989    0.23
+memcpy (all)                      2.053     10.741
+kernels total                     7.627     27.531   epoch wall 55.2 ms, launches 650
