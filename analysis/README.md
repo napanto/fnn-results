@@ -20,8 +20,13 @@ rows whose numerical check failed and `superseded.jsonl` files are excluded.
 | compilers | `compilers-<workload>-<dtype>.png` | ompnn host and target builds per compiler next to the SYCL rows (E4) |
 | precision | `precision.png` | double/float epoch-time ratio per backend and device (fp64 rate contrast) |
 | scaling | `scaling-<workload>-<dtype>.png` | CPU thread scaling of the SYCL/OpenMP host builds and the parallel efficiency (E1 threads) |
+| tiled | `tiled-<device>.png` | E7: epoch time of the hand-written tiled GEMM relative to the library BLAS, per backend and workload |
 | sweep | `sweep-<backend>-<device>-<dtype>.png` | W4 width x depth x batch scaling: epoch time and GFLOP/s (E2/E3/E4 sweeps) |
 
-E7 (hand-written tiled GEMM vs vendor BLAS) rows appear in the throughput and
-sweep families through their `blas = tiled` label; the tiled GEMM peak runs are
+E7 rows also appear in the throughput and sweep families through their
+`blas = tiled` label; the tiled GEMM peak runs are
 in `results/ws-amd/peaks-tiled*`.
+
+The breakdown bars amortise the dataset upload over all epochs of a call while
+the wall-time marker is the steady-state epoch; the gap between them is the
+upload plus the first-epoch initialisation.
