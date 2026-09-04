@@ -1,0 +1,10 @@
+syclnn acpp gpu --blas tiled --dtype double    117 passed, 1 skipped in 10.67s
+syclnn acpp gpu --blas tiled --dtype float     111 passed, 7 skipped in 7.30s
+syclnn acpp cpu --blas tiled --dtype float     111 passed, 7 skipped in 23.26s
+cudann hip gpu --option blas=tiled --dtype double       119 passed, 1 skipped in 3.37s
+cudann hip gpu --option blas=tiled --dtype float        113 passed, 7 skipped in 3.30s
+cudann hip gpu --option blas=tiled --option queue=graph 223 passed, 8 skipped in 3.15s
+ompnn venv-amdclang  gpu --option blas=tiled --dtype double 117 passed, 1 skipped in 2.30s
+ompnn venv-amdclang  gpu --option blas=tiled --dtype float  111 passed, 7 skipped in 2.13s
+ompnn venv-gcc14amd  gpu --option blas=tiled --dtype double 117 passed, 1 skipped in 37.21s
+ompnn venv-gcc14amd  gpu --option blas=tiled --dtype float  111 passed, 7 skipped in 36.47s
