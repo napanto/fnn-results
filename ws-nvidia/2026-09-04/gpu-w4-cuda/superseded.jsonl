@@ -1,0 +1,1 @@
+{"backend": "cudann", "batch": null, "dtype": "double", "error": "cudann: cudaMalloc: out of memory", "id": "93cfa746fea3", "options": {"profile": true}, "threads": null, "timestamp": "2026-09-04T01:37:28+00:00", "workload": "sweep-w4096-d8-b4096"}
