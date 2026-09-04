@@ -1,0 +1,7 @@
+{
+ "blas": 10.629999999999999,
+ "library kernels": 1.88,
+ "runtime": 55.73999999999998,
+ "python/numpy": 5.66,
+ "other": 0.0
+}

@@ -1,0 +1,45 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 567K of event 'cpu-clock:u'
+# Event count (approx.): 567782000000
+#
+# Overhead  Shared Object                                      Symbol                                    IPC   [IPC Coverage]
+# ........  .................................................  ........................................  ....................
+#
+    30.34%  libomp.so                                          [.] 0x00000000000ec012                    -      -            
+     6.16%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc3a                    -      -            
+     5.09%  libomp.so                                          [.] 0x00000000000993a2                    -      -            
+     4.99%  libc.so.6                                          [.] 0x000000000010e90b                    -      -            
+     4.70%  libomp.so                                          [.] 0x00000000000993a9                    -      -            
+     2.31%  _ompnn.cpython-312-x86_64-linux-gnu.so             [.] 0x00000000001cfb90                    -      -            
+     1.46%  libomp.so                                          [.] 0x000000000009946c                    -      -            
+     1.30%  libomp.so                                          [.] 0x00000000000ec010                    -      -            
+     1.30%  libomp.so                                          [.] 0x000000000006b3d0                    -      -            
+     1.14%  libomp.so                                          [.] 0x00000000000993ab                    -      -            
+     0.91%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2f1                    -      -            
+     0.89%  libomp.so                                          [.] 0x000000000006b3d4                    -      -            
+     0.86%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2d1                    -      -            
+     0.82%  libomp.so                                          [.] 0x0000000000099255                    -      -            
+     0.80%  libomp.so                                          [.] 0x000000000009930b                    -      -            
+     0.78%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc45                    -      -            
+     0.72%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc5d                    -      -            
+     0.71%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2e1                    -      -            
+     0.70%  libomp.so                                          [.] 0x0000000000099462                    -      -            
+     0.68%  libomp.so                                          [.] 0x00000000000993d4                    -      -            
+     0.65%  libomp.so                                          [.] 0x00000000000ec019                    -      -            
+     0.63%  libomp.so                                          [.] 0x0000000000099408                    -      -            
+     0.62%  libopenblasp-r0.3.26.so                            [.] 0x000000000039cabc                    -      -            
+     0.61%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc51                    -      -            
+     0.61%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d302                    -      -            
+     0.59%  libomp.so                                          [.] 0x0000000000099432                    -      -            
+     0.59%  libomp.so                                          [.] 0x00000000000ec016                    -      -            
+     0.54%  libomp.so                                          [.] 0x0000000000099413                    -      -            
+     0.54%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2cc                    -      -            
+
+
+#
+# (Tip: To see call chains by final symbol taking CPU time (bottom up) use perf report -G)
+#
