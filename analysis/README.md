@@ -36,7 +36,7 @@ are not distinguishable.
 
 E7 rows also appear in the throughput and sweep families through their
 `blas = tiled` label; the tiled GEMM peak runs are
-in `results/ws-amd/peaks-tiled*`.
+in `results/<machine>/<date>/peaks-tiled*`.
 
 The breakdown bars amortise the dataset upload over all epochs of a call while
 the wall-time marker is the steady-state epoch; the gap between them is the
