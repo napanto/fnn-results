@@ -28,6 +28,12 @@ de-duplicated (newest row wins).
 | tiled | `tiled-<device>.png` | E7: epoch time of the hand-written tiled GEMM relative to the library BLAS, per backend and workload |
 | sweep | `sweep-<backend>-<device>-<dtype>.png` | W4 width x depth x batch scaling: epoch time and GFLOP/s (E2/E3/E4 sweeps) |
 
+`headline-<machine>-<date>.md` (from `scripts/headline.py`) holds the
+default-configuration epoch times per device and toolchain, the tiled/vendor
+ratios and the run-to-run spread of configurations measured in more than one
+sweep; the last figure of that file is the resolution below which two rows
+are not distinguishable.
+
 E7 rows also appear in the throughput and sweep families through their
 `blas = tiled` label; the tiled GEMM peak runs are
 in `results/ws-amd/peaks-tiled*`.
