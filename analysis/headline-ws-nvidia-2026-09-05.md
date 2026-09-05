@@ -7,8 +7,8 @@
 | ws-nvidia | 1080 Ti | ompnn | gcc-14 nvptx | cublas | 7.5 | 85.0 | 775.2 | 212.5 |
 | ws-nvidia | 1080 Ti | syclnn | AdaptiveCpp | auto | 2.1 | 18.0 | 224.9 | 69.0 |
 | ws-nvidia | 1080 Ti | syclnn | DPC++ | auto | 2.4 | 16.7 | 145.8 | 40.7 |
-| ws-nvidia | TR 2950X (acpp host) | syclnn | AdaptiveCpp | auto | 1.6 | 11.1 | 3821.2 | - |
 | ws-nvidia | Xeon E5-2643v2 (OpenMP host, 12 threads) | ompnn | clang-22 | openblas | 0.2 | 4.8 | 1327.1 | 1099.1 |
+| ws-nvidia | Xeon E5-2643v2 (acpp host, 16 threads) | syclnn | AdaptiveCpp | auto | 1.6 | 11.1 | 3821.2 | - |
 
 ### Hand-written tiled BLAS (E7) vs vendor BLAS, steady epoch ms and ratio tiled/vendor
 
@@ -19,8 +19,8 @@
 | ws-nvidia | 1080 Ti | ompnn | gcc-14 nvptx | 7.5 / 13.3 (1.76x) | 85.0 / 169.3 (1.99x) | 775.2 / 108490.7 (139.96x) | 212.5 / - |
 | ws-nvidia | 1080 Ti | syclnn | AdaptiveCpp | 2.1 / 1.4 (0.69x) | 18.0 / 12.1 (0.67x) | 224.9 / 192.5 (0.86x) | 69.0 / - |
 | ws-nvidia | 1080 Ti | syclnn | DPC++ | 2.4 / 1.6 (0.65x) | 16.7 / 11.7 (0.70x) | 145.8 / 243.9 (1.67x) | 40.7 / - |
-| ws-nvidia | TR 2950X (acpp host) | syclnn | AdaptiveCpp | 1.6 / 1.4 (0.87x) | 11.1 / 12.6 (1.14x) | 3821.2 / 3180.4 (0.83x) | - |
 | ws-nvidia | Xeon E5-2643v2 (OpenMP host, 12 threads) | ompnn | clang-22 | 0.2 / - | 4.8 / - | 1327.1 / - | 1099.1 / - |
+| ws-nvidia | Xeon E5-2643v2 (acpp host, 16 threads) | syclnn | AdaptiveCpp | 1.6 / 1.4 (0.87x) | 11.1 / 12.6 (1.14x) | 3821.2 / 3180.4 (0.83x) | - |
 
 ### Same visible configuration measured in more than one sweep (run-to-run spread)
 
