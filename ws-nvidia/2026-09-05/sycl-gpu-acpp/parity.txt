@@ -1,0 +1,9 @@
+syclnn AdaptiveCpp cuda:gpu --dtype double                     117 passed, 1 skipped in 13.91s
+syclnn AdaptiveCpp cuda:gpu --dtype float                      111 passed, 7 skipped in 9.24s
+syclnn AdaptiveCpp cuda:gpu --option queue=in_order            221 passed, 8 skipped in 8.54s
+syclnn AdaptiveCpp cuda:gpu --option streams=1                 221 passed, 8 skipped in 10.24s
+syclnn AdaptiveCpp cuda:gpu --option blas_queue=dedicated      221 passed, 8 skipped in 18.96s
+syclnn AdaptiveCpp cuda:gpu --option memory=shared             221 passed, 8 skipped in 12.22s
+syclnn AdaptiveCpp cuda:gpu --option memory=host               3 failed, 218 passed, 8 skipped in 9.60s
+syclnn AdaptiveCpp cuda:gpu --option blas=tiled --dtype float  111 passed, 7 skipped in 7.97s
+syclnn AdaptiveCpp cuda:gpu --run-slow -k mnist                2 passed, 227 deselected in 14.79s
