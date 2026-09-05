@@ -1,0 +1,3 @@
+{"backend": "syclnn", "batch": null, "dtype": "float", "error": "syclnn.Options has no option 'sync_ops'", "id": "5f4aa66cab63", "options": {"sync_ops": true}, "threads": null, "timestamp": "2026-09-05T03:45:20+00:00", "workload": "monk"}
+{"backend": "syclnn", "batch": null, "dtype": "float", "error": "syclnn.Options has no option 'sync_ops'", "id": "1c178d506684", "options": {"sync_ops": true}, "threads": null, "timestamp": "2026-09-05T03:45:20+00:00", "workload": "cup"}
+{"backend": "syclnn", "batch": 256, "dtype": "float", "error": "syclnn.Options has no option 'sync_ops'", "id": "036be49bcc65", "options": {"sync_ops": true}, "threads": null, "timestamp": "2026-09-05T03:45:21+00:00", "workload": "mnist-512-256"}
