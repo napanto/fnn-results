@@ -7,7 +7,10 @@ fnnbench plot results/ws-amd/<date> results/ws-amd/peaks -o analysis/figures
 fnnbench collect results/ws-amd/<date> -o analysis/ws-amd-<date>.csv
 ```
 
-Every figure uses the steady-state epoch time (`steady_epoch_s`, see
+Passes before 2026-09-05 had the per-launch profiler on in every timed row
+(20-40 % overhead on the GPU libraries); from the third pass
+(`results/*/2026-09-05`) timing rows are unprofiled and the breakdown figures
+come from `plans/e5_breakdown.json`. Every figure uses the steady-state epoch time (`steady_epoch_s`, see
 `docs/methodology.md`) when the row has one, the call-level median otherwise;
 rows whose numerical check failed and `superseded.jsonl` files are excluded, and
 re-measurements of the same configuration in the same environment are
