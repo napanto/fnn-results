@@ -18,7 +18,7 @@ de-duplicated (newest row wins).
 
 | Family | File pattern | What it shows |
 |---|---|---|
-| throughput | `throughput-<workload>-<dtype>.png` | samples/s per backend / compiler / BLAS / device, training rows (E1, E2, E3, E4) |
+| throughput | `throughput-<workload>-<dtype>-<cpu|gpu>.png` | samples/s per backend / compiler / BLAS / device, training rows (E1, E2, E3, E4) |
 | breakdown | `breakdown-<workload>-<dtype>-<mode>.png` | per-phase device time (H2D, GEMM, activation, delta, bias gradient, update, loss, regularisation, D2H) and the host-side remainder, one bar per backend/device (E5) |
 | roofline | `roofline.png` | achieved GEMM GFLOP/s vs arithmetic intensity of every training row against the measured GEMM peaks (`results/ws-amd/peaks`) |
 | ablation | `ablation-<backend>-<workload>-<dtype>-<device>.png` | epoch time relative to the default for every single-switch ablation and the all-switches-off (0.1 behaviour) configuration (E6, E3 stream/graph/memory rows) |
