@@ -1,5 +1,5 @@
 # ZLUDA cross-check, 2026-09-05T11:19:55Z
-ZLUDA: zluda-linux-9c8b43f2.tar.gz; wheel: $HOME/fnn/fnn-bench/.wheels/ws-nvidia-cuda; libcuda: $HOME/.local/opt/zluda/libnvcuda.so
+ZLUDA: zluda-linux-9c8b43f2.tar.gz; wheel: <fnn-bench>/.wheels/ws-nvidia-cuda; libcuda: <zluda>/libnvcuda.so
 
 ## import / device enumeration
 {'version': '0.1.0', 'compiler': 'nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0', 'flags': '-O3 -DNDEBUG', 'cuda_archs': '61;80', 'onemath': 'cuBLAS 12.9.86', 'git_sha': 'v0.1.0-6-gfd2d0d5-dirty', 'blas_backends': ['cublas', 'tiled'], 'blas_selectable': ['cublas', 'tiled'], 'runtime_version': 12090, 'driver_version': 13000, 'platform': 'CUDA', 'dtypes': ['float', 'double']}
