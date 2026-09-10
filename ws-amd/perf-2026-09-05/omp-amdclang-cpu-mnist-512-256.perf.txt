@@ -1,0 +1,45 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 589K of event 'cpu-clock:u'
+# Event count (approx.): 589863000000
+#
+# Overhead  Shared Object                                      Symbol                                    IPC   [IPC Coverage]
+# ........  .................................................  ........................................  ....................
+#
+    31.83%  libomp.so                                          [.] 0x00000000000ec012                    -      -            
+     5.54%  libc.so.6                                          [.] 0x000000000010e90b                    -      -            
+     5.39%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc3a                    -      -            
+     5.12%  libomp.so                                          [.] 0x00000000000993a2                    -      -            
+     4.45%  libomp.so                                          [.] 0x00000000000993a9                    -      -            
+     1.62%  _ompnn.cpython-312-x86_64-linux-gnu.so             [.] 0x00000000001d0650                    -      -            
+     1.50%  libomp.so                                          [.] 0x000000000009946c                    -      -            
+     1.38%  libomp.so                                          [.] 0x000000000006b3d0                    -      -            
+     1.38%  libomp.so                                          [.] 0x00000000000ec010                    -      -            
+     1.20%  libomp.so                                          [.] 0x00000000000993ab                    -      -            
+     0.92%  libomp.so                                          [.] 0x000000000006b3d4                    -      -            
+     0.85%  libomp.so                                          [.] 0x0000000000099255                    -      -            
+     0.84%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2d1                    -      -            
+     0.83%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2f1                    -      -            
+     0.82%  libomp.so                                          [.] 0x000000000009930b                    -      -            
+     0.77%  libomp.so                                          [.] 0x00000000000993d4                    -      -            
+     0.74%  libomp.so                                          [.] 0x0000000000099408                    -      -            
+     0.73%  libomp.so                                          [.] 0x0000000000099462                    -      -            
+     0.69%  libomp.so                                          [.] 0x00000000000ec019                    -      -            
+     0.67%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2e1                    -      -            
+     0.66%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc45                    -      -            
+     0.65%  libopenblasp-r0.3.26.so                            [.] 0x000000000039cabc                    -      -            
+     0.64%  libomp.so                                          [.] 0x0000000000099432                    -      -            
+     0.62%  libomp.so                                          [.] 0x00000000000ec016                    -      -            
+     0.60%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d302                    -      -            
+     0.59%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc5d                    -      -            
+     0.57%  libomp.so                                          [.] 0x0000000000099413                    -      -            
+     0.55%  libopenblasp-r0.3.26.so                            [.] 0x000000000170dc51                    -      -            
+     0.50%  libopenblasp-r0.3.26.so                            [.] 0x000000000170d2cc                    -      -            
+
+
+#
+# (Tip: Treat branches as callchains: perf record -b ... ; perf report --branch-history)
+#
