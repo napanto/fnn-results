@@ -1,0 +1,16 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+32.3,9349537,291,32129.0,26689.0,10080,61185,20567.4,ampere_sgemm_32x32_sliced1x4_nn
+15.0,4352449,96,45338.0,44993.0,44481,53632,1055.1,ampere_sgemm_32x128_nt
+12.0,3478205,192,18115.7,17680.0,10144,60608,8553.5,ampere_sgemm_32x32_sliced1x4_nt
+9.6,2778131,96,28938.9,27216.0,26464,35936,3444.5,ampere_sgemm_32x32_sliced1x4_tn
+9.5,2737044,288,9503.6,6672.0,3584,38369,6969.1,"void cudann::kernels::update_k<float>(T1 *, const T1 *, T1 *, T1 *, unsigned long, T1 *, const T1 *, T1 *, T1 *, unsigned long, cudann::kernels::UpdateParams<T1>, const cudann::kernels::StepScalars<T1> *)"
+4.7,1353703,290,4667.9,4160.0,3744,8128,844.7,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)"
+3.2,914213,194,4712.4,4640.0,4064,5664,604.6,"void cudann::kernels::activate_k<float, cudann::kernels::ActF<(cudann::ActivationType)3>>(T1 *, T1 *, const T1 *, unsigned long, unsigned long, T2)"
+2.9,839336,192,4371.5,4320.0,3680,7201,777.4,"void cudann::kernels::hidden_delta_k<float, cudann::kernels::DfF<(cudann::ActivationType)3, (bool)1>>(T1 *, const T1 *, const T1 *, unsigned long, T2)"
+2.5,730274,96,7607.0,7616.0,7456,7680,50.4,ampere_sgemm_128x32_tn
+2.2,642307,96,6690.7,6464.0,6016,31840,2599.5,"void gemvNSP_kernel<float, float, float, float, (int)1, (int)16, (int)4, (int)1024, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T10)"
+1.8,509026,96,5302.4,4864.0,4544,8096,934.9,"void gemvNSP_kernel<float, float, float, float, (int)1, (int)32, (int)4, (int)1024, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T10)"
+1.7,504837,96,5258.7,5184.0,5088,8672,425.1,"std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)0, (bool)0, (int)7, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)"
+1.5,426852,96,4446.4,4448.0,4192,4672,82.1,"void cudann::kernels::output_delta_loss_k<float, cudann::kernels::DfF<(cudann::ActivationType)1, (bool)1>>(const T1 *, const T1 *, const T1 *, T1 *, unsigned long, T2, double *)"
+1.1,327331,97,3374.5,3392.0,3200,3424,42.3,"void cudann::kernels::activate_k<float, cudann::kernels::ActF<(cudann::ActivationType)1>>(T1 *, T1 *, const T1 *, unsigned long, unsigned long, T2)"
+0.0,4064,2,2032.0,2032.0,2016,2048,22.6,"void cudann::kernels::fill_k<float>(T1 *, T1, unsigned long)"

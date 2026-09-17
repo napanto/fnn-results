@@ -1,0 +1,20 @@
+{'version': '0.1.1', 'compiler': 'GNU 14.2.0 /usr/bin/g++-14', 'flags': '-O3 -DNDEBUG -fopenmp -foffload=disable', 'offload_arch': '', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled'], 'blas_selectable': ['openblas', 'omp', 'tiled'], 'openmp': 201511, 'omp_num_devices': 1, 'omp_max_threads': 32, 'target': 'cpu', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
+ompnn gcc14      cpu --dtype double                 119 passed, 1 skipped in 1.47s
+ompnn gcc14      cpu --dtype float                  113 passed, 7 skipped in 1.49s
+ompnn gcc14      cpu --option blas=tiled --dtype float 113 passed, 7 skipped in 2.29s
+{'version': '0.1.1', 'compiler': 'Clang 22.1.8 /usr/bin/clang++-22', 'flags': '-O3 -DNDEBUG -fopenmp=libomp', 'offload_arch': '', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled'], 'blas_selectable': ['openblas', 'omp', 'tiled'], 'openmp': 202011, 'omp_num_devices': 0, 'omp_max_threads': 32, 'target': 'cpu', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
+ompnn clang22    cpu --dtype double                 119 passed, 1 skipped in 1.53s
+ompnn clang22    cpu --dtype float                  113 passed, 7 skipped in 1.33s
+ompnn clang22    cpu --option blas=tiled --dtype float 113 passed, 7 skipped in 2.10s
+{'version': '0.1.1', 'compiler': 'Clang 18.1.8 /usr/bin/clang++-18', 'flags': '-O3 -DNDEBUG -fopenmp=libomp', 'offload_arch': '', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled'], 'blas_selectable': ['openblas', 'omp', 'tiled'], 'openmp': 202011, 'omp_num_devices': 0, 'omp_max_threads': 32, 'target': 'cpu', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
+ompnn clang18    cpu --dtype double                 119 passed, 1 skipped in 1.63s
+ompnn clang18    cpu --dtype float                  113 passed, 7 skipped in 1.48s
+ompnn clang18    cpu --option blas=tiled --dtype float 113 passed, 7 skipped in 1.91s
+{'version': '0.1.1', 'compiler': 'GNU 14.2.0 /usr/bin/g++-14', 'flags': '-O3 -DNDEBUG -fopenmp -foffload=disable', 'offload_arch': '', 'onemath': 'oneMKL (mkl_rt) /opt/venv/lib/libmkl_rt.so.3', 'git_sha': 'v0.1.1', 'blas_backends': ['mkl', 'omp', 'tiled'], 'blas_selectable': ['mkl', 'omp', 'tiled'], 'openmp': 201511, 'omp_num_devices': 1, 'omp_max_threads': 32, 'target': 'cpu', 'cblas': 'mkl', 'dtypes': ['float', 'double']}
+ompnn gcc14mkl   cpu --dtype double                 119 passed, 1 skipped in 1.74s
+ompnn gcc14mkl   cpu --dtype float                  113 passed, 7 skipped in 1.63s
+ompnn gcc14mkl   cpu --option blas=tiled --dtype float 113 passed, 7 skipped in 2.31s
+{'version': '0.1.1', 'compiler': 'NVHPC 26.5.0 /opt/nvidia/hpc_sdk/Linux_x86_64/26.5/compilers/bin/nvc++', 'flags': '-fast -O3 -DNDEBUG -mp -mp=multicore', 'offload_arch': '', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled'], 'blas_selectable': ['openblas', 'omp', 'tiled'], 'openmp': 202011, 'omp_num_devices': 0, 'omp_max_threads': 32, 'target': 'cpu', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
+ompnn nvcppmc    cpu --dtype double                 119 passed, 1 skipped in 1.17s
+ompnn nvcppmc    cpu --dtype float                  113 passed, 7 skipped in 1.12s
+ompnn nvcppmc    cpu --option blas=tiled --dtype float 113 passed, 7 skipped in 1.65s

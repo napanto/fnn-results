@@ -1,0 +1,14 @@
+{'version': '0.1.1', 'compiler': 'nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0', 'flags': '-O3 -DNDEBUG', 'cuda_archs': '80', 'onemath': 'cuBLAS 12.9.86', 'git_sha': 'v0.1.1', 'blas_backends': ['cublas', 'tiled'], 'blas_selectable': ['cublas', 'tiled'], 'runtime_version': 12090, 'driver_version': 13030, 'platform': 'CUDA', 'dtypes': ['float', 'double']}
+[{'index': 0, 'name': 'NVIDIA A30', 'vendor': 'NVIDIA', 'type': 'gpu', 'backend': 'cuda', 'platform': 'CUDA runtime 12.9', 'driver': '13.3', 'global_mem_bytes': 25362432000, 'compute_units': 56, 'fp64': True, 'compute_capability': '8.0'}]
+cudann --dtype double                           121 passed, 1 skipped in 2.64s
+cudann --dtype float                            115 passed, 7 skipped in 2.38s
+cudann --option memory=shared                   227 passed, 8 skipped in 4.44s
+cudann --option memory=host                     227 passed, 8 skipped in 4.29s
+cudann --option queue=in_order                  227 passed, 8 skipped in 3.78s
+cudann --option queue=graph                     227 passed, 8 skipped in 3.42s
+cudann --option streams=8                       227 passed, 8 skipped in 4.58s
+cudann --option queue=graph --option streams=4  227 passed, 8 skipped in 3.44s
+cudann --option blas=tiled --dtype double       121 passed, 1 skipped in 2.10s
+cudann --option blas=tiled --dtype float        115 passed, 7 skipped in 1.92s
+cudann --option blas=tiled --option queue=graph 227 passed, 8 skipped in 2.93s
+cudann --run-slow -k mnist                      2 passed, 233 deselected in 2.94s

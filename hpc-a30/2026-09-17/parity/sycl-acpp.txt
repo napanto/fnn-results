@@ -1,0 +1,14 @@
+{'version': '0.2.1', 'compiler': 'AdaptiveCpp 25.10.0 /opt/acpp/bin/acpp / host Clang 18.1.3 /opt/acpp/bin/acpp', 'flags': '-O3 -DNDEBUG', 'sycl_targets': 'acpp:generic', 'onemath': '0.5.0 /opt/onemath-acpp/lib/cmake/oneMath', 'git_sha': 'v0.2.1', 'blas_backends': ['netlib', 'cublas'], 'blas_selectable': ['netlib', 'tiled'], 'sycl_implementation': 'AdaptiveCpp', 'dtypes': ['float', 'double']}
+[{'index': 0, 'name': 'NVIDIA A30', 'vendor': 'NVIDIA', 'type': 'gpu', 'backend': 'cuda', 'platform': 'CUDA (platform 0)', 'driver': '13030', 'global_mem_bytes': 25362432000, 'compute_units': 56, 'fp64': True}, {'index': 1, 'name': 'AdaptiveCpp OpenMP host device', 'vendor': 'the AdaptiveCpp project', 'type': 'cpu', 'backend': 'omp', 'platform': 'OpenMP (platform 0)', 'driver': '1.2', 'global_mem_bytes': 270085226496, 'compute_units': 64, 'fp64': True}]
+syclnn AdaptiveCpp cuda:gpu --dtype double                     119 passed, 1 skipped in 13.93s
+syclnn AdaptiveCpp cuda:gpu --dtype float                      113 passed, 7 skipped in 9.87s
+syclnn AdaptiveCpp cuda:gpu --option queue=in_order            225 passed, 8 skipped in 7.45s
+syclnn AdaptiveCpp cuda:gpu --option streams=1                 225 passed, 8 skipped in 8.67s
+syclnn AdaptiveCpp cuda:gpu --option blas_queue=dedicated      225 passed, 8 skipped in 15.01s
+syclnn AdaptiveCpp cuda:gpu --option memory=shared             225 passed, 8 skipped in 8.89s
+syclnn AdaptiveCpp cuda:gpu --option memory=host               225 passed, 8 skipped in 9.20s
+syclnn AdaptiveCpp cuda:gpu --option blas=tiled --dtype float  113 passed, 7 skipped in 7.12s
+syclnn AdaptiveCpp cuda:gpu --run-slow -k mnist                2 passed, 231 deselected in 5.67s
+syclnn AdaptiveCpp omp:cpu --dtype double                     119 passed, 1 skipped in 46.61s
+syclnn AdaptiveCpp omp:cpu --dtype float                      113 passed, 7 skipped in 40.29s
+syclnn AdaptiveCpp omp:cpu --blas tiled --dtype float         113 passed, 7 skipped in 35.30s

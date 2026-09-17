@@ -1,0 +1,16 @@
+{'version': '0.2.1', 'compiler': 'Clang 22.1.0 /opt/sycl/bin/clang++', 'flags': '-O3 -DNDEBUG', 'sycl_targets': 'spir64,nvidia_gpu_sm_80', 'onemath': '0.5.0 /opt/onemath/lib/cmake/oneMath', 'git_sha': 'v0.2.1', 'blas_backends': ['mklcpu', 'netlib', 'cublas'], 'blas_selectable': ['mklcpu', 'netlib', 'tiled'], 'sycl_implementation': 'DPC++ (intel/llvm)', 'dtypes': ['float', 'double']}
+[{'index': 0, 'name': 'NVIDIA A30', 'vendor': 'NVIDIA Corporation', 'type': 'gpu', 'backend': 'cuda', 'platform': 'NVIDIA CUDA BACKEND', 'driver': 'CUDA 13.3', 'global_mem_bytes': 25362432000, 'compute_units': 56, 'fp64': True}, {'index': 1, 'name': 'AMD EPYC 7301 16-Core Processor                ', 'vendor': 'Intel(R) Corporation', 'type': 'cpu', 'backend': 'opencl', 'platform': 'Intel(R) OpenCL', 'driver': '2026.21.6.0.17_160000', 'global_mem_bytes': 270085226496, 'compute_units': 64, 'fp64': True}]
+syclnn DPC++ cuda:gpu --dtype double               119 passed, 1 skipped in 3.59s
+syclnn DPC++ cuda:gpu --dtype float                113 passed, 7 skipped in 3.34s
+syclnn DPC++ cuda:gpu --option memory=shared       225 passed, 8 skipped in 6.26s
+syclnn DPC++ cuda:gpu --option queue=in_order      225 passed, 8 skipped in 5.95s
+syclnn DPC++ cuda:gpu --option fine_deps=False     225 passed, 8 skipped in 5.88s
+syclnn DPC++ cuda:gpu --blas tiled --dtype double  119 passed, 1 skipped in 2.88s
+syclnn DPC++ cuda:gpu --blas tiled --dtype float   113 passed, 7 skipped in 2.94s
+syclnn DPC++ cuda:gpu --run-slow -k mnist          2 passed, 231 deselected in 4.08s
+syclnn DPC++ opencl:cpu --dtype double               119 passed, 1 skipped in 6.00s
+syclnn DPC++ opencl:cpu --dtype float                113 passed, 7 skipped in 5.49s
+syclnn DPC++ opencl:cpu --blas netlib --dtype float  113 passed, 7 skipped in 5.94s
+syclnn DPC++ opencl:cpu --blas tiled --dtype float   113 passed, 7 skipped in 5.43s
+syclnn DPC++ opencl:cpu --blas generic --dtype double 119 passed, 1 skipped in 6.37s
+syclnn DPC++ opencl:cpu --blas generic --dtype float 113 passed, 7 skipped in 6.27s

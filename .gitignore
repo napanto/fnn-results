@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+# Nsight Systems traces are kept next to their CSV summaries only locally (the summaries are the record)
+*.nsys-rep
+*.sqlite
