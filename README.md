@@ -11,6 +11,7 @@ documentation that starts with `results/` is a path in this tree.
 ```
 ws-amd/       AMD Ryzen Threadripper 2950X + Radeon RX 7900 XTX (ROCm 7.2.4)
 ws-nvidia/    Intel Xeon E5-2643 v2 + GeForce GTX 1080 Ti (CUDA 12.9)
+hpc-a30/      2 x AMD EPYC 7301 + NVIDIA A30 (the department SLURM node; CUDA 12.9 images on a CUDA 13.3 driver, nvc++ 26.5)
   <date>/       one measurement pass: one sweep per subdirectory, <backend>.jsonl = the live rows,
                 superseded.jsonl = rows replaced by a later re-measurement (skipped by every reader),
                 peak.jsonl = GEMM / streaming peaks, parity.txt = parity-suite outputs where captured
@@ -23,7 +24,11 @@ Passes: `2026-09-03` (ws-amd) and `2026-09-04` (ws-nvidia) were measured with
 the per-launch profiler on in every row; `2026-09-05` is the third pass the
 study reports (timing rows unprofiled, oracle check on a separate instance,
 every confounder found on the way fixed or isolated), with the ws-amd rows
-re-measured on 2026-09-06/07 at a fixed 2.8 GHz host clock. The protocol,
+re-measured on 2026-09-06/07 at a fixed 2.8 GHz host clock. The inference rows (`mode = infer`) of both
+workstations were re-measured on 2026-09-17 with the zero-copy bindings of
+syclnn 0.2.1 / cudann 0.1.1 / ompnn 0.1.1 (the earlier rows had timed a host
+copy of the input; they are in `superseded.jsonl`). `hpc-a30/2026-09-17` is
+the department node's pass, measured with the fixed libraries from the start. The protocol,
 the meaning of every field and the caveats are in `fnn-bench/docs/methodology.md`.
 
 Each row is one JSON object: configuration (`backend`, `workload`, `batch`,
