@@ -1,15 +1,15 @@
 {'version': '0.1.1', 'compiler': 'Clang 18.1.8 /usr/bin/clang++-18', 'flags': '-O3 -DNDEBUG -fopenmp=libomp -fopenmp-targets=nvptx64-nvidia-cuda --offload-arch=sm_80 --cuda-path=/usr/local/cuda-12.9', 'offload_arch': 'sm_80', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so; cuBLAS 12.9.86', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled', 'cublas'], 'blas_selectable': ['openblas', 'omp', 'tiled', 'cublas'], 'openmp': 202011, 'omp_num_devices': 1, 'omp_max_threads': 16, 'target': 'nvidia', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
-ompnn clang18nv  gpu --dtype double                     119 passed, 1 skipped in 6.85s
-ompnn clang18nv  gpu --dtype float                      113 passed, 7 skipped in 6.72s
-ompnn clang18nv  gpu --option blas=tiled --dtype double 119 passed, 1 skipped in 6.84s
-ompnn clang18nv  gpu --option blas=tiled --dtype float  113 passed, 7 skipped in 6.15s
-ompnn clang18nv  gpu --option blas=omp --dtype float    113 passed, 7 skipped in 6.11s
+ompnn clang18nv  gpu --dtype double                     119 passed, 1 skipped in 5.32s
+ompnn clang18nv  gpu --dtype float                      113 passed, 7 skipped in 6.69s
+ompnn clang18nv  gpu --option blas=tiled --dtype double 119 passed, 1 skipped in 4.76s
+ompnn clang18nv  gpu --option blas=tiled --dtype float  113 passed, 7 skipped in 6.14s
+ompnn clang18nv  gpu --option blas=omp --dtype float    113 passed, 7 skipped in 6.06s
 {'version': '0.1.1', 'compiler': 'GNU 14.2.0 /usr/bin/g++-14', 'flags': '-O3 -DNDEBUG -fopenmp -foffload=nvptx-none -foffload-options=nvptx-none=-misa=sm_80 -fcf-protection=none -fno-stack-protector', 'offload_arch': 'sm_80', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so; cuBLAS 12.9.86', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled', 'cublas'], 'blas_selectable': ['openblas', 'omp', 'tiled', 'cublas'], 'openmp': 201511, 'omp_num_devices': 1, 'omp_max_threads': 16, 'target': 'nvidia', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
-ompnn gcc14nv    gpu --dtype double                     119 passed, 1 skipped in 18.59s
-ompnn gcc14nv    gpu --dtype float                      113 passed, 7 skipped in 17.99s
+ompnn gcc14nv    gpu --dtype double                     119 passed, 1 skipped in 19.51s
+ompnn gcc14nv    gpu --dtype float                      113 passed, 7 skipped in 18.25s
 ompnn gcc14nv    gpu --option blas=tiled --dtype double ompnn gcc14nv    gpu --option blas=tiled --dtype float  ompnn gcc14nv    gpu --option blas=omp --dtype float    {'version': '0.1.1', 'compiler': 'NVHPC 26.5.0 /opt/nvidia/hpc_sdk/Linux_x86_64/26.5/compilers/bin/nvc++', 'flags': '-fast -O3 -DNDEBUG -mp -mp=gpu -gpu=cc80', 'offload_arch': 'sm_80', 'onemath': 'OpenBLAS /usr/lib/x86_64-linux-gnu/openblas-openmp/libopenblasp-r0.3.26.so; cuBLAS 13.2.78', 'git_sha': 'v0.1.1', 'blas_backends': ['openblas', 'omp', 'tiled', 'cublas'], 'blas_selectable': ['openblas', 'omp', 'tiled', 'cublas'], 'openmp': 202011, 'omp_num_devices': 1, 'omp_max_threads': 16, 'target': 'nvidia', 'cblas': 'openblas', 'dtypes': ['float', 'double']}
-ompnn nvcpp      gpu --dtype double                     119 passed, 1 skipped in 3.52s
-ompnn nvcpp      gpu --dtype float                      113 passed, 7 skipped in 3.28s
-ompnn nvcpp      gpu --option blas=tiled --dtype double 119 passed, 1 skipped in 2.73s
-ompnn nvcpp      gpu --option blas=tiled --dtype float  113 passed, 7 skipped in 2.85s
-ompnn nvcpp      gpu --option blas=omp --dtype float    113 passed, 7 skipped in 2.46s
+ompnn nvcpp      gpu --dtype double                     119 passed, 1 skipped in 3.26s
+ompnn nvcpp      gpu --dtype float                      113 passed, 7 skipped in 3.20s
+ompnn nvcpp      gpu --option blas=tiled --dtype double 119 passed, 1 skipped in 2.77s
+ompnn nvcpp      gpu --option blas=tiled --dtype float  113 passed, 7 skipped in 2.73s
+ompnn nvcpp      gpu --option blas=omp --dtype float    113 passed, 7 skipped in 2.54s
