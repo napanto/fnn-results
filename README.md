@@ -21,8 +21,9 @@ The study reports `ws-amd/2026-09-05`, `ws-nvidia/2026-09-05` and `hpc-a30/2026-
 (timing rows unprofiled, oracle check on a separate instance; the ws-amd rows at a fixed 2.8 GHz
 host clock). Rows of earlier library builds were re-measured inside these passes and the old
 rows moved to `superseded.jsonl`: the inference rows with the zero-copy bindings of syclnn 0.2.1 /
-cudann 0.1.1 / ompnn 0.1.1, the syclnn and cudann rows with the pinned-staging default of
-syclnn 0.2.2 / cudann 0.1.2. The earlier passes `ws-amd/2026-09-03` and `ws-nvidia/2026-09-04`
+cudann 0.1.1 / ompnn 0.1.1, the syclnn and cudann rows of hpc-a30 and ws-nvidia with the
+pinned-staging default of syclnn 0.2.2 / cudann 0.1.2 (on ws-amd that re-measure is not complete
+yet, and its syclnn and cudann rows still have the earlier default). The earlier passes `ws-amd/2026-09-03` and `ws-nvidia/2026-09-04`
 were measured with the per-launch profiler on in every timed row; their raw rows are kept, without
 an analysis. The protocol, the meaning of every field and the measurement conditions are in
 `fnn-bench/docs/methodology.md`.
