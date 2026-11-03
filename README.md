@@ -8,38 +8,32 @@ and [ompnn](https://github.com/napanto/ompnn), measured by the
 mounted as the `results/` submodule of fnn-bench; every path in the fnn-bench
 documentation that starts with `results/` is a path in this tree.
 
-```
-ws-amd/       AMD Ryzen Threadripper 2950X + Radeon RX 7900 XTX (ROCm 7.2.4)
-ws-nvidia/    Intel Xeon E5-2643 v2 + GeForce GTX 1080 Ti (CUDA 12.9)
-hpc-a30/      2 x AMD EPYC 7301 + NVIDIA A30 (the department SLURM node; CUDA 12.9 images on a CUDA 13.3 driver, nvc++ 26.5)
-  <date>/       one measurement pass: one sweep per subdirectory, <backend>.jsonl = the live rows,
-                superseded.jsonl = rows replaced by a later re-measurement (skipped by every reader),
-                peak.jsonl = GEMM / streaming peaks, parity.txt = parity-suite outputs where captured
-  peaks/, perf*/, rocprof/, zluda/, nsys-*.md   cross-checks and the optional experiments
-analysis/     CSVs (`fnnbench collect`), figures (`fnnbench plot`), headline tables (`scripts/headline.py`);
-              analysis/README.md describes the figure families
-```
+| Path | Contents |
+|---|---|
+| `ws-amd/` | AMD Ryzen Threadripper 2950X + Radeon RX 7900 XTX (ROCm 7.2.4) |
+| `ws-nvidia/` | Intel Xeon E5-2643 v2 + GeForce GTX 1080 Ti (CUDA 12.9) |
+| `hpc-a30/` | 2 x AMD EPYC 7301 + NVIDIA A30 (the department SLURM node; CUDA 12.9 images on a CUDA 13.3 driver, nvc++ 26.5) |
+| `<machine>/<date>/` | one measurement pass, one sweep per subdirectory: `<backend>.jsonl` = the live rows, `superseded.jsonl` = rows replaced by a later re-measurement (skipped by every reader), `peak.jsonl` = GEMM / streaming peaks, `parity.txt` = parity-suite outputs where captured |
+| `<machine>/peaks/`, `perf*/`, `rocprof/`, `zluda/`, `<date>/nsys-*` | profiler cross-checks and the optional experiments |
+| `analysis/` | CSVs (`fnnbench collect`), figures (`fnnbench plot`) and headline tables (`scripts/headline.py`) of the reported passes; `analysis/README.md` describes the figure families |
 
-Passes: `2026-09-03` (ws-amd) and `2026-09-04` (ws-nvidia) were measured with
-the per-launch profiler on in every row; `2026-09-05` is the third pass the
-study reports (timing rows unprofiled, oracle check on a separate instance,
-every confounder found on the way fixed or isolated), with the ws-amd rows
-re-measured on 2026-09-06/07 at a fixed 2.8 GHz host clock. The inference rows (`mode = infer`) of both
-workstations were re-measured on 2026-09-17 with the zero-copy bindings of
-syclnn 0.2.1 / cudann 0.1.1 / ompnn 0.1.1 (the earlier rows had timed a host
-copy of the input; they are in `superseded.jsonl`). `hpc-a30/2026-09-17` is
-the department node's pass, measured with the fixed libraries from the start. The protocol,
-the meaning of every field and the caveats are in `fnn-bench/docs/methodology.md`.
+The study reports `ws-amd/2026-09-05`, `ws-nvidia/2026-09-05` and `hpc-a30/2026-09-17`
+(timing rows unprofiled, oracle check on a separate instance; the ws-amd rows at a fixed 2.8 GHz
+host clock). Rows of earlier library builds were re-measured inside these passes and the old
+rows moved to `superseded.jsonl`: the inference rows with the zero-copy bindings of syclnn 0.2.1 /
+cudann 0.1.1 / ompnn 0.1.1, the syclnn and cudann rows with the pinned-staging default of
+syclnn 0.2.2 / cudann 0.1.2. The earlier passes `ws-amd/2026-09-03` and `ws-nvidia/2026-09-04`
+were measured with the per-launch profiler on in every timed row; their raw rows are kept, without
+an analysis. The protocol, the meaning of every field and the measurement conditions are in
+`fnn-bench/docs/methodology.md`.
 
 Each row is one JSON object: configuration (`backend`, `workload`, `batch`,
 `dtype`, `mode`, `options`, `effective_options`), the measurement (`results`:
 per-epoch wall clock, `steady_epoch_s`, throughput, FLOP model, GPU and CPU
 monitors, optional per-phase profile), the oracle `check` against the NumPy
-reference, `build_info` of the library and the `sysinfo` of the run. The
-`git_sha` strings in `build_info` are `git describe` outputs of the library
-trees at build time and refer to the development history that preceded the
-published one (renumbered when the machines were given their ids); the tags
-they count from are unchanged in content.
+reference, `build_info` of the library and the `sysinfo` of the run. For rows
+built before the repositories were published, the `git_sha` strings in
+`build_info` count from the published tags but name pre-publication commits.
 
 Regenerate the analysis from a checkout of fnn-bench with this repository as
 its `results/` submodule:
