@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-11-04T00:52:21.939112+00:00",
+  "machine": "ws-nvidia",
+  "kernel": "7.2.11-200.fc44.x86_64",
+  "binding": "numactl --cpunodebind=1 --membind=1",
+  "niceness": 0,
+  "cpu_cap_khz": null,
+  "boost": null,
+  "numa_balancing": "0",
+  "sysinfo": {
+    "timestamp": "2026-11-04T00:52:21+00:00",
+    "hostname": "ws-nvidia",
+    "kernel": "7.2.11-200.fc44.x86_64",
+    "python": "3.12.3",
+    "cpu": {
+      "count": 24,
+      "model": "Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz",
+      "isa": [
+        "avx"
+      ],
+      "threads_per_core": "2",
+      "cores_per_socket": "6",
+      "sockets": "2",
+      "numa_nodes": "2",
+      "l2_cache": "3 MiB (12 instances)",
+      "l3_cache": "50 MiB (2 instances)",
+      "governor": null,
+      "max_khz": null,
+      "scaling_max_khz": null,
+      "boost": null,
+      "affinity": 12
+    },
+    "libs": [],
+    "gpu": {
+      "nvidia": [
+        "NVIDIA GeForce GTX 1080 Ti, 580.196.07, 11264 MiB, 1999 MHz, 5505 MHz, 1569 MHz, 5005 MHz, 280.00 W, P2, 0x0000000000000000"
+      ]
+    },
+    "container": {
+      "FNN_IMAGE": "fnn-cuda:dev",
+      "container": "podman",
+      "HOSTNAME": "ws-nvidia",
+      "containerenv": true,
+      "os": "Ubuntu 24.04.4 LTS"
+    },
+    "env": {
+      "NVIDIA_VISIBLE_DEVICES": "void",
+      "FNN_REF_CACHE": "/work/fnn-bench/results/ws-nvidia/extra-tools-2026-11-04/ref",
+      "FNN_IMAGE_BUILT": "2026-09-03",
+      "FNN_IMAGE": "fnn-cuda:dev",
+      "OPENBLAS_ROOT": "/opt/openblas-openmp",
+      "CUDA_PATH": "/usr/local/cuda-12.9",
+      "FNN_DATA_DIR": "/work/fnn-bench/results/ws-nvidia/extra-tools-2026-11-04/data",
+      "OMP_NUM_THREADS": "16",
+      "NVIDIA_CTK_LIBCUDA_DIR": "/usr/lib64",
+      "CUDA_HOME": "/usr/local/cuda-12.9"
+    },
+    "numa": {
+      "cpus_allowed_list": "12-23",
+      "mems_allowed_list": "0-1",
+      "numactl_show": [
+        "policy: bind",
+        "preferred node: 1",
+        "physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 ",
+        "cpubind: 1 ",
+        "nodebind: 1 ",
+        "membind: 1 ",
+        "preferred: 1"
+      ]
+    },
+    "omp_max_threads": 16,
+    "meminfo_total_kb": 65618120,
+    "packages": {
+      "numpy": "2.5.2",
+      "fnn-testkit": "1.0.0",
+      "fnnbench": "1.0.0",
+      "cudann": "0.1.2"
+    },
+    "git": {}
+  },
+  "numactl": {
+    "command": [
+      "numactl",
+      "--show"
+    ],
+    "exit": 0,
+    "stdout": "policy: bind\npreferred node: 1\nphyscpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \ncpubind: 1 \nnodebind: 1 \nmembind: 1 \npreferred: 1",
+    "stderr": ""
+  },
+  "background_note": "other services were running on the host and in the VM, as in every ws-nvidia pass; their CPU and GPU use is not controlled",
+  "nvidia_parameters": "ResmanDebugLevel: 4294967295\nRmLogonRC: 1\nModifyDeviceFiles: 0\nDeviceFileUID: 0\nDeviceFileGID: 0\nDeviceFileMode: 438\nInitializeSystemMemoryAllocations: 1\nUsePageAttributeTable: 4294967295\nEnableMSI: 1\nEnablePCIeGen3: 0\nMemoryPoolSize: 0\nKMallocHeapMaxSize: 0\nVMallocHeapMaxSize: 0\nIgnoreMMIOCheck: 0\nEnableStreamMemOPs: 0\nEnableUserNUMAManagement: 1\nNvLinkDisable: 0\nRmProfilingAdminOnly: 1\nPreserveVideoMemoryAllocations: 1\nEnableS0ixPowerManagement: 0\nS0ixPowerManagementVideoMemoryThreshold: 256\nDynamicPowerManagement: 3\nDynamicPowerManagementVideoMemoryThreshold: 200\nRegisterPCIDriver: 1\nEnablePCIERelaxedOrderingMode: 0\nEnableResizableBar: 0\nEnableGpuFirmware: 18\nEnableGpuFirmwareLogs: 2\nRmNvlinkBandwidthLinkCount: 0\nEnableDbgBreakpoint: 0\nOpenRmEnableUnsupportedGpus: 1\nDmaRemapPeerMmio: 1\nImexChannelCount: 2048\nCreateImexChannel0: 0\nGrdmaPciTopoCheckOverride: 0\nCoherentGPUMemoryMode: \"\"\nRegistryDwords: \"\"\nRegistryDwordsPerDevice: \"\"\nRmMsg: \"\"\nGpuBlacklist: \"\"\nTemporaryFilePath: \"/var/tmp\"\nExcludedGpus: \"\"",
+  "nvidia_smi": {
+    "command": [
+      "nvidia-smi"
+    ],
+    "exit": 0,
+    "stdout": "Wed Nov  4 00:52:22 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.196.07             Driver Version: 580.196.07     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce GTX 1080 Ti     Off |   00000000:01:00.0 Off |                  N/A |\n|  7%   53C    P2             61W /  280W |    2067MiB /  11264MiB |      3%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+",
+    "stderr": "",
+    "note": "Device summary only; the process table is omitted."
+  },
+  "gpu_clocks": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,driver_version,clocks.current.sm,clocks.current.memory,power.draw,temperature.gpu,utilization.gpu,utilization.memory",
+      "--format=csv"
+    ],
+    "exit": 0,
+    "stdout": "name, driver_version, clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], temperature.gpu, utilization.gpu [%], utilization.memory [%]\nNVIDIA GeForce GTX 1080 Ti, 580.196.07, 1569 MHz, 5005 MHz, 60.99 W, 53, 2 %, 1 %",
+    "stderr": ""
+  },
+  "limits": "Pascal GPU; other GPU work remains possible. Bench mode only changes the listed runtime settings. No comparisons with the historical pass assume identical conditions.",
+  "gpu_sharing": "The GPU was not dedicated to the benchmark.",
+  "compute_process_summary": {
+    "count": 6,
+    "memory_mib": [
+      270,
+      392,
+      392,
+      392,
+      392,
+      159
+    ],
+    "note": "Process names and IDs omitted; memory values are the recorded snapshot."
+  }
+}

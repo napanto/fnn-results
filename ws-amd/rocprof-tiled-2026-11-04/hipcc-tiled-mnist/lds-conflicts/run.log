@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc LDSBankConflict --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/driver.json --samples 256 --batch 256
+W20261104 02:03:33.299983 140136261667136 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.237236 sec
+W20261104 02:03:33.300109 140136261667136 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 02:03:33.347958 140136261667136 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:03:33.980616 140136261667136 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 4161105 ns; profile=False
+W20261104 02:03:35.610878 140136261667136 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/driver.json --samples 256 --batch 256' ::     2.310770 sec
+E20261104 02:03:35.621321 140136261667136 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/run_kernel_trace.csv
+E20261104 02:03:35.631121 140136261667136 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/run_marker_api_trace.csv
+E20261104 02:03:35.641742 140136261667136 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/run_counter_collection.csv
+E20261104 02:03:35.649919 140136261667136 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/run_agent_info.csv
+E20261104 02:03:35.650417 140136261667136 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-conflicts/run_results.json
+W20261104 02:03:35.687692 140136261667136 simple_timer.cpp:55] [rocprofv3] output generation ::     0.074201 sec
+W20261104 02:03:35.687822 140136261667136 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.074378 sec

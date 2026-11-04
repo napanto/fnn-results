@@ -1,0 +1,15 @@
+rocprofiler-sdk:
+  counters-schema-version: 1
+  counters:
+    - name: FNN_LDS_INSTS
+      description: Sum of exposed SQ_INSTS_WAVE32_LDS across hardware instances
+      properties: []
+      definitions:
+        - architectures: [gfx1100]
+          expression: reduce(SQ_INSTS_WAVE32_LDS,sum)
+    - name: FNN_LDS_BASE
+      description: Sum of the base SQ_INSTS_LDS counter
+      properties: []
+      definitions:
+        - architectures: [gfx1100]
+          expression: reduce(SQ_INSTS_LDS,sum)

@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc WRITE_SIZE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/driver.json --samples 256 --batch 256
+W20261104 02:16:36.689922 140079000869184 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.243491 sec
+W20261104 02:16:36.690056 140079000869184 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 02:16:36.741297 140079000869184 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:16:37.378687 140079000869184 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+ompnn: 1 epochs, 256 samples, 5082572 ns; profile=False
+W20261104 02:16:38.844178 140079000869184 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/driver.json --samples 256 --batch 256' ::     2.154122 sec
+E20261104 02:16:38.855801 140079000869184 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/run_kernel_trace.csv
+E20261104 02:16:38.867110 140079000869184 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/run_marker_api_trace.csv
+E20261104 02:16:38.877916 140079000869184 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/run_counter_collection.csv
+E20261104 02:16:38.886034 140079000869184 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/run_agent_info.csv
+E20261104 02:16:38.886499 140079000869184 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-mnist/memory-write/run_results.json
+W20261104 02:16:38.921963 140079000869184 simple_timer.cpp:55] [rocprofv3] output generation ::     0.075092 sec
+W20261104 02:16:38.922045 140079000869184 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.075245 sec

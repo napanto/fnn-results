@@ -1,0 +1,6 @@
+racecheck-float-default-test_parity_with_reference errors
+racecheck-float-graph-test_parity_with_reference errors
+racecheck-float-tiled-test_parity_with_reference pass
+racecheck-double-default-test_parity_with_reference pass
+racecheck-double-graph-test_parity_with_reference pass
+racecheck-double-tiled-test_parity_with_reference pass

@@ -1,0 +1,6 @@
+synccheck-float-default-test_parity_with_reference pass
+synccheck-float-graph-test_parity_with_reference pass
+synccheck-float-tiled-test_parity_with_reference pass
+synccheck-double-default-test_parity_with_reference pass
+synccheck-double-graph-test_parity_with_reference pass
+synccheck-double-tiled-test_parity_with_reference pass

@@ -1,0 +1,5 @@
+$ /work/fnn-bench/results/ws-nvidia/sanitizer-2026-11-04/toolkit/usr/local/cuda-12.9/compute-sanitizer/compute-sanitizer --tool initcheck --error-exitcode 86 --target-processes all python -m pytest -q -p no:cacheprovider --backend cudann --device gpu --dtype float --option queue=graph -k cup-like ../cudann/tests/test_suite.py::test_parity_with_reference
+========= COMPUTE-SANITIZER
+.                                                                        [100%]
+1 passed, 3 deselected in 0.74s
+========= ERROR SUMMARY: 0 errors

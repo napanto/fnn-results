@@ -1,0 +1,6 @@
+memcheck-float-default-test_parity_with_reference pass
+memcheck-float-graph-test_parity_with_reference pass
+memcheck-float-tiled-test_parity_with_reference pass
+memcheck-double-default-test_parity_with_reference pass
+memcheck-double-graph-test_parity_with_reference pass
+memcheck-double-tiled-test_parity_with_reference pass

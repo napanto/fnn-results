@@ -1,0 +1,19 @@
+{
+  "usable": [
+    "Wavefronts",
+    "VGPR_Count",
+    "LDS_Block_Size",
+    "kernel timestamps"
+  ],
+  "unusable_zero": [
+    "LDSBankConflict",
+    "FNN_LDS_INSTS",
+    "VALUInsts",
+    "OccupancyPercent",
+    "FETCH_SIZE",
+    "WRITE_SIZE"
+  ],
+  "reason": "Identically zero readouts in auto power mode, including a 384 MiB STREAM traffic control; removing ROCTx pause did not fix them. AMD documents stable power state as a gfx11/gfx12 counter prerequisite.",
+  "source": "https://rocm.docs.amd.com/projects/rocprofiler-sdk/en/latest/what-is-rocprofiler-sdk.html",
+  "next_step": "Resolved in ../rocprof-stable-2026-11-04 using the ordinary DRM profiling-context API; original auto mode restored after each session."
+}

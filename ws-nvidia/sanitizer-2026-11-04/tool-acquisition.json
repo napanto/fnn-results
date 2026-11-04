@@ -1,0 +1,9 @@
+{
+  "package": "cuda-sanitizer-12-9",
+  "version": "12.9.79-1",
+  "url": "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-sanitizer-12-9_12.9.79-1_amd64.deb",
+  "sha256": "3b2fdf2c3caf82cddc4c4c0f93b3877a5671de04ab7778f9e7d517e497a05218",
+  "index": "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/Packages.gz",
+  "reason": "compute-sanitizer absent from existing fnn-cuda sandbox",
+  "action": "dpkg-deb -x only, no installation or package scripts"
+}

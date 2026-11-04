@@ -1,0 +1,97 @@
+{
+  "command": [
+    "rocprofv3",
+    "--extra-counters",
+    "results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml",
+    "--marker-trace",
+    "--kernel-trace",
+    "--pmc",
+    "FETCH_SIZE",
+    "--kernel-include-regex",
+    ".*(gemm|Gemm|GEMM|Cijk).*",
+    "--output-format",
+    "csv",
+    "json",
+    "-d",
+    "results/ws-amd/rocprof-stable-2026-11-04/adaptivecpp-tiled-large/memory-read",
+    "-o",
+    "run",
+    "--",
+    "python",
+    "scripts/nsys_epoch.py",
+    "--runtime",
+    "hip",
+    "--backend",
+    "syclnn",
+    "--blas",
+    "tiled",
+    "--epochs",
+    "1",
+    "--out",
+    "results/ws-amd/rocprof-stable-2026-11-04/adaptivecpp-tiled-large/memory-read/driver.json",
+    "--workload",
+    "sweep-w4096-d2-b4096",
+    "--samples",
+    "4096",
+    "--batch",
+    "4096"
+  ],
+  "backend": "syclnn",
+  "label": "adaptivecpp",
+  "blas": "tiled",
+  "size": "large",
+  "group": "memory-read",
+  "counters": [
+    "FETCH_SIZE"
+  ],
+  "shapes_in_submission_order": [
+    [
+      "NN",
+      4096,
+      4096,
+      256
+    ],
+    [
+      "NN",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NN",
+      16,
+      4096,
+      4096
+    ],
+    [
+      "TN",
+      4096,
+      4096,
+      16
+    ],
+    [
+      "TN",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NT",
+      4096,
+      256,
+      4096
+    ],
+    [
+      "NT",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NT",
+      16,
+      4096,
+      4096
+    ]
+  ]
+}

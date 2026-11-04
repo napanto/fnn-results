@@ -1,0 +1,16 @@
+W20261104 02:22:54.822319 140176847213312 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233666 sec
+W20261104 02:22:54.822642 140176847213312 simple_timer.cpp:55] [rocprofv3] 'results/ws-amd/stream-2026-11-04/stream-probe 33554432 3' ::     0.000000 sec
+W20261104 02:22:54.850449 140176847213312 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+W20261104 02:22:55.122371 140176847213312 simple_timer.cpp:55] [rocprofv3] 'results/ws-amd/stream-2026-11-04/stream-probe 33554432 3' ::     0.299730 sec
+E20261104 02:22:55.132829 140176847213312 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/stream-memory/WRITE_SIZE/run_kernel_trace.csv
+E20261104 02:22:55.148748 140176847213312 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/stream-memory/WRITE_SIZE/run_counter_collection.csv
+E20261104 02:22:55.157069 140176847213312 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/stream-memory/WRITE_SIZE/run_agent_info.csv
+W20261104 02:22:55.159611 140176847213312 simple_timer.cpp:55] [rocprofv3] output generation ::     0.034811 sec
+W20261104 02:22:55.159661 140176847213312 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.034923 sec
+# device=AMD Radeon RX 7900 XTX runtime=70253211 driver=70253211
+# architecture=gfx1100
+operation,elements,arrays_bytes,traffic_bytes,repetitions,best_ms,median_ms,best_GB_s,median_GB_s
+copy,33554432,402653184,268435456,3,5.44176006,5.47215986,49.328792,49.054754
+scale,33554432,402653184,268435456,3,5.42272186,5.44252205,49.501976,49.3218867
+add,33554432,402653184,402653184,3,7.79634523,7.800385,51.646404,51.6196552
+triad,33554432,402653184,402653184,3,7.78154993,7.79255009,51.7446,51.6715555

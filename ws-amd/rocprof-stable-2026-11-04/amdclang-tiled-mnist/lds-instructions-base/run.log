@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc FNN_LDS_BASE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/driver.json --samples 256 --batch 256
+W20261104 03:39:13.833045 140602781256000 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.234388 sec
+W20261104 03:39:13.833171 140602781256000 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 03:39:13.879363 140602781256000 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 03:39:14.507487 140602781256000 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+ompnn: 1 epochs, 256 samples, 3486009 ns; profile=False
+W20261104 03:39:15.968672 140602781256000 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/driver.json --samples 256 --batch 256' ::     2.135502 sec
+E20261104 03:39:15.980978 140602781256000 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/run_kernel_trace.csv
+E20261104 03:39:15.991964 140602781256000 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/run_marker_api_trace.csv
+E20261104 03:39:16.002581 140602781256000 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/run_counter_collection.csv
+E20261104 03:39:16.010799 140602781256000 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/run_agent_info.csv
+E20261104 03:39:16.011252 140602781256000 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/lds-instructions-base/run_results.json
+W20261104 03:39:16.046385 140602781256000 simple_timer.cpp:55] [rocprofv3] output generation ::     0.074617 sec
+W20261104 03:39:16.046473 140602781256000 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.074769 sec

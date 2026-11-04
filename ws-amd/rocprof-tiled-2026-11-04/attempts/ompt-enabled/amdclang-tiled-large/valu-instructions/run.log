@@ -1,0 +1,39 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc VALUInsts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-large/valu-instructions -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-large/valu-instructions/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096
+W20261104 02:07:23.102984 140391121639744 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.232801 sec
+W20261104 02:07:23.103109 140391121639744 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/amdclang-tiled-large/valu-instructions/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     0.000000 sec
+W20261104 02:07:23.149319 140391121639744 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+*** Aborted at 1793754443 (unix time) try "date -d @1793754443" if you are using GNU date ***
+PC: @     0x7faf654cf0d4 pthread_mutex_lock
+*** SIGSEGV (@0x2a8) received by PID 777961 (TID 0x7faf5aef5940) from PID 680; stack trace: ***
+    @     0x7faf654d0fb3 (unknown)
+    @     0x7faf6642ea00 (unknown)
+    @     0x7faf65474330 (unknown)
+    @     0x7faf654cf0d4 pthread_mutex_lock
+    @     0x7faf1f49aab4 omp_get_num_devices
+    @     0x7faf242a5413 ompt_post_init
+    @     0x7faf24223558 __kmp_do_middle_initialize()
+    @     0x7faf2422352c __kmp_middle_initialize
+    @     0x7faf242a0228 __kmp_api_omp_get_num_places
+    @     0x7faf2209bcd0 get_num_procs
+    @     0x7faf2209bdbd blas_get_cpu_number
+    @     0x7faf21e400bb gotoblas_init
+    @     0x7faf6658871f (unknown)
+    @     0x7faf66588824 (unknown)
+    @     0x7faf665845b2 _dl_catch_exception
+    @     0x7faf6658fd7c (unknown)
+    @     0x7faf6658451c _dl_catch_exception
+    @     0x7faf66590164 (unknown)
+    @     0x7faf654c7284 (unknown)
+    @     0x7faf6658451c _dl_catch_exception
+    @     0x7faf66584669 (unknown)
+    @     0x7faf654c6d63 (unknown)
+    @     0x7faf654c733f dlopen
+    @           0x6bc8cc (unknown)
+    @           0x6a99ca (unknown)
+    @           0x6a9152 (unknown)
+    @           0x582287 (unknown)
+    @           0x5db532 _PyEval_EvalFrameDefault
+    @           0x5d58bb PyEval_EvalCode
+    @           0x5d36ac (unknown)
+    @           0x58206d (unknown)
+    @           0x5db532 _PyEval_EvalFrameDefault

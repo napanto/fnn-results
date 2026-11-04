@@ -1,0 +1,5 @@
+$ /work/fnn-bench/results/ws-nvidia/sanitizer-2026-11-04/toolkit/usr/local/cuda-12.9/compute-sanitizer/compute-sanitizer --tool racecheck --error-exitcode 86 --target-processes all python -m pytest -q -p no:cacheprovider --backend cudann --device gpu --dtype float ../cudann/tests/test_suite.py::test_remainder_batch
+========= COMPUTE-SANITIZER
+.                                                                        [100%]
+1 passed in 1.04s
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

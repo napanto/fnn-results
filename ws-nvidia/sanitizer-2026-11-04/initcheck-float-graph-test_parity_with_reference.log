@@ -1,0 +1,8 @@
+$ /work/fnn-bench/results/ws-nvidia/sanitizer-2026-11-04/toolkit/usr/local/cuda-12.9/compute-sanitizer/compute-sanitizer --tool initcheck --error-exitcode 86 --target-processes all python -m pytest -q -p no:cacheprovider --backend cudann --device gpu --dtype float --option queue=graph '../cudann/tests/test_suite.py::test_parity_with_reference[cup-like]'
+========= COMPUTE-SANITIZER
+ERROR: not found: /work/cudann/tests/test_suite.py::test_parity_with_reference
+(no match in any of [<Module test_suite.py>])
+
+
+no tests ran in 0.06s
+========= Error: Target application terminated before first instrumented API call

@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc FNN_LDS_INSTS --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions -o run -- python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256
+W20261104 02:05:50.323064 139810444138816 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.232857 sec
+W20261104 02:05:50.323184 139810444138816 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256' ::     0.000001 sec
+W20261104 02:05:50.369422 139810444138816 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:05:51.085791 139810444138816 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+syclnn: 1 epochs, 256 samples, 3927132 ns; profile=False
+W20261104 02:05:52.847101 139810444138816 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256' ::     2.523917 sec
+E20261104 02:05:52.856269 139810444138816 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/run_kernel_trace.csv
+E20261104 02:05:52.866606 139810444138816 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/run_marker_api_trace.csv
+E20261104 02:05:52.877422 139810444138816 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/run_counter_collection.csv
+E20261104 02:05:52.886364 139810444138816 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/run_agent_info.csv
+E20261104 02:05:52.886817 139810444138816 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-mnist/lds-instructions/run_results.json
+W20261104 02:05:52.922737 139810444138816 simple_timer.cpp:55] [rocprofv3] output generation ::     0.074666 sec
+W20261104 02:05:52.922800 139810444138816 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.074820 sec

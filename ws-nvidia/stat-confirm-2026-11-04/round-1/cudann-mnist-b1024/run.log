@@ -1,0 +1,1 @@
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=1024  float  train epoch      45.39 ms       1321854 samples/s     3182.3 GFLOP/s(gemm)  check=ok

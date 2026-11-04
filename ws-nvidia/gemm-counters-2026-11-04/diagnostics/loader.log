@@ -1,0 +1,9 @@
+/usr/lib/x86_64-linux-gnu/libcuda.so
+/usr/lib/x86_64-linux-gnu/libcuda.so.1
+	libcupti.so.12 (libc6,x86-64) => /usr/local/cuda/targets/x86_64-linux/lib/libcupti.so.12
+	libcupti.so (libc6,x86-64) => /usr/local/cuda/targets/x86_64-linux/lib/libcupti.so
+	libcudart.so.12 (libc6,x86-64) => /usr/local/cuda/targets/x86_64-linux/lib/libcudart.so.12
+	libcudart.so (libc6,x86-64) => /usr/local/cuda/targets/x86_64-linux/lib/libcudart.so
+	libcudadebugger.so.1 (libc6,x86-64) => /usr/lib64/libcudadebugger.so.1
+	libcuda.so.1 (libc6,x86-64) => /usr/lib64/libcuda.so.1
+	libcuda.so (libc6,x86-64) => /usr/lib64/libcuda.so

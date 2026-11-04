@@ -1,0 +1,305 @@
+$ /work/fnn-bench/results/ws-nvidia/sanitizer-2026-11-04/toolkit/usr/local/cuda-12.9/compute-sanitizer/compute-sanitizer --tool racecheck --error-exitcode 86 --target-processes all python -m pytest -q -p no:cacheprovider --backend cudann --device gpu --dtype float --option queue=graph -k cup-like ../cudann/tests/test_suite.py::test_parity_with_reference
+========= COMPUTE-SANITIZER
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Warning: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+.                                                                        [100%]
+1 passed, 3 deselected in 4.00s
+========= RACECHECK SUMMARY: 100 hazards displayed (122 errors, 1 warning)

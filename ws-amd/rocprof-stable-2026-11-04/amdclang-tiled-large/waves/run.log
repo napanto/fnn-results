@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc Wavefronts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096
+W20261104 02:45:48.803049 140591122401600 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233761 sec
+W20261104 02:45:48.803173 140591122401600 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     0.000000 sec
+W20261104 02:45:48.851066 140591122401600 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:45:49.391008 140591122401600 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+ompnn: 1 epochs, 4096 samples, 273556245 ns; profile=False
+W20261104 02:45:51.570077 140591122401600 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     2.766905 sec
+E20261104 02:45:51.580676 140591122401600 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/run_kernel_trace.csv
+E20261104 02:45:51.590756 140591122401600 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/run_marker_api_trace.csv
+E20261104 02:45:51.601602 140591122401600 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/run_counter_collection.csv
+E20261104 02:45:51.609972 140591122401600 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/run_agent_info.csv
+E20261104 02:45:51.610450 140591122401600 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-large/waves/run_results.json
+W20261104 02:45:51.647072 140591122401600 simple_timer.cpp:55] [rocprofv3] output generation ::     0.074480 sec
+W20261104 02:45:51.647153 140591122401600 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.074624 sec

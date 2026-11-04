@@ -1,0 +1,4 @@
+python3 scripts/amd-profile-session.py (ordinary DRM context; profile_standard; release in finally)
+worker phase: probe
+python3 scripts/amd-profile-session.py (ordinary DRM context; profile_standard; release in finally)
+worker phase: full

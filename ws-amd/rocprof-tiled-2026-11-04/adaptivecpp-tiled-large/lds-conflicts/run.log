@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc LDSBankConflict --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts -o run -- python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096
+W20261104 02:06:08.615551 140214179154240 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233355 sec
+W20261104 02:06:08.615673 140214179154240 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     0.000000 sec
+W20261104 02:06:08.662159 140214179154240 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:06:09.274812 140214179154240 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+syclnn: 1 epochs, 4096 samples, 234884003 ns; profile=False
+W20261104 02:06:13.299113 140214179154240 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     4.683440 sec
+E20261104 02:06:13.309268 140214179154240 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/run_kernel_trace.csv
+E20261104 02:06:13.320589 140214179154240 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/run_marker_api_trace.csv
+E20261104 02:06:13.331598 140214179154240 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/run_counter_collection.csv
+E20261104 02:06:13.340074 140214179154240 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/run_agent_info.csv
+E20261104 02:06:13.340582 140214179154240 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/adaptivecpp-tiled-large/lds-conflicts/run_results.json
+W20261104 02:06:13.376369 140214179154240 simple_timer.cpp:55] [rocprofv3] output generation ::     0.076291 sec
+W20261104 02:06:13.376437 140214179154240 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.076421 sec

@@ -1,0 +1,36 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+========= COMPUTE-SANITIZER
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN_vec+0x68
+=========     and Read access at sgemm_32x32x32_NN_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NN+0x68
+=========     and Read access at sgemm_32x32x32_NN+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT+0x68
+=========     and Read access at sgemm_32x32x32_NT+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_NT_vec+0x68
+=========     and Read access at sgemm_32x32x32_NT_vec+0x78 [32 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN_vec+0x68
+=========     and Read access at sgemm_32x32x32_TN_vec+0x78 [16 hazards]
+========= 
+========= Error: Race reported between Write access at sgemm_32x32x32_TN+0x68
+=========     and Read access at sgemm_32x32x32_TN+0x78 [16 hazards]
+========= 
+cuBLAS version 120902; one stream, synchronisation after each GEMM
+NN 16x40x12 checked
+NN 16x40x16 checked
+NN 3x40x16 checked
+TN 16x40x3 checked
+TN 16x40x16 checked
+NT 16x12x40 checked
+NT 16x16x40 checked
+NT 3x16x40 checked
+========= RACECHECK SUMMARY: 8 hazards displayed (8 errors, 0 warnings)

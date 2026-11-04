@@ -1,0 +1,13 @@
+W20261104 02:12:37.193049 140476224297280 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.322156 sec
+W20261104 02:12:37.193228 140476224297280 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --hip-marker-only --backend ompnn --blas tiled --epochs 1 --samples 256 --batch 256 --out results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/driver.json' ::     0.000000 sec
+W20261104 02:12:37.874718 140476224297280 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+W20261104 02:12:37.967577 140476224297280 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+ompnn: 1 epochs, 256 samples, 4053004 ns; profile=False
+W20261104 02:12:39.359023 140476224297280 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --hip-marker-only --backend ompnn --blas tiled --epochs 1 --samples 256 --batch 256 --out results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/driver.json' ::     2.165796 sec
+E20261104 02:12:39.369900 140476224297280 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/run_kernel_trace.csv
+E20261104 02:12:39.380680 140476224297280 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/run_marker_api_trace.csv
+E20261104 02:12:39.391499 140476224297280 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/run_counter_collection.csv
+E20261104 02:12:39.399644 140476224297280 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/run_agent_info.csv
+E20261104 02:12:39.400066 140476224297280 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/diagnostics/no-pause-omp/run_results.json
+W20261104 02:12:39.435903 140476224297280 simple_timer.cpp:55] [rocprofv3] output generation ::     0.074369 sec
+W20261104 02:12:39.435985 140476224297280 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.074516 sec

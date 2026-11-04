@@ -1,0 +1,38 @@
+==47== NVPROF is profiling process 47, command: python scripts/cuda-access-check.py
+{
+  "environment": {
+    "LD_LIBRARY_PATH": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "CUDA_INJECTION64_PATH": "/work/fnn-bench/results/ws-nvidia/extra-tools-2026-11-04/profilers/nvprof/usr/local/cuda-12.9/bin/../lib64/libcuinj64.so.12.9"
+  },
+  "libcuda.so.1": {
+    "init_code": 0,
+    "init_name": "CUDA_SUCCESS",
+    "count_code": 0,
+    "devices": 1
+  },
+  "libcuda.so": {
+    "init_code": 0,
+    "init_name": "CUDA_SUCCESS",
+    "count_code": 0,
+    "devices": 1
+  },
+  "runtime": {
+    "count_code": 0,
+    "devices": 1,
+    "error": "no error"
+  },
+  "cupti": {
+    "code": 0,
+    "api_version": 28
+  },
+  "mapped_libraries": [
+    "/usr/lib64/libcuda.so.580.196.07",
+    "/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79",
+    "/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcupti.so.2025.2.1"
+  ]
+}
+==47== Profiling application: python scripts/cuda-access-check.py
+==47== Profiling result:
+No kernels were profiled.
+No API activities were profiled.

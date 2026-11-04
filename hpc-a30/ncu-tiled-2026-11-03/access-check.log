@@ -1,0 +1,5 @@
+==PROF== Connected to process 1301193 (/usr/bin/python3.12)
+==PROF== Profiling "gemm_k" - 0 (1/1): 0%....50%....100% - 10 passes
+cudann: 1 epochs, 256 samples, 1064345429 ns; profile=False
+==PROF== Disconnected from process 1301193
+==PROF== Report: /home/a.napolitano11/fnn/fnn-bench/results/hpc-a30/ncu-tiled-2026-11-03/access-check.ncu-rep

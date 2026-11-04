@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc LDSBankConflict --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/driver.json --samples 256 --batch 256
+W20261104 02:46:02.185210 140685888883008 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.236197 sec
+W20261104 02:46:02.185339 140685888883008 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 02:46:02.231797 140685888883008 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:46:02.854067 140685888883008 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 2345599 ns; profile=False
+W20261104 02:46:08.334053 140685888883008 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/driver.json --samples 256 --batch 256' ::     6.148713 sec
+E20261104 02:46:08.350593 140685888883008 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/run_kernel_trace.csv
+E20261104 02:46:08.361455 140685888883008 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/run_marker_api_trace.csv
+E20261104 02:46:08.372665 140685888883008 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/run_counter_collection.csv
+E20261104 02:46:08.381840 140685888883008 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/run_agent_info.csv
+E20261104 02:46:08.382320 140685888883008 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-conflicts/run_results.json
+W20261104 02:46:08.490878 140685888883008 simple_timer.cpp:55] [rocprofv3] output generation ::     0.148598 sec
+W20261104 02:46:08.491843 140685888883008 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.149611 sec

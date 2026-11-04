@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "LD_LIBRARY_PATH": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "CUDA_INJECTION64_PATH": null
+  },
+  "libcuda.so.1": {
+    "init_code": 0,
+    "init_name": "CUDA_SUCCESS",
+    "count_code": 0,
+    "devices": 1
+  },
+  "libcuda.so": {
+    "init_code": 0,
+    "init_name": "CUDA_SUCCESS",
+    "count_code": 0,
+    "devices": 1
+  },
+  "runtime": {
+    "count_code": 0,
+    "devices": 1,
+    "error": "no error"
+  },
+  "cupti": {
+    "code": 0,
+    "api_version": 28
+  },
+  "legacy_counter_api": {
+    "event_id": {
+      "code": 27,
+      "name": "CUPTI_ERROR_NOT_SUPPORTED"
+    }
+  },
+  "mapped_libraries": [
+    "/usr/lib64/libcuda.so.580.196.07",
+    "/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79",
+    "/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcupti.so.2025.2.1"
+  ]
+}

@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc FNN_LDS_BASE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/driver.json --samples 256 --batch 256
+W20261104 03:39:19.900462 140473510635840 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233784 sec
+W20261104 03:39:19.900583 140473510635840 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 03:39:19.947307 140473510635840 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 03:39:20.564597 140473510635840 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 2143127 ns; profile=False
+W20261104 03:39:26.017396 140473510635840 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/driver.json --samples 256 --batch 256' ::     6.116813 sec
+E20261104 03:39:26.033295 140473510635840 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/run_kernel_trace.csv
+E20261104 03:39:26.042927 140473510635840 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/run_marker_api_trace.csv
+E20261104 03:39:26.053767 140473510635840 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/run_counter_collection.csv
+E20261104 03:39:26.061482 140473510635840 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/run_agent_info.csv
+E20261104 03:39:26.061960 140473510635840 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/hipcc-auto-mnist/lds-instructions-base/run_results.json
+W20261104 03:39:26.175029 140473510635840 simple_timer.cpp:55] [rocprofv3] output generation ::     0.149647 sec
+W20261104 03:39:26.176153 140473510635840 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.150821 sec

@@ -1,0 +1,97 @@
+{
+  "command": [
+    "rocprofv3",
+    "--extra-counters",
+    "results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml",
+    "--marker-trace",
+    "--kernel-trace",
+    "--pmc",
+    "Wavefronts",
+    "--kernel-include-regex",
+    ".*(gemm|Gemm|GEMM|Cijk).*",
+    "--output-format",
+    "csv",
+    "json",
+    "-d",
+    "results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-large/waves",
+    "-o",
+    "run",
+    "--",
+    "python",
+    "scripts/nsys_epoch.py",
+    "--runtime",
+    "hip",
+    "--backend",
+    "cudann",
+    "--blas",
+    "auto",
+    "--epochs",
+    "1",
+    "--out",
+    "results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-large/waves/driver.json",
+    "--workload",
+    "sweep-w4096-d2-b4096",
+    "--samples",
+    "4096",
+    "--batch",
+    "4096"
+  ],
+  "backend": "cudann",
+  "label": "hipcc",
+  "blas": "auto",
+  "size": "large",
+  "group": "waves",
+  "counters": [
+    "Wavefronts"
+  ],
+  "shapes_in_submission_order": [
+    [
+      "NN",
+      4096,
+      4096,
+      256
+    ],
+    [
+      "NN",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NN",
+      16,
+      4096,
+      4096
+    ],
+    [
+      "TN",
+      4096,
+      4096,
+      16
+    ],
+    [
+      "TN",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NT",
+      4096,
+      256,
+      4096
+    ],
+    [
+      "NT",
+      4096,
+      4096,
+      4096
+    ],
+    [
+      "NT",
+      16,
+      4096,
+      4096
+    ]
+  ]
+}

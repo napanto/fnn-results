@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc OccupancyPercent --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/driver.json --samples 256 --batch 256
+W20261104 02:08:19.006421 139789876189504 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233066 sec
+W20261104 02:08:19.006557 139789876189504 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 02:08:19.055442 139789876189504 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:08:19.686843 139789876189504 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 2581681 ns; profile=False
+W20261104 02:08:25.293384 139789876189504 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/driver.json --samples 256 --batch 256' ::     6.286828 sec
+E20261104 02:08:25.309616 139789876189504 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/run_kernel_trace.csv
+E20261104 02:08:25.320924 139789876189504 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/run_marker_api_trace.csv
+E20261104 02:08:25.332218 139789876189504 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/run_counter_collection.csv
+E20261104 02:08:25.341045 139789876189504 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/run_agent_info.csv
+E20261104 02:08:25.341502 139789876189504 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-auto-mnist/occupancy/run_results.json
+W20261104 02:08:25.450203 139789876189504 simple_timer.cpp:55] [rocprofv3] output generation ::     0.148797 sec
+W20261104 02:08:25.451201 139789876189504 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.149844 sec

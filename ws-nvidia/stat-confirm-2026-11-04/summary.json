@@ -1,0 +1,454 @@
+[
+  {
+    "configuration": "cudann-cup-default",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"61;80\", \"driver_version\": 13000, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"6.1\", \"compute_units\": 28, \"driver\": \"13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": 0, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {},
+      "repeat": 5,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      4.243468,
+      4.023453,
+      4.1341625
+    ],
+    "within_steady_iqr_s": [
+      0.0001875869999999986,
+      0.00015829750000000056,
+      0.00017983450000000085
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/cudann-cup-default/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/cudann-cup-default/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/cudann-cup-default/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-cup-graph",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "Graph",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"61;80\", \"driver_version\": 13000, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"6.1\", \"compute_units\": 28, \"driver\": \"13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": 0, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {
+        "queue": "graph"
+      },
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      1.1375464999999998,
+      1.113033,
+      1.1273115
+    ],
+    "within_steady_iqr_s": [
+      0.00031053150000000013,
+      5.570500000000051e-06,
+      2.3121999999999986e-05
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/cudann-cup-graph/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/cudann-cup-graph/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/cudann-cup-graph/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-cup-in-order",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 1,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"61;80\", \"driver_version\": 13000, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"6.1\", \"compute_units\": 28, \"driver\": \"13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": 0, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {
+        "queue": "in_order"
+      },
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      3.435123,
+      3.373397,
+      3.4251945
+    ],
+    "within_steady_iqr_s": [
+      6.769825000000002e-05,
+      0.00017973725000000043,
+      0.00013453350000000022
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/cudann-cup-in-order/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/cudann-cup-in-order/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/cudann-cup-in-order/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-mnist-b1024",
+    "conditions": {
+      "batch": 1024,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"61;80\", \"driver_version\": 13000, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"6.1\", \"compute_units\": 28, \"driver\": \"13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": 0, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      27.9865985,
+      27.7938595,
+      28.049019
+    ],
+    "within_steady_iqr_s": [
+      0.00021247050000000253,
+      0.0003464102500000017,
+      0.0002637347499999977
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/cudann-mnist-b1024/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/cudann-mnist-b1024/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/cudann-mnist-b1024/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-mnist-b256",
+    "conditions": {
+      "batch": 256,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"61;80\", \"driver_version\": 13000, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"6.1\", \"compute_units\": 28, \"driver\": \"13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": 0, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      57.143474499999996,
+      54.4844455,
+      53.8216335
+    ],
+    "within_steady_iqr_s": [
+      0.0032583647499999993,
+      0.0008942384999999983,
+      0.0011575092500000009
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/cudann-mnist-b256/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/cudann-mnist-b256/cudann.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/cudann-mnist-b256/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "syclnn-mnist-b1024",
+    "conditions": {
+      "batch": 1024,
+      "blas": "auto",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "shared",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"syclnn\", \"build_info\": {\"blas_backends\": [\"mklcpu\", \"netlib\", \"cublas\"], \"blas_selectable\": [\"mklcpu\", \"netlib\", \"tiled\"], \"compiler\": \"Clang 22.1.0 /opt/sycl/bin/clang++\", \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.2.2\", \"onemath\": \"0.5.0 /opt/onemath/lib/cmake/oneMath\", \"sycl_implementation\": \"DPC++ (intel/llvm)\", \"sycl_targets\": \"spir64,nvidia_gpu_sm_61\", \"version\": \"0.2.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_units\": 28, \"driver\": \"CUDA 13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": -1, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"NVIDIA CUDA BACKEND\", \"type\": \"gpu\", \"vendor\": \"NVIDIA Corporation\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\", \"SYCL_CACHE_PERSISTENT\": \"1\", \"SYCL_ROOT\": \"/opt/sycl\"}, \"libs\": [\"/opt/oclcpu/x64/libOpenCL.so.1.0.0\", \"/opt/oclcpu/x64/libintelocl.so.2026.21.6.0\", \"/opt/onemath/lib/libonemath.so.0\", \"/opt/onemath/lib/libonemath_blas_cublas.so.0\", \"/opt/onemath/lib/libonemath_blas_mklcpu.so.0\", \"/opt/onemath/lib/libonemath_blas_netlib.so.0\", \"/opt/sycl/lib/libsycl.so.9.0.0-0\", \"/opt/sycl/lib/libur_adapter_cuda.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero_v2.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_opencl.so.0.12.0\", \"/opt/sycl/lib/libur_loader.so.0.12.0\", \"/opt/venv/lib/libmkl_sycl_blas.so.6\", \"/opt/venv/lib/libtbb.so.12\", \"/opt/venv/lib/libtbbmalloc.so.2\", \"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.2.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      39.0288145,
+      37.1495615,
+      38.027634500000005
+    ],
+    "within_steady_iqr_s": [
+      0.004751506499999995,
+      0.0003087127499999953,
+      0.00014226100000000463
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/syclnn-mnist-b1024/syclnn.jsonl"
+    ]
+  },
+  {
+    "configuration": "syclnn-mnist-b256",
+    "conditions": {
+      "batch": 256,
+      "blas": "auto",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "shared",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"syclnn\", \"build_info\": {\"blas_backends\": [\"mklcpu\", \"netlib\", \"cublas\"], \"blas_selectable\": [\"mklcpu\", \"netlib\", \"tiled\"], \"compiler\": \"Clang 22.1.0 /opt/sycl/bin/clang++\", \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.2.2\", \"onemath\": \"0.5.0 /opt/onemath/lib/cmake/oneMath\", \"sycl_implementation\": \"DPC++ (intel/llvm)\", \"sycl_targets\": \"spir64,nvidia_gpu_sm_61\", \"version\": \"0.2.2\"}, \"cpu_model\": \"Intel(R) Xeon(R) CPU E5-2643 v2 @ 3.50GHz\", \"device\": {\"backend\": \"cuda\", \"compute_units\": 28, \"driver\": \"CUDA 13.0\", \"fp64\": true, \"global_mem_bytes\": 11707809792, \"index\": -1, \"name\": \"NVIDIA GeForce GTX 1080 Ti\", \"platform\": \"NVIDIA CUDA BACKEND\", \"type\": \"gpu\", \"vendor\": \"NVIDIA Corporation\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\", \"SYCL_CACHE_PERSISTENT\": \"1\", \"SYCL_ROOT\": \"/opt/sycl\"}, \"libs\": [\"/opt/oclcpu/x64/libOpenCL.so.1.0.0\", \"/opt/oclcpu/x64/libintelocl.so.2026.21.6.0\", \"/opt/onemath/lib/libonemath.so.0\", \"/opt/onemath/lib/libonemath_blas_cublas.so.0\", \"/opt/onemath/lib/libonemath_blas_mklcpu.so.0\", \"/opt/onemath/lib/libonemath_blas_netlib.so.0\", \"/opt/sycl/lib/libsycl.so.9.0.0-0\", \"/opt/sycl/lib/libur_adapter_cuda.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero_v2.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_opencl.so.0.12.0\", \"/opt/sycl/lib/libur_loader.so.0.12.0\", \"/opt/venv/lib/libmkl_sycl_blas.so.6\", \"/opt/venv/lib/libtbb.so.12\", \"/opt/venv/lib/libtbbmalloc.so.2\", \"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\"], \"machine\": \"ws-nvidia\", \"numa\": {\"cpus_allowed_list\": \"12-23\", \"mems_allowed_list\": \"0-1\", \"numactl_show\": [\"policy: bind\", \"preferred node: 1\", \"physcpubind: 12 13 14 15 16 17 18 19 20 21 22 23 \", \"cpubind: 1 \", \"nodebind: 1 \", \"membind: 1 \", \"preferred: 1\"]}, \"package_version\": \"0.2.2\", \"pass\": \"stat-confirm-2026-11-04\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      141.1809775,
+      133.276218,
+      135.88801350000003
+    ],
+    "within_steady_iqr_s": [
+      0.014520749500000013,
+      0.0009036619999999995,
+      0.0011178915000000234
+    ],
+    "sources": [
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-1/syclnn-mnist-b256/syclnn.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-2/syclnn-mnist-b256/syclnn.jsonl",
+      "results/ws-nvidia/stat-confirm-2026-11-04/round-3/syclnn-mnist-b256/syclnn.jsonl"
+    ]
+  }
+]

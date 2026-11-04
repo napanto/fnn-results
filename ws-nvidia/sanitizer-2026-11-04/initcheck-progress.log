@@ -1,0 +1,6 @@
+initcheck-float-default-test_parity_with_reference pass
+initcheck-float-graph-test_parity_with_reference pass
+initcheck-float-tiled-test_parity_with_reference pass
+initcheck-double-default-test_parity_with_reference pass
+initcheck-double-graph-test_parity_with_reference pass
+initcheck-double-tiled-test_parity_with_reference pass

@@ -1,0 +1,9 @@
+"Correlation_Id","Dispatch_Id","Agent_Id","Queue_Id","Process_Id","Thread_Id","Grid_Size","Kernel_Id","Kernel_Name","Workgroup_Size","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Counter_Name","Counter_Value","Start_Timestamp","End_Timestamp"
+29,29,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22763.625000,477014525398498,477014525456538
+30,30,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22730.750000,477014528662925,477014528717845
+31,31,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22714.875000,477014528883767,477014528938047
+32,32,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22712.750000,477014529086569,477014529141809
+33,33,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22728.500000,477014529288650,477014529343411
+34,34,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22715.875000,477014529523092,477014529578853
+35,35,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22716.500000,477014529734494,477014529790374
+36,36,"Agent 2",1,879698,879698,393216,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",256,0,0,16,0,128,"WRITE_SIZE",22729.625000,477014529944016,477014530000096

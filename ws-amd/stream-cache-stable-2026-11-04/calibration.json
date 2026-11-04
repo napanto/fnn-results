@@ -1,0 +1,41 @@
+{
+  "counter_boundary": "GL2 external interface",
+  "working_set_MiB": 72,
+  "read_bytes": 50331776.0,
+  "write_bytes": 23261696.0,
+  "kernel_duration_ns": 56181.5,
+  "counter_bandwidth_median_GB_s": 1309.9235869458807,
+  "logical_triad_bandwidth_median_GB_s": 1152.98519,
+  "method": "Five warm-ups then three recorded triad kernels per counter group. Read/write groups are separate deterministic repeats, as for the GEMM points. The reference uses kernel timestamps, not bracketing event durations.",
+  "limits": "Cache-resident reference for GL2 request bytes, not a DRAM bandwidth ceiling. 384 MiB STREAM is separate. Firmware-selected clocks and other GPU contexts can affect results.",
+  "samples": {
+    "FETCH_SIZE": [
+      {
+        "bytes": 50331776.0,
+        "duration_ns": 56363
+      },
+      {
+        "bytes": 50331776.0,
+        "duration_ns": 56483
+      },
+      {
+        "bytes": 50331776.0,
+        "duration_ns": 57323
+      }
+    ],
+    "WRITE_SIZE": [
+      {
+        "bytes": 23261056.0,
+        "duration_ns": 55761
+      },
+      {
+        "bytes": 23261696.0,
+        "duration_ns": 55880
+      },
+      {
+        "bytes": 23275136.0,
+        "duration_ns": 56080
+      }
+    ]
+  }
+}

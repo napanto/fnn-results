@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc FNN_LDS_INSTS --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256
+W20261104 01:59:45.537492 140362532755776 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.236402 sec
+W20261104 01:59:45.537629 140362532755776 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 01:59:45.585648 140362532755776 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 01:59:46.229932 140362532755776 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 3629520 ns; profile=False
+W20261104 01:59:47.871299 140362532755776 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/driver.json --samples 256 --batch 256' ::     2.333670 sec
+E20261104 01:59:47.881918 140362532755776 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/run_kernel_trace.csv
+E20261104 01:59:47.892534 140362532755776 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/run_marker_api_trace.csv
+E20261104 01:59:47.903501 140362532755776 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/run_counter_collection.csv
+E20261104 01:59:47.911986 140362532755776 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/run_agent_info.csv
+E20261104 01:59:47.912463 140362532755776 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/lds-instructions/run_results.json
+W20261104 01:59:47.950960 140362532755776 simple_timer.cpp:55] [rocprofv3] output generation ::     0.077337 sec
+W20261104 01:59:47.951079 140362532755776 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.077510 sec

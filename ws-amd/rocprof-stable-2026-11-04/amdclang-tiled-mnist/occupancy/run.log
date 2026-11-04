@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc OccupancyPercent --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/driver.json --samples 256 --batch 256
+W20261104 02:45:30.521652 140267993172288 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.235877 sec
+W20261104 02:45:30.521774 140267993172288 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 02:45:30.575093 140267993172288 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 02:45:31.213915 140267993172288 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+ompnn: 1 epochs, 256 samples, 3366738 ns; profile=False
+W20261104 02:45:32.693811 140267993172288 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/driver.json --samples 256 --batch 256' ::     2.172037 sec
+E20261104 02:45:32.704446 140267993172288 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/run_kernel_trace.csv
+E20261104 02:45:32.714893 140267993172288 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/run_marker_api_trace.csv
+E20261104 02:45:32.725939 140267993172288 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/run_counter_collection.csv
+E20261104 02:45:32.734614 140267993172288 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/run_agent_info.csv
+E20261104 02:45:32.735062 140267993172288 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-04/amdclang-tiled-mnist/occupancy/run_results.json
+W20261104 02:45:32.772169 140267993172288 simple_timer.cpp:55] [rocprofv3] output generation ::     0.075782 sec
+W20261104 02:45:32.772251 140267993172288 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.075927 sec

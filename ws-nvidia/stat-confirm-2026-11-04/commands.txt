@@ -1,0 +1,1 @@
+bash scripts/ws-nvidia-extras.sh stat-confirm 2026-11-04

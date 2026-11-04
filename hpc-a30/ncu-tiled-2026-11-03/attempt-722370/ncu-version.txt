@@ -1,0 +1,1 @@
+fnn/fnn-bench/scripts/hpc-blocks.sh: line 59: /opt/nvidia/nsight-compute/2026.2.1/target/linux-desktop-t210-a64/ncu: cannot execute binary file: Exec format error

@@ -1,0 +1,58 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-04/extra-counters.yaml --marker-trace --kernel-trace --pmc FETCH_SIZE WRITE_SIZE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory/driver.json --samples 256 --batch 256
+W20261104 01:53:59.713684 140321515387200 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.238772 sec
+W20261104 01:53:59.713808 140321515387200 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261104 01:53:59.761530 140321515387200 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261104 01:54:00.390903 140321515387200 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+F20261104 01:54:00.631556 140321515387200 tool.cpp:1198]  :: [/longer_pathname_so_that_rpms_can_support_packaging_the_debug_info_for_all_os_profiles/src/rocm-systems/projects/rocprofiler-sdk/source/lib/rocprofiler-sdk-tool/tool.cpp:1198]
+	rocprofiler_create_counter_config( agent_id, counters_v.data(), counters_v.size(), &profile_v)
+
+Could not construct profile cfg failed with error code 38: Request exceeds the capabilities of the hardware to collect
+    @     0x7f9f316726e0  (unknown)
+    @     0x7f9f31673617  (unknown)
+    @     0x7f9f3130fae4  (unknown)
+    @     0x7f9f30fe58af  (unknown)
+    @     0x7f9f30fdf553  (unknown)
+    @     0x7f9f30c50af3  (unknown)
+    @     0x7f9f30c5329b  (unknown)
+    @     0x7f9f261d350e  (unknown)
+    @     0x7f9f261c492f  (unknown)
+    @     0x7f9f1ea7b6f4  (unknown)
+    @     0x7f9f1ea77f0b  (unknown)
+    @     0x7f9f1ea78514  (unknown)
+    @     0x7f9f1ea3f5f5  (unknown)
+    @     0x7f9f1e8c5027  (unknown)
+    @     0x7f9f1e91a815  (unknown)
+    @     0x7f9f1e8c56de  (unknown)
+    @     0x7f9f1e8dd58e  (unknown)
+    @     0x7f9f30fa4af4  (unknown)
+    @     0x7f9eef88f3f1  (unknown)
+    @     0x7f9eef88f1b2  (unknown)
+    @     0x7f9eef88e95e  (unknown)
+    @     0x7f9eef88d52a  (unknown)
+    @     0x7f9eef88a059  (unknown)
+    @     0x7f9eef88617b  (unknown)
+    @     0x7f9eef83cbfd  (unknown)
+    @     0x7f9eef8839e6  (unknown)
+    @     0x7f9eef8838dd  (unknown)
+    @     0x7f9eef883535  (unknown)
+    @     0x7f9eef84cfe0  (unknown)
+    @           0x58206d  (unknown)
+    @           0x549cb5  PyObject_Vectorcall
+    @           0x5d7389  _PyEval_EvalFrameDefault
+W20261104 01:54:00.754719 140321515387200 tool.cpp:3104] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 caught signal 6...
+W20261104 01:54:00.754781 140321515387200 tool.cpp:3127] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 will wait for 0 children to exit
+W20261104 01:54:00.754796 140321515387200 tool.cpp:3142] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 finalizing after signal 6...
+W20261104 01:54:05.754868 140321515387200 queue.cpp:938] Timeout while waiting for queue sync: 1 kernels still active
+W20261104 01:54:05.754959 140321515387200 pool.hpp:201] Pool object at index 24 is still in use during pool clear
+W20261104 01:54:05.755669 140321515387200 correlation_id.cpp:231] retiring dangling correlation ID 28 from thread 749488 :: remaining reference count: 2
+W20261104 01:54:10.755800 140321515387200 queue.cpp:938] Timeout while waiting for queue sync: 1 kernels still active
+E20261104 01:54:10.760787 140321515387200 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory/run_marker_api_trace.csv
+E20261104 01:54:10.765206 140321515387200 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory/run_agent_info.csv
+E20261104 01:54:10.765598 140321515387200 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-04/hipcc-tiled-mnist/memory/run_results.json
+W20261104 01:54:10.786375 140321515387200 simple_timer.cpp:55] [rocprofv3] output generation ::     0.030414 sec
+W20261104 01:54:10.786542 140321515387200 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.030683 sec
+W20261104 01:54:10.786706 140321515387200 tool.cpp:3184] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 found chained signal handler for 6... executing chained sigaction (SIGINFO)
+W20261104 01:54:10.786745 140321515387200 tool.cpp:3104] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 caught signal 6...
+W20261104 01:56:59.382800 140321515387200 tool.cpp:3104] [PPID=749220][PID=749488][TID=749488][rocprofv3_error_signal_handler] rocprofv3 caught signal 15...
+
+TIMEOUT: process group terminated

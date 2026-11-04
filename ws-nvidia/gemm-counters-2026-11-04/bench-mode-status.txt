@@ -1,0 +1,12 @@
+the host 2026-11-04T02:05:42+01:00
+cpufreq: driver=intel_cpufreq intel_pstate=passive no_turbo=1 min_perf_pct=92 max_perf_pct=100
+  policies: 24 governor=performance min=3500000 max=3500000
+  scaling_cur_freq kHz (cpu0..23): 3500260 3500276 3499217 3500283 3495769 3500272 3500286 3500274 3500236 3499679 3500275 3500256 3500272 3500256 3500276 3500272 3500302 3502174 3500313 3500276 3500281 3500270 3500278 3500166
+cpuidle: driver=intel_idle governor=menu cpu_dma_latency=1us (tuned: my-latency-performance)
+  idle states allowed by PM QoS: POLL C1
+kernel.numa_balancing=0 ksm.run=0 ksm.pages_sharing=0 zone_reclaim_mode=0 swappiness=10 swap=0kB
+THP enabled=madvise defrag=never
+node0 2M hugepages total=0 free=0  node1 2M hugepages total=0 free=0
+ZFS ARC c_max=90.0 GiB size=50.4 GiB
+zfs_arc_max param=96636764160
+the VM: running (booted)  hugepage guard: inactive

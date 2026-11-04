@@ -1,0 +1,23 @@
+{
+  "lds-conflicts": [
+    "LDSBankConflict"
+  ],
+  "lds-instructions": [
+    "FNN_LDS_INSTS"
+  ],
+  "valu-instructions": [
+    "VALUInsts"
+  ],
+  "waves": [
+    "Wavefronts"
+  ],
+  "occupancy": [
+    "OccupancyPercent"
+  ],
+  "memory-read": [
+    "FETCH_SIZE"
+  ],
+  "memory-write": [
+    "WRITE_SIZE"
+  ]
+}

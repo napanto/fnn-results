@@ -1,0 +1,16 @@
+W20261104 02:59:34.967954 140264111002368 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233982 sec
+W20261104 02:59:34.968288 140264111002368 simple_timer.cpp:55] [rocprofv3] 'results/ws-amd/stream-2026-11-04/stream-probe 6291456 3' ::     0.000000 sec
+W20261104 02:59:34.996337 140264111002368 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+W20261104 02:59:35.049218 140264111002368 simple_timer.cpp:55] [rocprofv3] 'results/ws-amd/stream-2026-11-04/stream-probe 6291456 3' ::     0.080930 sec
+E20261104 02:59:35.059609 140264111002368 output_stream.cpp:111] Opened result file: results/ws-amd/stream-cache-stable-2026-11-04/FETCH_SIZE/run_kernel_trace.csv
+E20261104 02:59:35.075793 140264111002368 output_stream.cpp:111] Opened result file: results/ws-amd/stream-cache-stable-2026-11-04/FETCH_SIZE/run_counter_collection.csv
+E20261104 02:59:35.084093 140264111002368 output_stream.cpp:111] Opened result file: results/ws-amd/stream-cache-stable-2026-11-04/FETCH_SIZE/run_agent_info.csv
+W20261104 02:59:35.086738 140264111002368 simple_timer.cpp:55] [rocprofv3] output generation ::     0.035295 sec
+W20261104 02:59:35.086787 140264111002368 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.035411 sec
+# device=AMD Radeon RX 7900 XTX runtime=70253211 driver=70253211
+# architecture=gfx1100
+operation,elements,arrays_bytes,traffic_bytes,repetitions,best_ms,median_ms,best_GB_s,median_GB_s
+copy,6291456,75497472,50331648,3,0.0705640018,0.0713640004,713.276544,705.280641
+scale,6291456,75497472,50331648,3,0.0709630027,0.0713239983,709.266048,705.676199
+add,6291456,75497472,75497472,3,0.0812849998,0.0823239982,928.799552,917.077324
+triad,6291456,75497472,75497472,3,0.280815005,0.28193599,268.851264,267.782315

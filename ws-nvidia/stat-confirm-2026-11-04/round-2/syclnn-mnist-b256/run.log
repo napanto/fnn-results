@@ -1,0 +1,1 @@
+syclnn  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch     153.59 ms        390657 samples/s      940.5 GFLOP/s(gemm)  check=ok
