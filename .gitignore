@@ -3,3 +3,23 @@ __pycache__/
 # Nsight Systems traces are kept next to their CSV summaries only locally (the summaries are the record)
 *.nsys-rep
 *.sqlite
+# Extra experiments of 2026-11-04: tools fetched to run them (NVIDIA/AMD binaries and packages,
+# Python plotting wheels, a dataset copy) and third-party documents stay local, not redistributed
+**/extra-tools-*/
+**/toolkit/
+*.deb
+*.so
+**/stream-probe
+**/nvidia-Packages.gz
+extra-sources-*/
+**/sources-20*/
+# raw rocprofv3 dispatch records (~200 MB); the per-counter CSVs, summaries and figures are committed
+**/rocprof-*/**/run_results.json
+# A30 extra experiments prepared on 2026-11-03 but never run (queue cancelled: shared node)
+hpc-a30/nsys-epoch-2026-11-03/
+hpc-a30/stat-confirm-2026-11-03/
+hpc-a30/stream-2026-11-03/
+hpc-a30/sanitizer-2026-11-03/
+# scratch output of the analysis-code checks
+analysis/figures/engineer-check-*/
+analysis/headline-*-engineer-check.md

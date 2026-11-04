@@ -1,0 +1,41 @@
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  cup            b=40    float  train epoch       4.04 ms        247826 samples/s        7.1 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist-512-256  b=256   float  train epoch    1361.09 ms         44082 samples/s      106.1 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist          b=1024  float  train epoch    3428.84 ms         17499 samples/s      167.4 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  cup            b=40    float  train epoch       4.66 ms        214800 samples/s        6.2 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist-512-256  b=256   float  train epoch    1315.83 ms         45599 samples/s      109.8 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist          b=1024  float  train epoch    3181.69 ms         18858 samples/s      180.4 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.67 ms        184860 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       5.25 ms        190453 samples/s        5.5 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      82.75 ms        725082 samples/s     1745.6 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.61 ms        204144 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.19 ms        238860 samples/s        6.9 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      72.54 ms        827094 samples/s     1991.2 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.63 ms        196156 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.78 ms        209372 samples/s        6.0 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      71.92 ms        834273 samples/s     2008.4 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  cup            b=40    float  train epoch       4.79 ms        208626 samples/s        6.0 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist-512-256  b=256   float  train epoch    1381.55 ms         43430 samples/s      104.6 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist          b=1024  float  train epoch    3390.57 ms         17696 samples/s      169.2 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  cup            b=40    float  train epoch       4.89 ms        204543 samples/s        5.9 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist-512-256  b=256   float  train epoch    1371.48 ms         43749 samples/s      105.3 GFLOP/s(gemm)  check=ok
+ompnn   Intel(R) Xeon(R) CPU E5-2643 v2  mnist          b=1024  float  train epoch    3364.02 ms         17836 samples/s      170.6 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.61 ms        202981 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.91 ms        203835 samples/s        5.9 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      82.84 ms        724312 samples/s     1743.7 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.68 ms        182464 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.83 ms        206889 samples/s        6.0 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      74.00 ms        810792 samples/s     1951.9 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+cudann  NVIDIA GeForce GTX 1080 Ti       monk           b=40    float  train epoch       0.60 ms        205858 samples/s        0.1 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.41 ms        226520 samples/s        6.5 GFLOP/s(gemm)  check=ok
+cudann  NVIDIA GeForce GTX 1080 Ti       mnist-512-256  b=256   float  train epoch      73.02 ms        821748 samples/s     1978.3 GFLOP/s(gemm)  check=ok
+replayed 3 rows
+PILOT-DONE
