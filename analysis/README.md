@@ -1,26 +1,29 @@
 # analysis
 
-Figures are produced from the raw rows by
+From the fnn-bench repository root, figures and tables are produced from the raw rows by
 
 ```sh
-fnnbench plot results/ws-amd/<date> results/ws-amd/peaks -o analysis/figures
-fnnbench collect results/ws-amd/<date> -o analysis/ws-amd-<date>.csv
+fnnbench plot results/ws-amd/<date> results/ws-amd/peaks -o results/analysis/figures/ws-amd-<date>
+fnnbench collect results/ws-amd/<date> -o results/analysis/ws-amd-<date>.csv
 ```
 
 The analysis covers the passes the study reports (`ws-amd-2026-09-05`, `ws-nvidia-2026-09-05`,
 `hpc-a30-2026-09-17`; `scripts/analyze.sh`). Timing rows are unprofiled and the breakdown figures
-come from `plans/e5_breakdown.json`. Every figure uses the steady-state epoch time (`steady_epoch_s`, see
-`docs/methodology.md`) when the row has one, the call-level median otherwise;
-rows whose numerical check failed and `superseded.jsonl` files are excluded, and
-re-measurements of the same configuration in the same environment are
-de-duplicated (newest row wins).
+come from `plans/e5_breakdown.json`. Training figures use the median steady-state epoch
+time when available, falling back to the call-level median (`docs/methodology.md`).
+Inference figures use `median_epoch_s`, the time of the whole `predict` call.
+Failed numerical checks, non-finite losses and `superseded.jsonl` files are excluded.
+Exact duplicate rows are removed; valid repeated sweeps with matching configurations
+and environments are aggregated by median with a count. Re-measurements replace rows
+through explicit supersession.
 
 | Family | File pattern | What it shows |
 |---|---|---|
 | throughput | `throughput-<workload>-<dtype>-<cpu\|gpu>.png` | samples/s per backend / compiler / BLAS / device, training rows (E1, E2, E3, E4); only workloads measured at two or more batch sizes (mnist, mnist-512-256) |
-| breakdown | `breakdown-<workload>-<dtype>-<mode>.png` | per-phase device time (H2D, GEMM, activation, delta, bias gradient, update, loss, regularisation, D2H) and the host-side remainder, one bar per backend/device (E5) |
-| roofline | `roofline.png` | achieved GEMM GFLOP/s vs arithmetic intensity of every training row against the measured GEMM peaks (`results/ws-amd/peaks`) |
-| ablation | `ablation-<backend>-<workload>-<dtype>-<device>.png` | epoch time relative to the default for every single-switch ablation and the all-switches-off (0.1 behaviour) configuration (E6, E3 stream/graph/memory rows) |
+| breakdown | `breakdown-<workload>-<dtype>-<mode>.png` | internal-profiler phase attributions with an internal call-wall marker; the phases may overlap (E5) |
+| roofline | `roofline-<device>-<dtype>.png` | application W4 GEMM-equivalent GFLOP/s against modeled intensity, with measured GEMM peaks and effective activation-bandwidth references per library/toolchain |
+| ablation | `ablation-<backend>-<implementation>-<workload>-<dtype>-b<batch>-<mode>-<device>-<hash>.png` | time relative to the default for each single-switch ablation and the all-switches-off (0.1 behaviour) configuration (E6, E3 stream/graph/memory rows) |
+| inference | `inference-<workload>-<dtype>-b<batch>.png` | whole-predict time, with the library's internal per-call timer as a secondary marker |
 | compilers | `compilers-ompnn.png` | ompnn host and target builds per compiler next to the SYCL rows (E4) |
 | precision | `precision.png` | double/float epoch-time ratio per backend and device (fp64 rate contrast) |
 | scaling | `scaling-threads.png` | CPU thread scaling of the SYCL/OpenMP host builds and the parallel efficiency (E1 threads) |
@@ -37,6 +40,7 @@ E7 rows also appear in the throughput and sweep families through their
 `blas = tiled` label; the tiled GEMM peak runs are
 in `results/<machine>/<date>/peaks-tiled*`.
 
-The breakdown bars amortise the dataset upload over all epochs of a call while
-the wall-time marker is the steady-state epoch; the gap between them is the
-upload plus the first-epoch initialisation.
+The breakdown bars and internal wall marker average all epochs of the profiled
+call, including upload and initialisation. Their difference depends on the
+profiler's attribution and synchronisation semantics; it cannot be interpreted
+as a partition of elapsed wall time.
