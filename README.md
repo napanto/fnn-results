@@ -46,3 +46,9 @@ cd fnn-bench && python -m venv .venv && .venv/bin/pip install -e testkit -e benc
 .venv/bin/bash scripts/analyze.sh                      # -> results/analysis/{<machine>-<date>.csv, figures/, ...}
 PYTHONPATH=bench .venv/bin/python scripts/headline.py results/ws-amd/2026-09-05
 ```
+
+## Commit hashes in the rows
+
+The history of this repository and of `fnn-bench` was rewritten on 2026-11-06 to remove host names.
+Measurements did not change. Rows keep the `fnn-bench` hash recorded when they ran:
+`fnn-bench-sha-map.tsv` maps each one to the current commit.
