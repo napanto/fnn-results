@@ -1,0 +1,2 @@
+/sys/class/drm/card1/device/pp_dpm_sclk:S: 119Mhz *
+/sys/class/drm/card1/device/pp_dpm_mclk:3: 1249Mhz *

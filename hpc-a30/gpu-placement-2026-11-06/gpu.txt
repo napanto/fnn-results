@@ -1,0 +1,2 @@
+clocks.current.graphics [MHz], clocks.current.memory [MHz], pstate, pcie.link.gen.current, pcie.link.width.current
+210 MHz, 1215 MHz, P0, 3, 16

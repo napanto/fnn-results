@@ -1,0 +1,1 @@
+cudann  NVIDIA A30                       mnist-512-256  b=256   float  train epoch      68.39 ms        877346 samples/s     2112.1 GFLOP/s(gemm)  check=ok

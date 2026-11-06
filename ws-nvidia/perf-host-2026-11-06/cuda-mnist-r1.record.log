@@ -1,0 +1,3 @@
+cudann 76 calls
+[ perf record: Woken up 30 times to write data ]
+[ perf record: Captured and wrote 1.934 MB /tmp/p.data (50474 samples) ]

@@ -49,6 +49,9 @@ PYTHONPATH=bench .venv/bin/python scripts/headline.py results/ws-amd/2026-09-05
 
 ## Commit hashes in the rows
 
+Directories dated 2026-11-06 investigate where the time and the variance go; `docs/optional.md` in
+`fnn-bench`, section 5, says which question each one answers. None of them enters the reported pass.
+
 The history of this repository and of `fnn-bench` was rewritten on 2026-11-06 to remove host names.
 Measurements did not change. Rows keep the `fnn-bench` hash recorded when they ran:
 `fnn-bench-sha-map.tsv` maps each one to the current commit.

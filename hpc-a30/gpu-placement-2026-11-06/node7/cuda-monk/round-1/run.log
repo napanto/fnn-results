@@ -1,0 +1,1 @@
+cudann  NVIDIA A30                       monk           b=40    float  train epoch       0.50 ms        248993 samples/s        0.1 GFLOP/s(gemm)  check=ok

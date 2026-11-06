@@ -1,0 +1,1 @@
+syclnn  NVIDIA A30                       monk           b=40    float  train epoch       1.24 ms        100274 samples/s        0.0 GFLOP/s(gemm)  check=ok

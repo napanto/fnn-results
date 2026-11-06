@@ -1,0 +1,3 @@
+syclnn 32 calls
+[ perf record: Woken up 32 times to write data ]
+[ perf record: Captured and wrote 2.019 MB /tmp/p.data (52577 samples) ]

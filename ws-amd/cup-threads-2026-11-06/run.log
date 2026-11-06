@@ -1,0 +1,420 @@
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/work/fnn-bench/scripts/cup_threads.py", line 79, in <module>
+    main()
+  File "/work/fnn-bench/scripts/cup_threads.py", line 65, in main
+    t1 = threads(); i1 = per_cpu('/proc/interrupts'); s1 = per_cpu('/proc/softirqs')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/fnn-bench/scripts/cup_threads.py", line 37, in per_cpu
+    n = len(lines[0].split())
+            ~~~~~^^^
+IndexError: list index out of range

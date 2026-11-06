@@ -1,0 +1,1 @@
+cudann  AMD Radeon RX 7900 XTX           mnist-512-256  b=256   float  train epoch      67.51 ms        888708 samples/s     2139.5 GFLOP/s(gemm)  check=ok

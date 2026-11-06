@@ -1,0 +1,359 @@
+{
+  "clang18/target-teams-parallel": {
+    "repeats": 36,
+    "host_us": 43.202957999999995,
+    "total_us": 43.202957999999995,
+    "min_us": 31.599088,
+    "max_us": 44.383900000000004
+  },
+  "clang18/target-single": {
+    "repeats": 36,
+    "host_us": 43.489233,
+    "total_us": 43.489233,
+    "min_us": 31.45061,
+    "max_us": 44.70977
+  },
+  "clang18/target-nowait-depend": {
+    "repeats": 36,
+    "host_us": 1.379472,
+    "total_us": 28.952398,
+    "min_us": 24.170944,
+    "max_us": 32.280919999999995
+  },
+  "cuda/launch": {
+    "repeats": 24,
+    "host_us": 3.0515619999999997,
+    "total_us": 3.0774255000000004,
+    "min_us": 3.046891,
+    "max_us": 3.4383695
+  },
+  "cuda/launch+event": {
+    "repeats": 24,
+    "host_us": 3.5155562500000004,
+    "total_us": 3.5182085,
+    "min_us": 3.472273,
+    "max_us": 3.5385365
+  },
+  "cuda/launch+wait": {
+    "repeats": 24,
+    "host_us": 8.848583000000001,
+    "total_us": 8.848583000000001,
+    "min_us": 8.778039000000001,
+    "max_us": 10.4738665
+  },
+  "cuda/cublas-gemm": {
+    "repeats": 24,
+    "host_us": 8.13102875,
+    "total_us": 8.13692725,
+    "min_us": 8.022560499999999,
+    "max_us": 8.2756245
+  },
+  "cuda/sum-kernel+copyback": {
+    "repeats": 24,
+    "host_us": 13.28802175,
+    "total_us": 13.28901875,
+    "min_us": 12.625364,
+    "max_us": 14.390739
+  },
+  "dpcpp/in-order": {
+    "repeats": 24,
+    "host_us": 5.23049775,
+    "total_us": 5.23319525,
+    "min_us": 5.0807655,
+    "max_us": 5.313656
+  },
+  "dpcpp/in-order+discard_events": {
+    "repeats": 24,
+    "host_us": 5.2006365,
+    "total_us": 5.20319125,
+    "min_us": 5.065437,
+    "max_us": 5.318996
+  },
+  "dpcpp/in-order+eventless": {
+    "repeats": 24,
+    "host_us": 3.7529607499999997,
+    "total_us": 3.75599625,
+    "min_us": 3.591757,
+    "max_us": 3.809564
+  },
+  "dpcpp/out-of-order+dep": {
+    "repeats": 24,
+    "host_us": 5.5423665,
+    "total_us": 5.545146750000001,
+    "min_us": 5.3838585000000005,
+    "max_us": 5.9471725
+  },
+  "dpcpp/in-order+wait": {
+    "repeats": 24,
+    "host_us": 10.52447175,
+    "total_us": 10.52447175,
+    "min_us": 10.175066500000002,
+    "max_us": 10.621656000000002
+  },
+  "dpcpp/native-command(empty)": {
+    "repeats": 24,
+    "host_us": 2.75002525,
+    "total_us": 2.7511775,
+    "min_us": 2.7043195,
+    "max_us": 2.7614270000000003
+  },
+  "dpcpp/host_task(empty)": {
+    "repeats": 24,
+    "host_us": 25.97931375,
+    "total_us": 27.40118675,
+    "min_us": 26.4216145,
+    "max_us": 29.279822499999998
+  },
+  "dpcpp/onemath-gemm": {
+    "repeats": 24,
+    "host_us": 15.1453565,
+    "total_us": 15.1484095,
+    "min_us": 14.757941,
+    "max_us": 15.9126285
+  },
+  "dpcpp/onemath-gemm+dep": {
+    "repeats": 24,
+    "host_us": 15.8833855,
+    "total_us": 15.886073249999999,
+    "min_us": 15.492156000000001,
+    "max_us": 16.7342065
+  },
+  "dpcpp/kernel+dep": {
+    "repeats": 24,
+    "host_us": 5.398841,
+    "total_us": 5.4019065,
+    "min_us": 5.126318,
+    "max_us": 5.728765999999999
+  },
+  "dpcpp/reduction": {
+    "repeats": 24,
+    "host_us": 59.3246965,
+    "total_us": 59.3281655,
+    "min_us": 58.7223555,
+    "max_us": 61.763415
+  },
+  "dpcpp/atomic+copyback": {
+    "repeats": 24,
+    "host_us": 10.9410475,
+    "total_us": 10.9446695,
+    "min_us": 10.40705,
+    "max_us": 11.169808000000002
+  },
+  "gcc14/target-teams-parallel": {
+    "repeats": 36,
+    "host_us": 4414.589705,
+    "total_us": 4414.589705,
+    "min_us": 3733.8313900000003,
+    "max_us": 4490.25677
+  },
+  "gcc14/target-single": {
+    "repeats": 36,
+    "host_us": 48.551635000000005,
+    "total_us": 48.551635000000005,
+    "min_us": 47.968674,
+    "max_us": 49.00372
+  },
+  "gcc14/target-nowait-depend": {
+    "repeats": 36,
+    "host_us": 4416.363042,
+    "total_us": 4416.363282,
+    "min_us": 4353.93089,
+    "max_us": 4514.83705
+  },
+  "clang18/target-ompnn-clauses": {
+    "repeats": 12,
+    "host_us": 46.496634,
+    "total_us": 46.496634,
+    "min_us": 46.30279,
+    "max_us": 49.01202
+  },
+  "clang18/target-ompnn-reduction": {
+    "repeats": 12,
+    "host_us": 101.261922,
+    "total_us": 101.261922,
+    "min_us": 97.19777400000001,
+    "max_us": 107.614974
+  },
+  "m256/cuda/cublas-gemm": {
+    "repeats": 24,
+    "host_us": 8.590729499999998,
+    "total_us": 12.8797235,
+    "min_us": 12.868917,
+    "max_us": 12.885157999999999
+  },
+  "m256/cuda/sum-kernel+copyback": {
+    "repeats": 24,
+    "host_us": 21.596249,
+    "total_us": 21.5982125,
+    "min_us": 21.477702,
+    "max_us": 22.478244999999998
+  },
+  "m64/cuda/cublas-gemm": {
+    "repeats": 24,
+    "host_us": 8.099596,
+    "total_us": 8.1187115,
+    "min_us": 8.066388,
+    "max_us": 10.68443
+  },
+  "m64/cuda/sum-kernel+copyback": {
+    "repeats": 24,
+    "host_us": 13.30804,
+    "total_us": 13.309959000000001,
+    "min_us": 13.15289,
+    "max_us": 18.262294
+  },
+  "m256/dpcpp/onemath-gemm": {
+    "repeats": 24,
+    "host_us": 15.279440000000001,
+    "total_us": 15.2935665,
+    "min_us": 15.203828999999999,
+    "max_us": 15.487348
+  },
+  "m256/dpcpp/onemath-gemm+dep": {
+    "repeats": 24,
+    "host_us": 16.2871255,
+    "total_us": 16.3009815,
+    "min_us": 16.02727,
+    "max_us": 16.581227
+  },
+  "m256/dpcpp/kernel+dep": {
+    "repeats": 24,
+    "host_us": 5.544478,
+    "total_us": 5.549778,
+    "min_us": 5.318385,
+    "max_us": 5.6711149999999995
+  },
+  "m256/dpcpp/reduction": {
+    "repeats": 24,
+    "host_us": 58.110425500000005,
+    "total_us": 58.1171035,
+    "min_us": 57.752672,
+    "max_us": 59.124369
+  },
+  "m256/dpcpp/atomic+copyback": {
+    "repeats": 24,
+    "host_us": 11.0106045,
+    "total_us": 11.016295,
+    "min_us": 10.543035,
+    "max_us": 11.457957
+  },
+  "m64/dpcpp/onemath-gemm": {
+    "repeats": 24,
+    "host_us": 14.910198999999999,
+    "total_us": 14.918229,
+    "min_us": 14.680299000000002,
+    "max_us": 15.006669
+  },
+  "m64/dpcpp/onemath-gemm+dep": {
+    "repeats": 24,
+    "host_us": 15.547141,
+    "total_us": 15.555391,
+    "min_us": 15.355222,
+    "max_us": 16.031047
+  },
+  "m64/dpcpp/kernel+dep": {
+    "repeats": 24,
+    "host_us": 5.4546505,
+    "total_us": 5.459429500000001,
+    "min_us": 5.301002,
+    "max_us": 5.755383
+  },
+  "m64/dpcpp/reduction": {
+    "repeats": 24,
+    "host_us": 59.129684,
+    "total_us": 59.1360305,
+    "min_us": 57.432573,
+    "max_us": 59.856389
+  },
+  "m64/dpcpp/atomic+copyback": {
+    "repeats": 24,
+    "host_us": 11.0200275,
+    "total_us": 11.025598,
+    "min_us": 10.599590000000001,
+    "max_us": 11.490698
+  },
+  "gcc14/target-ompnn-clauses": {
+    "repeats": 12,
+    "host_us": 5147.94783,
+    "total_us": 5147.94783,
+    "min_us": 5057.09959,
+    "max_us": 5197.058150000001
+  },
+  "gcc14/target-ompnn-reduction": {
+    "repeats": 12,
+    "host_us": 5176.243834999999,
+    "total_us": 5176.243834999999,
+    "min_us": 5025.62127,
+    "max_us": 5225.11568
+  },
+  "nvcpp/target-teams-parallel": {
+    "repeats": 36,
+    "host_us": 10.827489,
+    "total_us": 10.827489,
+    "min_us": 10.543776,
+    "max_us": 12.746086
+  },
+  "nvcpp/target-single": {
+    "repeats": 36,
+    "host_us": 14.498569,
+    "total_us": 14.498569,
+    "min_us": 14.220858,
+    "max_us": 16.612621999999998
+  },
+  "nvcpp/target-nowait-depend": {
+    "repeats": 36,
+    "host_us": 17.88427,
+    "total_us": 17.890693,
+    "min_us": 14.730512000000001,
+    "max_us": 20.880576
+  },
+  "nvcpp/target-ompnn-clauses": {
+    "repeats": 12,
+    "host_us": 29.432842,
+    "total_us": 29.432842,
+    "min_us": 28.52293,
+    "max_us": 29.720632000000002
+  },
+  "nvcpp/target-ompnn-reduction": {
+    "repeats": 12,
+    "host_us": 45.972833,
+    "total_us": 45.972833,
+    "min_us": 45.642654,
+    "max_us": 46.844303999999994
+  },
+  "cuda/kernel-12-args": {
+    "repeats": 24,
+    "host_us": 3.12637225,
+    "total_us": 3.29049925,
+    "min_us": 3.1051149999999996,
+    "max_us": 3.7004029999999997
+  },
+  "dpcpp/kernel-12-args": {
+    "repeats": 24,
+    "host_us": 5.4274942500000005,
+    "total_us": 5.4307755,
+    "min_us": 5.3155225,
+    "max_us": 5.6060755
+  },
+  "dpcpp/kernel-12-args+3deps": {
+    "repeats": 24,
+    "host_us": 5.8304625,
+    "total_us": 5.8341217499999996,
+    "min_us": 5.72347,
+    "max_us": 6.0437935
+  },
+  "dpcpp/native-command+cublas": {
+    "repeats": 24,
+    "host_us": 13.660748250000001,
+    "total_us": 13.665496999999998,
+    "min_us": 13.255968000000001,
+    "max_us": 14.1737155
+  },
+  "dpcpp/native-command-empty": {
+    "repeats": 24,
+    "host_us": 2.76478175,
+    "total_us": 2.76599175,
+    "min_us": 2.7473665,
+    "max_us": 2.82134
+  }
+}

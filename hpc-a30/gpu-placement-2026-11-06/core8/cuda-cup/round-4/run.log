@@ -1,0 +1,1 @@
+cudann  NVIDIA A30                       cup            b=40    float  train epoch       6.08 ms        164419 samples/s        4.7 GFLOP/s(gemm)  check=ok

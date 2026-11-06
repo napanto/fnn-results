@@ -1,0 +1,557 @@
+{
+  "cudann-default": {
+    "wall_ms": 14.763796,
+    "busy_ms": 8.957227,
+    "idle_ms": 5.806569,
+    "idle_host_ms": 4.707992,
+    "idle_device_ms": 1.098577,
+    "gpu_ms": {
+      "GEMM": 6.955162,
+      "hand-written": 2.246834,
+      "GEMV": 0.355936,
+      "copy": 0.181025
+    },
+    "host_api_ms": 8.027648,
+    "host_outside_ms": 6.736148,
+    "host_class_ms": {
+      "other-api": 0.193804,
+      "launch": 5.551675,
+      "event-mgmt": 1.277651,
+      "sync": 0.534007,
+      "copy-set": 0.470511
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 2335,
+    "outside_us_per_kernel": 9.152375000000001,
+    "median_submit_to_start_us": 6.677,
+    "streams": 4,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cudaEventRecord_v3020",
+        737,
+        1.278
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        736,
+        5.552
+      ],
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.194
+      ],
+      [
+        "cudaStreamWaitEvent_v3020",
+        259,
+        0.474
+      ],
+      [
+        "cudaStreamSynchronize_v3020",
+        20,
+        0.06
+      ],
+      [
+        "cudaMemcpy_v3020",
+        6,
+        0.459
+      ],
+      [
+        "cudaMemcpyAsync_v3020",
+        1,
+        0.011
+      ]
+    ],
+    "osrt_top": []
+  },
+  "cudann-inorder": {
+    "wall_ms": 12.331699,
+    "busy_ms": 9.380939,
+    "idle_ms": 2.95076,
+    "idle_host_ms": 1.82415,
+    "idle_device_ms": 1.12661,
+    "gpu_ms": {
+      "GEMM": 6.728697,
+      "hand-written": 2.099595,
+      "GEMV": 0.35639,
+      "copy": 0.196257
+    },
+    "host_api_ms": 6.086915,
+    "host_outside_ms": 6.244784,
+    "host_class_ms": {
+      "other-api": 0.162887,
+      "launch": 5.183345,
+      "event-mgmt": 0.211342,
+      "copy-set": 0.481081,
+      "sync": 0.04826
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 1420,
+    "outside_us_per_kernel": 8.484760869565218,
+    "median_submit_to_start_us": 37.532,
+    "streams": 2,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cudaLaunchKernel_v7000",
+        736,
+        5.183
+      ],
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.163
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.211
+      ],
+      [
+        "cudaMemcpy_v3020",
+        6,
+        0.47
+      ],
+      [
+        "cudaStreamSynchronize_v3020",
+        5,
+        0.048
+      ],
+      [
+        "cudaMemcpyAsync_v3020",
+        1,
+        0.011
+      ]
+    ],
+    "osrt_top": []
+  },
+  "ompnn-clang18": {
+    "wall_ms": 54.182751,
+    "busy_ms": 12.677634,
+    "idle_ms": 41.505117,
+    "idle_host_ms": 39.941433,
+    "idle_device_ms": 1.563684,
+    "gpu_ms": {
+      "GEMM": 6.723108,
+      "copy": 0.756579,
+      "hand-written": 4.835898,
+      "GEMV": 0.362049
+    },
+    "host_api_ms": 43.60794,
+    "host_outside_ms": 10.574811,
+    "host_class_ms": {
+      "other-api": 0.43366,
+      "copy-set": 5.097932,
+      "launch": 8.029973,
+      "sync": 29.043367,
+      "event-mgmt": 0.601166,
+      "allocation": 0.401842
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 2934,
+    "outside_us_per_kernel": 14.36794972826087,
+    "median_submit_to_start_us": 1.307,
+    "streams": 2,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.245
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        448,
+        5.029
+      ],
+      [
+        "cuCtxSetCurrent",
+        392,
+        0.189
+      ],
+      [
+        "cuMemcpyHtoDAsync_v2",
+        352,
+        2.992
+      ],
+      [
+        "cudaDeviceSynchronize_v3020",
+        352,
+        16.143
+      ],
+      [
+        "cuStreamSynchronize",
+        294,
+        12.842
+      ],
+      [
+        "cuLaunchKernel",
+        288,
+        3.001
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.323
+      ],
+      [
+        "cuEventRecord",
+        64,
+        0.278
+      ],
+      [
+        "cuMemcpyDtoHAsync_v2",
+        38,
+        2.106
+      ]
+    ],
+    "osrt_top": []
+  },
+  "ompnn-gcc14": {
+    "wall_ms": 180.631926,
+    "busy_ms": 151.524636,
+    "idle_ms": 29.10729,
+    "idle_host_ms": 28.194006,
+    "idle_device_ms": 0.913284,
+    "gpu_ms": {
+      "GEMM": 4.73619,
+      "copy": 1.04154,
+      "hand-written": 145.498842,
+      "GEMV": 0.248064
+    },
+    "host_api_ms": 170.862172,
+    "host_outside_ms": 9.769754,
+    "host_class_ms": {
+      "allocation": 3.103582,
+      "copy-set": 8.81976,
+      "launch": 7.002812,
+      "sync": 151.409615,
+      "other-api": 0.219091,
+      "event-mgmt": 0.307312
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 3240,
+    "outside_us_per_kernel": 13.274122282608698,
+    "median_submit_to_start_us": 0.744,
+    "streams": 1,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.219
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        448,
+        4.269
+      ],
+      [
+        "cudaDeviceSynchronize_v3020",
+        352,
+        5.329
+      ],
+      [
+        "cuMemcpyDtoH_v2",
+        326,
+        6.217
+      ],
+      [
+        "cuMemFree_v2",
+        290,
+        1.492
+      ],
+      [
+        "cuMemAlloc_v2",
+        288,
+        1.611
+      ],
+      [
+        "cuMemcpyHtoD_v2",
+        288,
+        2.603
+      ],
+      [
+        "cuLaunchKernel",
+        288,
+        2.734
+      ],
+      [
+        "cuCtxSynchronize",
+        288,
+        146.081
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.307
+      ]
+    ],
+    "osrt_top": []
+  },
+  "ompnn-nvcpp": {
+    "wall_ms": 36.514586,
+    "busy_ms": 11.069453,
+    "idle_ms": 25.445133,
+    "idle_host_ms": 23.805106,
+    "idle_device_ms": 1.640027,
+    "gpu_ms": {
+      "GEMM": 6.725878,
+      "copy": 1.32903,
+      "hand-written": 2.591374,
+      "memset": 0.043104,
+      "GEMV": 0.380067
+    },
+    "host_api_ms": 25.746486,
+    "host_outside_ms": 10.7681,
+    "host_class_ms": {
+      "copy-set": 9.573856,
+      "launch": 7.194293,
+      "sync": 8.298915,
+      "other-api": 0.366319,
+      "event-mgmt": 0.313103
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 3051,
+    "outside_us_per_kernel": 14.630570652173914,
+    "median_submit_to_start_us": 1.202,
+    "streams": 2,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.219
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        352,
+        3.707
+      ],
+      [
+        "cudaDeviceSynchronize_v3020",
+        352,
+        7.391
+      ],
+      [
+        "cuKernelGetName",
+        351,
+        0.147
+      ],
+      [
+        "cuMemcpyDtoHAsync_v2",
+        326,
+        7.198
+      ],
+      [
+        "cuStreamSynchronize",
+        294,
+        0.908
+      ],
+      [
+        "cuMemcpyHtoDAsync_v2",
+        288,
+        2.184
+      ],
+      [
+        "cuLaunchKernel",
+        288,
+        2.676
+      ],
+      [
+        "cudaLaunchKernelExC_v11060",
+        96,
+        0.812
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.313
+      ]
+    ],
+    "osrt_top": []
+  },
+  "syclnn-default": {
+    "wall_ms": 32.051689,
+    "busy_ms": 9.6452,
+    "idle_ms": 22.406489,
+    "idle_host_ms": 21.458483,
+    "idle_device_ms": 0.948006,
+    "gpu_ms": {
+      "GEMM": 6.72467,
+      "hand-written": 2.324812,
+      "memset": 0.042881,
+      "GEMV": 0.360197,
+      "copy": 0.19264
+    },
+    "host_api_ms": 11.962596,
+    "host_outside_ms": 20.089093,
+    "host_class_ms": {
+      "event-mgmt": 2.472603,
+      "launch": 7.265273,
+      "other-api": 0.172045,
+      "allocation": 1.044486,
+      "copy-set": 0.686707,
+      "sync": 0.321482
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 3638,
+    "outside_us_per_kernel": 27.29496331521739,
+    "median_submit_to_start_us": 1.288,
+    "streams": 1,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cuEventDestroy_v2",
+        665,
+        0.445
+      ],
+      [
+        "cuEventRecord",
+        647,
+        1.202
+      ],
+      [
+        "cuEventCreate",
+        646,
+        0.591
+      ],
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.172
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        448,
+        4.536
+      ],
+      [
+        "cuLaunchKernel",
+        288,
+        2.73
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.234
+      ],
+      [
+        "cuMemFree_v2",
+        66,
+        0.658
+      ],
+      [
+        "cuMemAlloc_v2",
+        64,
+        0.387
+      ],
+      [
+        "cuEventQuery",
+        64,
+        0.212
+      ]
+    ],
+    "osrt_top": []
+  },
+  "syclnn-osrt": {
+    "wall_ms": 29.162167,
+    "busy_ms": 9.628938,
+    "idle_ms": 19.533229,
+    "idle_host_ms": 18.614582,
+    "idle_device_ms": 0.918647,
+    "gpu_ms": {
+      "GEMM": 6.723707,
+      "hand-written": 2.322379,
+      "memset": 0.042912,
+      "GEMV": 0.361091,
+      "copy": 0.178849
+    },
+    "host_api_ms": 12.199568,
+    "host_outside_ms": 16.962599,
+    "host_class_ms": {
+      "event-mgmt": 2.463931,
+      "launch": 7.440305,
+      "other-api": 0.178009,
+      "allocation": 1.087237,
+      "copy-set": 0.696174,
+      "sync": 0.333912
+    },
+    "kernels": 736,
+    "launches": 736,
+    "api_calls": 3638,
+    "outside_us_per_kernel": 23.047009510869565,
+    "median_submit_to_start_us": 1.23,
+    "streams": 1,
+    "threads": 1,
+    "top_calls": [
+      [
+        "cuEventDestroy_v2",
+        665,
+        0.46
+      ],
+      [
+        "cuEventRecord",
+        647,
+        1.172
+      ],
+      [
+        "cuEventCreate",
+        646,
+        0.591
+      ],
+      [
+        "cuStreamGetCaptureInfo_v2",
+        576,
+        0.178
+      ],
+      [
+        "cudaLaunchKernel_v7000",
+        448,
+        4.608
+      ],
+      [
+        "cuLaunchKernel",
+        288,
+        2.833
+      ],
+      [
+        "cudaEventRecord_v3020",
+        96,
+        0.242
+      ],
+      [
+        "cuMemFree_v2",
+        66,
+        0.698
+      ],
+      [
+        "cuMemAlloc_v2",
+        64,
+        0.389
+      ],
+      [
+        "cuEventQuery",
+        64,
+        0.219
+      ]
+    ],
+    "osrt_top": [
+      [
+        "ioctl",
+        4
+      ],
+      [
+        "poll",
+        1
+      ]
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+ompnn   NVIDIA A30                       monk           b=40    float  train epoch       3.03 ms         40875 samples/s        0.0 GFLOP/s(gemm)  check=ok

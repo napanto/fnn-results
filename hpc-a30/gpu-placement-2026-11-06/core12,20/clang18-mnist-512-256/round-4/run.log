@@ -1,0 +1,1 @@
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch     359.09 ms        167089 samples/s      402.3 GFLOP/s(gemm)  check=ok

@@ -1,0 +1,29 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 50K of event 'cpu-clock:u'
+# Event count (approx.): 16959295284
+#
+# Overhead  Shared Object                                    
+# ........  .................................................
+#
+    60.81%  libcuda.so.580.196.07                            
+     7.94%  libc.so.6                                        
+     7.86%  libz.so.1.3                                      
+     5.50%  libcublasLt.so.12.9.2.10                         
+     4.94%  libscipy_openblas64_-61654e39.so                 
+     3.99%  libcublas.so.12.9.2.10                           
+     2.42%  libcudart.so.12.9.79                             
+     2.36%  _cudann.cpython-312-x86_64-linux-gnu.so          
+     1.25%  [vdso]                                           
+     1.10%  python3.12                                       
+     0.81%  _multiarray_umath.cpython-312-x86_64-linux-gnu.so
+     0.51%  ld-linux-x86-64.so.2                             
+     0.32%  libstdc++.so.6.0.33                              
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

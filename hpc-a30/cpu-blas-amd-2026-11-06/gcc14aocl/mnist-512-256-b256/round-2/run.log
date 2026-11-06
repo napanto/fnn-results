@@ -1,0 +1,1 @@
+ompnn   AMD EPYC 7301 16-Core Processor  mnist-512-256  b=256   float  train epoch     603.46 ms         99427 samples/s      239.4 GFLOP/s(gemm)  check=ok

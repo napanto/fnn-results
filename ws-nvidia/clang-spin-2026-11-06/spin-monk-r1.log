@@ -1,0 +1,401 @@
+"CUDA" device 0 info: The primary context is active, no change to its flags
+"CUDA" device 0 info: Warning: The current flags are not CU_CTX_SCHED_BLOCKING_SYNC
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000099f4a20, TgtPtr=0x00007f357a620600, Size=272, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x0000000009924660, TgtPtr=0x00007f357a620800, Size=16, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Copying data from host to device, HstPtr=0x0000000009984a30, TgtPtr=0x00007f357a621200, Size=16, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000097c6ea0, TgtPtr=0x00007f357a621400, Size=4, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 4 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels4fillIfEEvbiiPT_S2_m_l267 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000093ef2f0, TgtPtr=0x00007f357a623a00, Size=8432, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000092da730, TgtPtr=0x00007f357a625c00, Size=496, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE2EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE1EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 8 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: tofrom(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Creating new map entry with HstPtrBase=0x00007fff496710f8, HstPtrBegin=0x00007fff496710f8, TgtAllocBegin=0x00007f357a626000, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1, HoldRefCount=0, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff496710f8, TgtPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1 (update suppressed), HoldRefCount=0
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670be0, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Copying data from host to device, HstPtr=0x00007fff49670e90, TgtPtr=0x00007f357a626200, Size=16, Name=KernelLaunchEnv
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels17output_delta_lossIfNS_3DfFILNS_14ActivationTypeE1ELb1EEEEEdbiibPKT_S7_S7_PS5_mT0__l78 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=0 (decremented, delayed deletion), HoldRefCount=0
+omptarget device 0 info: Copying data from device to host, TgtPtr=0x00007fff496710f8, HstPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Removing map entry with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 6 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d40, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels12hidden_deltaIfNS_3DfFILNS_14ActivationTypeE2ELb1EEEEEvbiiPT_PKS5_S8_mT0__l127 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000099f9a10, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x000000000a1cd900, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE2EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE1EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 8 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: tofrom(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Creating new map entry with HstPtrBase=0x00007fff496710f8, HstPtrBegin=0x00007fff496710f8, TgtAllocBegin=0x00007f357a626000, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1, HoldRefCount=0, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff496710f8, TgtPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1 (update suppressed), HoldRefCount=0
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670be0, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Copying data from host to device, HstPtr=0x00007fff49670e90, TgtPtr=0x00007f357a626200, Size=16, Name=KernelLaunchEnv
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels17output_delta_lossIfNS_3DfFILNS_14ActivationTypeE1ELb1EEEEEdbiibPKT_S7_S7_PS5_mT0__l78 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=0 (decremented, delayed deletion), HoldRefCount=0
+omptarget device 0 info: Copying data from device to host, TgtPtr=0x00007fff496710f8, HstPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Removing map entry with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 6 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d40, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels12hidden_deltaIfNS_3DfFILNS_14ActivationTypeE2ELb1EEEEEvbiiPT_PKS5_S8_mT0__l127 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000099f9a10, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x000000000a1cd900, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE2EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE1EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 8 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: tofrom(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Creating new map entry with HstPtrBase=0x00007fff496710f8, HstPtrBegin=0x00007fff496710f8, TgtAllocBegin=0x00007f357a626000, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1, HoldRefCount=0, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff496710f8, TgtPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1 (update suppressed), HoldRefCount=0
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670be0, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Copying data from host to device, HstPtr=0x00007fff49670e90, TgtPtr=0x00007f357a626200, Size=16, Name=KernelLaunchEnv
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels17output_delta_lossIfNS_3DfFILNS_14ActivationTypeE1ELb1EEEEEdbiibPKT_S7_S7_PS5_mT0__l78 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=0 (decremented, delayed deletion), HoldRefCount=0
+omptarget device 0 info: Copying data from device to host, TgtPtr=0x00007fff496710f8, HstPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Removing map entry with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 6 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d40, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels12hidden_deltaIfNS_3DfFILNS_14ActivationTypeE2ELb1EEEEEvbiiPT_PKS5_S8_mT0__l127 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000099f9a10, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x000000000a1cd900, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE2EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE1EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 8 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: tofrom(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Creating new map entry with HstPtrBase=0x00007fff496710f8, HstPtrBegin=0x00007fff496710f8, TgtAllocBegin=0x00007f357a626000, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1, HoldRefCount=0, Name=unknown
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff496710f8, TgtPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1 (update suppressed), HoldRefCount=0
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670be0, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Copying data from host to device, HstPtr=0x00007fff49670e90, TgtPtr=0x00007f357a626200, Size=16, Name=KernelLaunchEnv
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels17output_delta_lossIfNS_3DfFILNS_14ActivationTypeE1ELb1EEEEEdbiibPKT_S7_S7_PS5_mT0__l78 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Mapping exists with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=0 (decremented, delayed deletion), HoldRefCount=0
+omptarget device 0 info: Copying data from device to host, TgtPtr=0x00007fff496710f8, HstPtr=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Removing map entry with HstPtrBegin=0x00007fff496710f8, TgtPtrBegin=0x00007f357a626000, Size=8, Name=unknown
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 6 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d40, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels12hidden_deltaIfNS_3DfFILNS_14ActivationTypeE2ELb1EEEEEvbiiPT_PKS5_S8_mT0__l127 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00000000099f9a10, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 12 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[52] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x000000000a1cd900, TgtPtr=0x00007f357a628400, Size=52, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels6updateIfEEvbiiPT_PKS2_S3_S3_mS3_S5_S3_S3_mNS0_12UpdateParamsIS2_EE_l214 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE2EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 7 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Copying data from host to device, HstPtr=0x00007fff49670d20, TgtPtr=0x00007f357a625e00, Size=1, Name=unknown
+"PluginInterface" device 0 info: Launching kernel __omp_offloading_fd10_f807b24e__ZN5ompnn7kernels8activateIfNS_4ActFILNS_14ActivationTypeE1EEEEEvbiiPT_S6_PKS5_mmT0__l55 with 1 blocks and 256 threads in SPMD mode
+omptarget device 0 info: Entering OpenMP kernel at unknown:0:0 with 8 arguments:
+omptarget device 0 info: firstprivate(unknown)[8] (implicit)
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: to(unknown)[1] 
+omptarget device 0 info: firstprivate(unknown)[8] 
+omptarget device 0 info: tofrom(unknown)[8] 
+omptarget device 0 info: firstprivate(unknown)[4] (implicit)
+omptarget device 0 info: Creating new map entry with HstPtrBase=0x00007fff496710f8, HstPtrBegin=0x00007fff496710f8, TgtAllocBegin=0x00007f357a626000, TgtPtrBegin=0x00007f357a626000, Size=8, DynRefCount=1, HoldRefCount=0, Name=unknown
+[truncated: first 400 of 607351 lines of the verbose runtime log]

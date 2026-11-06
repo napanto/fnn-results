@@ -1,0 +1,3 @@
+ompnn 1771 calls
+[ perf record: Woken up 17 times to write data ]
+[ perf record: Captured and wrote 1.382 MB /tmp/p.data (35919 samples) ]

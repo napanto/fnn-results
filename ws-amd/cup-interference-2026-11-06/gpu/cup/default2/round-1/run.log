@@ -1,0 +1,1 @@
+cudann  AMD Radeon RX 7900 XTX           cup            b=40    float  train epoch       7.42 ms        134828 samples/s        3.9 GFLOP/s(gemm)  check=ok

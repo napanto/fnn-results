@@ -1,0 +1,1 @@
+syclnn  AdaptiveCpp OpenMP host device   cup            b=40    float  train epoch       9.14 ms        109466 samples/s        3.2 GFLOP/s(gemm)  check=ok

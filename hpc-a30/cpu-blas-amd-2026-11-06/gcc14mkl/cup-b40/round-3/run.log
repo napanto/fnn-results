@@ -1,0 +1,1 @@
+ompnn   AMD EPYC 7301 16-Core Processor  cup            b=40    float  train epoch      16.02 ms         62420 samples/s        1.8 GFLOP/s(gemm)  check=ok
