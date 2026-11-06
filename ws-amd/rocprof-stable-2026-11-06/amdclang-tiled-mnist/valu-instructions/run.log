@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc VALUInsts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions -o run -- python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256
+W20261106 04:27:54.527524 140502328604992 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.235298 sec
+W20261106 04:27:54.527634 140502328604992 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261106 04:27:54.575338 140502328604992 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:27:55.207311 140502328604992 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+ompnn: 1 epochs, 256 samples, 3412437 ns; profile=False
+W20261106 04:27:56.689285 140502328604992 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend ompnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256' ::     2.161651 sec
+E20261106 04:27:56.700934 140502328604992 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/run_kernel_trace.csv
+E20261106 04:27:56.712508 140502328604992 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/run_marker_api_trace.csv
+E20261106 04:27:56.725127 140502328604992 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/run_counter_collection.csv
+E20261106 04:27:56.736183 140502328604992 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/run_agent_info.csv
+E20261106 04:27:56.736830 140502328604992 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/amdclang-tiled-mnist/valu-instructions/run_results.json
+W20261106 04:27:56.788526 140502328604992 simple_timer.cpp:55] [rocprofv3] output generation ::     0.096430 sec
+W20261106 04:27:56.788639 140502328604992 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.096600 sec

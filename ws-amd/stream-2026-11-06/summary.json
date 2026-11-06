@@ -1,0 +1,46 @@
+[
+  {
+    "operation": "copy",
+    "elements": 33554432.0,
+    "arrays_bytes": 402653184.0,
+    "traffic_bytes": 268435456.0,
+    "repetitions": 31.0,
+    "best_ms": 0.418404996,
+    "median_ms": 0.430725992,
+    "best_GB_s": 641.568448,
+    "median_GB_s": 623.216293
+  },
+  {
+    "operation": "scale",
+    "elements": 33554432.0,
+    "arrays_bytes": 402653184.0,
+    "traffic_bytes": 268435456.0,
+    "repetitions": 31.0,
+    "best_ms": 0.410726011,
+    "median_ms": 0.424566001,
+    "best_GB_s": 653.563328,
+    "median_GB_s": 632.258484
+  },
+  {
+    "operation": "add",
+    "elements": 33554432.0,
+    "arrays_bytes": 402653184.0,
+    "traffic_bytes": 402653184.0,
+    "repetitions": 31.0,
+    "best_ms": 0.572528005,
+    "median_ms": 0.581049025,
+    "best_GB_s": 703.28992,
+    "median_GB_s": 692.976266
+  },
+  {
+    "operation": "triad",
+    "elements": 33554432.0,
+    "arrays_bytes": 402653184.0,
+    "traffic_bytes": 402653184.0,
+    "repetitions": 31.0,
+    "best_ms": 0.568328977,
+    "median_ms": 0.580888987,
+    "best_GB_s": 708.48608,
+    "median_GB_s": 693.167186
+  }
+]

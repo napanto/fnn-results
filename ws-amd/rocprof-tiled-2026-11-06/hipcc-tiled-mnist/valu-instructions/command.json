@@ -1,0 +1,95 @@
+{
+  "command": [
+    "rocprofv3",
+    "--extra-counters",
+    "results/ws-amd/rocprof-tiled-2026-11-06/extra-counters.yaml",
+    "--marker-trace",
+    "--kernel-trace",
+    "--pmc",
+    "VALUInsts",
+    "--kernel-include-regex",
+    ".*(gemm|Gemm|GEMM|Cijk).*",
+    "--output-format",
+    "csv",
+    "json",
+    "-d",
+    "results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/valu-instructions",
+    "-o",
+    "run",
+    "--",
+    "python",
+    "scripts/nsys_epoch.py",
+    "--runtime",
+    "hip",
+    "--backend",
+    "cudann",
+    "--blas",
+    "tiled",
+    "--epochs",
+    "1",
+    "--out",
+    "results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/valu-instructions/driver.json",
+    "--samples",
+    "256",
+    "--batch",
+    "256"
+  ],
+  "backend": "cudann",
+  "label": "hipcc",
+  "blas": "tiled",
+  "size": "mnist",
+  "group": "valu-instructions",
+  "counters": [
+    "VALUInsts"
+  ],
+  "shapes_in_submission_order": [
+    [
+      "NN",
+      512,
+      256,
+      784
+    ],
+    [
+      "NN",
+      256,
+      256,
+      512
+    ],
+    [
+      "NN",
+      10,
+      256,
+      256
+    ],
+    [
+      "TN",
+      256,
+      256,
+      10
+    ],
+    [
+      "TN",
+      512,
+      256,
+      256
+    ],
+    [
+      "NT",
+      512,
+      784,
+      256
+    ],
+    [
+      "NT",
+      256,
+      512,
+      256
+    ],
+    [
+      "NT",
+      10,
+      256,
+      256
+    ]
+  ]
+}

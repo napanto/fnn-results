@@ -1,0 +1,330 @@
+[
+  {
+    "name": "cudann-off",
+    "backend": "cudann",
+    "profile": false,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 35179497,
+    "train_call_ns": 35155214,
+    "gpu_ns": {
+      "H2D": 6407967.0,
+      "memset": 1344.0,
+      "GEMM": 9362367.0,
+      "hand-written": 3002598.0,
+      "BLAS vector/reduction": 889354.0,
+      "D2H": 239618.0
+    },
+    "gpu_busy_ns": 19719532.0,
+    "gpu_overlap_ns": 183716.0,
+    "gpu_idle_ns": 15459965.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "synchronization": 545,
+      "launch": 1280
+    },
+    "host_api_thread_union_ns": {
+      "synchronization": 894210.0,
+      "launch": 12374390.0
+    },
+    "internal_profile": {
+      "h2d_ns": 0,
+      "d2h_ns": 0,
+      "gemm_ns": 0,
+      "act_ns": 0,
+      "delta_ns": 0,
+      "biasgrad_ns": 0,
+      "update_ns": 0,
+      "loss_ns": 0,
+      "reg_ns": 0,
+      "other_ns": 0,
+      "wall_ns": 35039198,
+      "wait_ns": 22351,
+      "launches": 0,
+      "bytes_h2d": 0,
+      "bytes_d2h": 0,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 0,
+      "epoch_wall_ns": [
+        13298908,
+        12929308
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  },
+  {
+    "name": "cudann-on",
+    "backend": "cudann",
+    "profile": true,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 45854639,
+    "train_call_ns": 45830378,
+    "gpu_ns": {
+      "H2D": 6424192.0,
+      "memset": 1504.0,
+      "GEMM": 11103961.0,
+      "hand-written": 3310996.0,
+      "BLAS vector/reduction": 1040204.0,
+      "D2H": 239171.0
+    },
+    "gpu_busy_ns": 22117372.0,
+    "gpu_overlap_ns": 2656.0,
+    "gpu_idle_ns": 23737267.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "synchronization": 545,
+      "launch": 1280
+    },
+    "host_api_thread_union_ns": {
+      "synchronization": 901522.0,
+      "launch": 11665003.0
+    },
+    "internal_profile": {
+      "h2d_ns": 6857632,
+      "d2h_ns": 28032,
+      "gemm_ns": 16613900,
+      "act_ns": 1559036,
+      "delta_ns": 1332639,
+      "biasgrad_ns": 3633151,
+      "update_ns": 4351230,
+      "loss_ns": 901216,
+      "reg_ns": 0,
+      "other_ns": 34560,
+      "wall_ns": 45691801,
+      "wait_ns": 23490,
+      "launches": 1288,
+      "bytes_h2d": 26018816,
+      "bytes_d2h": 2143304,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 35311396,
+      "epoch_wall_ns": [
+        19163024,
+        17749405
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  },
+  {
+    "name": "ompnn-off",
+    "backend": "ompnn",
+    "profile": false,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 99523497,
+    "train_call_ns": 99500022,
+    "gpu_ns": {
+      "H2D": 6577868.0,
+      "GEMM": 11042054.0,
+      "hand-written": 16467522.0,
+      "D2H": 287075.0,
+      "BLAS vector/reduction": 970190.0
+    },
+    "gpu_busy_ns": 35344709.0,
+    "gpu_overlap_ns": 0.0,
+    "gpu_idle_ns": 64178788.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "synchronization": 1352,
+      "launch": 1280
+    },
+    "host_api_thread_union_ns": {
+      "synchronization": 47422422.0,
+      "launch": 16271825.0
+    },
+    "internal_profile": {
+      "h2d_ns": 0,
+      "d2h_ns": 0,
+      "gemm_ns": 0,
+      "act_ns": 0,
+      "delta_ns": 0,
+      "biasgrad_ns": 0,
+      "update_ns": 0,
+      "loss_ns": 0,
+      "reg_ns": 0,
+      "other_ns": 0,
+      "wall_ns": 99127716,
+      "wait_ns": 0,
+      "launches": 0,
+      "bytes_h2d": 0,
+      "bytes_d2h": 0,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 0,
+      "epoch_wall_ns": [
+        45007020,
+        44490540
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  },
+  {
+    "name": "ompnn-on",
+    "backend": "ompnn",
+    "profile": true,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 99007763,
+    "train_call_ns": 98983881,
+    "gpu_ns": {
+      "H2D": 6559743.0,
+      "GEMM": 11038750.0,
+      "hand-written": 16470136.0,
+      "D2H": 294116.0,
+      "BLAS vector/reduction": 971665.0
+    },
+    "gpu_busy_ns": 35334410.0,
+    "gpu_overlap_ns": 0.0,
+    "gpu_idle_ns": 63673353.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "synchronization": 1352,
+      "launch": 1280
+    },
+    "host_api_thread_union_ns": {
+      "synchronization": 47884938.0,
+      "launch": 15788168.0
+    },
+    "internal_profile": {
+      "h2d_ns": 6976407,
+      "d2h_ns": 0,
+      "gemm_ns": 30627497,
+      "act_ns": 10263242,
+      "delta_ns": 7492422,
+      "biasgrad_ns": 8540914,
+      "update_ns": 25256924,
+      "loss_ns": 6433558,
+      "reg_ns": 0,
+      "other_ns": 0,
+      "wall_ns": 98623596,
+      "wait_ns": 0,
+      "launches": 1282,
+      "bytes_h2d": 26017792,
+      "bytes_d2h": 0,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 95590964,
+      "epoch_wall_ns": [
+        44645062,
+        44378370
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  },
+  {
+    "name": "syclnn-off",
+    "backend": "syclnn",
+    "profile": false,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 68994378,
+    "train_call_ns": 68972959,
+    "gpu_ns": {
+      "H2D": 6498559.0,
+      "memset": 47936.0,
+      "GEMM": 11059958.0,
+      "hand-written": 4473149.0,
+      "BLAS vector/reduction": 1022127.0,
+      "D2H": 237891.0
+    },
+    "gpu_busy_ns": 23339620.0,
+    "gpu_overlap_ns": 0.0,
+    "gpu_idle_ns": 45654758.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "launch": 1280,
+      "synchronization": 200
+    },
+    "host_api_thread_union_ns": {
+      "launch": 16170408.0,
+      "synchronization": 332779.0
+    },
+    "internal_profile": {
+      "h2d_ns": 0,
+      "d2h_ns": 0,
+      "gemm_ns": 0,
+      "act_ns": 0,
+      "delta_ns": 0,
+      "biasgrad_ns": 0,
+      "update_ns": 0,
+      "loss_ns": 0,
+      "reg_ns": 0,
+      "other_ns": 0,
+      "wall_ns": 68642961,
+      "wait_ns": 57276,
+      "launches": 0,
+      "bytes_h2d": 0,
+      "bytes_d2h": 0,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 0,
+      "epoch_wall_ns": [
+        30105039,
+        29344017
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  },
+  {
+    "name": "syclnn-on",
+    "backend": "syclnn",
+    "profile": true,
+    "range_source": "NVTX train interval inside CUDA capture",
+    "range_ns": 91375265,
+    "train_call_ns": 91351805,
+    "gpu_ns": {
+      "H2D": 6391839.0,
+      "memset": 47904.0,
+      "GEMM": 11073161.0,
+      "hand-written": 4482178.0,
+      "BLAS vector/reduction": 1025644.0,
+      "D2H": 239172.0
+    },
+    "gpu_busy_ns": 23259898.0,
+    "gpu_overlap_ns": 0.0,
+    "gpu_idle_ns": 68115367.0,
+    "kernel_launches": 1280,
+    "host_api_calls": {
+      "launch": 1280,
+      "synchronization": 7952
+    },
+    "host_api_thread_union_ns": {
+      "launch": 14485500.0,
+      "synchronization": 3838581.0
+    },
+    "internal_profile": {
+      "h2d_ns": 6818177,
+      "d2h_ns": 756773,
+      "gemm_ns": 19879996,
+      "act_ns": 2398306,
+      "delta_ns": 1812072,
+      "biasgrad_ns": 6886480,
+      "update_ns": 4011099,
+      "loss_ns": 2080192,
+      "reg_ns": 0,
+      "other_ns": 32471,
+      "wall_ns": 90984642,
+      "wait_ns": 41459,
+      "launches": 1292,
+      "bytes_h2d": 26017792,
+      "bytes_d2h": 2143304,
+      "epochs": 2,
+      "batches": 64,
+      "unprofiled": 0,
+      "device_total_ns": 44675566,
+      "epoch_wall_ns": [
+        41948316,
+        39560369
+      ],
+      "predict_wall_ns": []
+    },
+    "epochs": 2
+  }
+]

@@ -1,0 +1,1 @@
+cudann  NVIDIA GeForce GTX 1080 Ti       cup            b=40    float  train epoch       4.11 ms        243041 samples/s        7.0 GFLOP/s(gemm)  check=ok

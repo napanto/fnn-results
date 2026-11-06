@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc Wavefronts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/driver.json --samples 256 --batch 256
+W20261106 04:20:46.489559 140318593149248 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.232156 sec
+W20261106 04:20:46.489682 140318593149248 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261106 04:20:46.536011 140318593149248 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:20:47.163896 140318593149248 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 3457358 ns; profile=False
+W20261106 04:20:48.789600 140318593149248 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/driver.json --samples 256 --batch 256' ::     2.299918 sec
+E20261106 04:20:48.801126 140318593149248 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/run_kernel_trace.csv
+E20261106 04:20:48.812423 140318593149248 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/run_marker_api_trace.csv
+E20261106 04:20:48.824104 140318593149248 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/run_counter_collection.csv
+E20261106 04:20:48.833372 140318593149248 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/run_agent_info.csv
+E20261106 04:20:48.833851 140318593149248 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/waves/run_results.json
+W20261106 04:20:48.876139 140318593149248 simple_timer.cpp:55] [rocprofv3] output generation ::     0.084155 sec
+W20261106 04:20:48.876272 140318593149248 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.084354 sec

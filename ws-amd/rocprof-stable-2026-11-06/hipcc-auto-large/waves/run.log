@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc Wavefronts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096
+W20261106 04:29:51.517685 140099061188928 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.230271 sec
+W20261106 04:29:51.517812 140099061188928 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     0.000000 sec
+W20261106 04:29:51.563810 140099061188928 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:29:52.093246 140099061188928 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 4096 samples, 56487326 ns; profile=False
+W20261106 04:29:57.883405 140099061188928 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas auto --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     6.365593 sec
+E20261106 04:29:57.900246 140099061188928 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/run_kernel_trace.csv
+E20261106 04:29:57.910533 140099061188928 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/run_marker_api_trace.csv
+E20261106 04:29:57.921429 140099061188928 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/run_counter_collection.csv
+E20261106 04:29:57.929599 140099061188928 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/run_agent_info.csv
+E20261106 04:29:57.930078 140099061188928 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-auto-large/waves/run_results.json
+W20261106 04:29:58.036305 140099061188928 simple_timer.cpp:55] [rocprofv3] output generation ::     0.144265 sec
+W20261106 04:29:58.037291 140099061188928 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.145326 sec

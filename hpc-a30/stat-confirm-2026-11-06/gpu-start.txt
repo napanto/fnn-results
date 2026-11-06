@@ -1,0 +1,3 @@
+name, driver_version, clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%], memory.used [MiB]
+NVIDIA A30, 610.43.02, 210 MHz, 1215 MHz, 0 %, 0 MiB
+pid, process_name, used_gpu_memory [MiB]

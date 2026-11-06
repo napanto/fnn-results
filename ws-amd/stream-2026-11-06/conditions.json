@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-11-06T03:25:10.026860+00:00",
+  "machine": "ws-amd",
+  "kernel": "7.2.3-300.vanilla.fc44.x86_64+rt",
+  "binding": "numactl --cpunodebind=0 --membind=0",
+  "niceness": 0,
+  "cpu_cap_khz": "2800000",
+  "boost": "0",
+  "numa_balancing": null,
+  "sysinfo": {
+    "timestamp": "2026-11-06T03:25:10+00:00",
+    "hostname": "ws-amd",
+    "kernel": "7.2.3-300.vanilla.fc44.x86_64+rt",
+    "python": "3.12.3",
+    "cpu": {
+      "count": 32,
+      "model": "AMD Ryzen Threadripper 2950X 16-Core Processor",
+      "isa": [
+        "avx",
+        "avx2",
+        "fma"
+      ],
+      "threads_per_core": "2",
+      "cores_per_socket": "16",
+      "sockets": "1",
+      "numa_nodes": "2",
+      "l2_cache": "8 MiB (16 instances)",
+      "l3_cache": "32 MiB (4 instances)",
+      "governor": "performance",
+      "max_khz": "4400000",
+      "scaling_max_khz": "2800000",
+      "boost": "0",
+      "affinity": 16,
+      "cpuset_effective": "0-31"
+    },
+    "libs": [],
+    "gpu": {
+      "rocm": {
+        "card0": {
+          "dcefclk clock speed:": "(1563Mhz)",
+          "dcefclk clock level:": "1",
+          "fclk clock speed:": "(2301Mhz)",
+          "fclk clock level:": "7",
+          "mclk clock speed:": "(1249Mhz)",
+          "mclk clock level:": "3",
+          "sclk clock speed:": "(45Mhz)",
+          "sclk clock level:": "S",
+          "socclk clock speed:": "(1500Mhz)",
+          "socclk clock level:": "1",
+          "pcie clock level": "0 (8.0GT/s x16)",
+          "Card Series": "AMD Radeon RX 7900 XTX",
+          "Card Model": "0x744c",
+          "Card Vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+          "Card SKU": "31XFSHAS1",
+          "Subsystem ID": "0x7901",
+          "Device Rev": "0xc8",
+          "Node ID": "2",
+          "GUID": "30371",
+          "GFX Version": "gfx1100"
+        }
+      }
+    },
+    "container": {
+      "container": "podman",
+      "HOSTNAME": "ws-amd",
+      "containerenv": true,
+      "name": "fnn-rocm",
+      "image": "localhost/rocm-pytorch-distrobox:latest",
+      "imageid": "dca570bf22dd8f2610582665c747380535269249e69b0d13608feca66f292da3",
+      "os": "Ubuntu 24.04.4 LTS"
+    },
+    "env": {
+      "FNN_REF_CACHE": "/var/home/antonio/Documents/unipi/magistrale/ac/fnn-bench/results/ws-amd/extra-tools-2026-11-06/ref",
+      "FNN_MACHINE_ID": "ws-amd",
+      "FNN_DATA_DIR": "/var/home/antonio/Documents/unipi/magistrale/ac/fnn-bench/results/ws-amd/extra-tools-2026-11-06/data",
+      "LD_LIBRARY_PATH": "/opt/rocm/lib",
+      "OMP_NUM_THREADS": "16",
+      "FNN_EXTRA_INSIDE": "1"
+    },
+    "numa": {
+      "cpus_allowed_list": "0-7,16-23",
+      "mems_allowed_list": "0-1",
+      "numactl_show": [
+        "policy: bind",
+        "preferred node: 0",
+        "physcpubind: 0 1 2 3 4 5 6 7 16 17 18 19 20 21 22 23 ",
+        "cpubind: 0 ",
+        "nodebind: 0 ",
+        "membind: 0 ",
+        "preferred: 0"
+      ]
+    },
+    "omp_max_threads": 16,
+    "meminfo_total_kb": 32754564,
+    "packages": {
+      "numpy": "2.5.2",
+      "fnn-testkit": "1.0.0",
+      "fnnbench": "1.0.0",
+      "syclnn": "0.2.2",
+      "cudann": "0.1.2",
+      "ompnn": "0.1.0"
+    },
+    "git": {}
+  },
+  "numactl": {
+    "command": [
+      "numactl",
+      "--show"
+    ],
+    "exit": 0,
+    "stdout": "policy: bind\npreferred node: 0\nphyscpubind: 0 1 2 3 4 5 6 7 16 17 18 19 20 21 22 23 \ncpubind: 0 \nnodebind: 0 \nmembind: 0 \npreferred: 0",
+    "stderr": ""
+  },
+  "background_note": "Other host services were running; their CPU and GPU use is not controlled.",
+  "gpu_clocks": {
+    "/sys/class/drm/card1/device/pp_dpm_sclk": "S: 41Mhz *\n1: 500Mhz \n2: 2526Mhz",
+    "/sys/class/drm/card1/device/pp_dpm_mclk": "0: 96Mhz \n1: 456Mhz \n2: 772Mhz \n3: 1249Mhz *",
+    "/sys/class/drm/card1/device/power_dpm_force_performance_level": "auto"
+  },
+  "gpu_hwmon": {
+    "/sys/class/drm/card1/device/hwmon/hwmon6/freq1_input": "42000000",
+    "/sys/class/drm/card1/device/hwmon/hwmon6/freq2_input": "1249000000",
+    "/sys/class/drm/card1/device/hwmon/hwmon6/temp3_input": "74000",
+    "/sys/class/drm/card1/device/hwmon/hwmon6/temp1_input": "54000",
+    "/sys/class/drm/card1/device/hwmon/hwmon6/temp2_input": "64000",
+    "/sys/class/drm/card1/device/hwmon/hwmon6/power1_average": "84000000"
+  },
+  "limits": "Same kernel, CPU cap and boost setting as the pass. These experiments prioritise counters. Timings and bandwidth describe this run only, not a programming-model speedup against the pass."
+}

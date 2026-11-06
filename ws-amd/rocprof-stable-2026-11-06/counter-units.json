@@ -1,0 +1,14 @@
+{
+  "FETCH_SIZE": "KiB",
+  "WRITE_SIZE": "KiB",
+  "boundary": "GL2 external request bytes. Radeon has Infinity Cache beyond L2; these values are not treated as DRAM-only bytes.",
+  "FETCH_SIZE_expression": "(GL2C_EA_RDREQ_32B_sum*32+GL2C_EA_RDREQ_64B_sum*64+GL2C_EA_RDREQ_96B_sum*96+GL2C_EA_RDREQ_128B_sum*128)/1024",
+  "WRITE_SIZE_expression": "((GL2C_MC_WRREQ_sum-GL2C_EA_WRREQ_64B_sum)*32+GL2C_EA_WRREQ_64B_sum*64)/1024",
+  "evidence": "list-avail.txt lines 257-260 and 701-704, ROCprofiler-SDK 1.1.0 / ROCm 7.2.4",
+  "LDSBankConflict": "percent of indexed-LDS active cycles stalled by bank conflicts (tool definition)",
+  "VALUUtilization": "not exposed for this gfx1100 device; VALUInsts is an instruction-count metric, not utilisation",
+  "FNN_LDS_INSTS": "Sum of exposed SQ_INSTS_WAVE32_LDS (wave32 GPU kernels); SQ_INSTS_LDS returned zero in the preserved pilot.",
+  "memory_collection": "FETCH_SIZE+WRITE_SIZE exceeds gfx1100 counter slots (error 38). Read/write traffic is collected in separate deterministic repeats; their per-kernel durations are retained separately.",
+  "counter_boundary": "GL2 external interface",
+  "roofline_reference": "../stream-cache-stable-2026-11-06/calibration.json: cache-resident triad, same counter/time boundary"
+}

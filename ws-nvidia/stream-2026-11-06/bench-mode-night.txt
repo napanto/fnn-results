@@ -1,0 +1,1 @@
+Bench mode: host at 3.5 GHz with turbo off, kernel.numa_balancing=0 in host and guest; guest kernel 7.2.11-200.fc44.x86_64.

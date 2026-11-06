@@ -1,0 +1,2 @@
+hipcc -O3 -std=c++17 --offload-arch=gfx1100 -x hip scripts/stream-probe.cu -o stream-probe
+./stream-probe (three 128 MiB arrays, 31 repetitions)

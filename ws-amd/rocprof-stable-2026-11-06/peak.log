@@ -1,0 +1,49 @@
+{
+  "kind": "peak",
+  "backend": "cudann",
+  "device": {
+    "index": 0,
+    "name": "AMD Radeon RX 7900 XTX",
+    "vendor": "AMD",
+    "type": "gpu",
+    "backend": "hip",
+    "platform": "HIP runtime 70253.21",
+    "driver": "70253.21",
+    "global_mem_bytes": 25753026560,
+    "compute_units": 48,
+    "fp64": true,
+    "compute_capability": "11.0"
+  },
+  "blas": "rocblas",
+  "dtype": "float",
+  "n": 8192,
+  "gemm_gflops": 21824.528513310976,
+  "gemm_ms": 50.379628,
+  "act_bandwidth_gbs": 943.80503835313,
+  "act_ms": 0.853255,
+  "wall_ms": 204.21626,
+  "build_info": {
+    "version": "0.1.2",
+    "compiler": "Clang 22.0.0 /usr/bin/hipcc (hipcc)",
+    "flags": "-O3 -DNDEBUG --offload-arch=gfx1100",
+    "cuda_archs": "gfx1100",
+    "onemath": "hipBLAS 3.2.0",
+    "git_sha": "v0.1.2",
+    "blas_backends": [
+      "rocblas",
+      "tiled"
+    ],
+    "blas_selectable": [
+      "rocblas",
+      "tiled"
+    ],
+    "runtime_version": 70253211,
+    "driver_version": 70253211,
+    "platform": "HIP (hipified)",
+    "dtypes": [
+      "float",
+      "double"
+    ]
+  },
+  "timestamp": "2026-11-06T03:30:38+00:00"
+}

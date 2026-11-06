@@ -1,0 +1,3 @@
+SLURM job 722680 on node09, partition gpu-excl
+NUMA prefix: none (adopted default)
+rounds: 5

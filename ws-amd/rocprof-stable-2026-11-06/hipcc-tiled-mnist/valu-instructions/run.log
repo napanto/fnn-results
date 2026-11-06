@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc VALUInsts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256
+W20261106 04:25:49.983774 140591426349376 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.235752 sec
+W20261106 04:25:49.983889 140591426349376 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261106 04:25:50.034424 140591426349376 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:25:50.654568 140591426349376 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 3157078 ns; profile=False
+W20261106 04:25:52.260499 140591426349376 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/driver.json --samples 256 --batch 256' ::     2.276611 sec
+E20261106 04:25:52.271551 140591426349376 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/run_kernel_trace.csv
+E20261106 04:25:52.282457 140591426349376 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/run_marker_api_trace.csv
+E20261106 04:25:52.294078 140591426349376 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/run_counter_collection.csv
+E20261106 04:25:52.302805 140591426349376 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/run_agent_info.csv
+E20261106 04:25:52.303255 140591426349376 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/hipcc-tiled-mnist/valu-instructions/run_results.json
+W20261106 04:25:52.344950 140591426349376 simple_timer.cpp:55] [rocprofv3] output generation ::     0.081794 sec
+W20261106 04:25:52.345089 140591426349376 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.081976 sec

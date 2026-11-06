@@ -1,0 +1,38 @@
+"Kind","Agent_Id","Queue_Id","Stream_Id","Thread_Id","Dispatch_Id","Kernel_Id","Kernel_Name","Correlation_Id","Start_Timestamp","End_Timestamp","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Workgroup_Size_X","Workgroup_Size_Y","Workgroup_Size_Z","Grid_Size_X","Grid_Size_Y","Grid_Size_Z"
+"KERNEL_DISPATCH","Agent 2",1,0,827953,1,5,"init(float*, float*, float*, unsigned long)",1,22155121301563,22155121337123,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,2,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",2,22155121411284,22155121445404,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,3,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",3,22155121463525,22155121494205,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,4,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",4,22155121512006,22155121543126,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,5,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",5,22155121560047,22155121590007,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,6,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",6,22155121606928,22155121637488,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,7,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",7,22155121680809,22155121711610,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,8,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",8,22155121756130,22155121787051,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,9,3,"void stream_op<0>(float const*, float const*, float*, unsigned long)",9,22155121828212,22155121859532,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,10,9,"__amd_rocclr_copyBuffer",10,22155121924774,22155121928294,0,0,16,0,128,1024,1,1,1024,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,11,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",11,22155121989615,22155122021255,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,12,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",12,22155122038976,22155122069176,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,13,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",13,22155122085497,22155122116137,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,14,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",14,22155122133418,22155122164258,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,15,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",15,22155122181339,22155122212459,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,16,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",16,22155122270900,22155122301741,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,17,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",17,22155122340302,22155122371102,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,18,4,"void stream_op<1>(float const*, float const*, float*, unsigned long)",18,22155122412223,22155122444104,0,0,8,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,19,9,"__amd_rocclr_copyBuffer",19,22155122487424,22155122490105,0,0,16,0,128,1024,1,1,1024,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,20,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",20,22155122539745,22155122575746,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,21,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",21,22155122592266,22155122626347,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,22,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",22,22155122643067,22155122678108,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,23,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",23,22155122695108,22155122729789,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,24,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",24,22155122751510,22155122785590,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,25,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",25,22155122831831,22155122867432,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,26,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",26,22155122907833,22155122943593,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,27,2,"void stream_op<2>(float const*, float const*, float*, unsigned long)",27,22155122981954,22155123016155,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,28,9,"__amd_rocclr_copyBuffer",28,22155123057715,22155123060635,0,0,16,0,128,1024,1,1,1024,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,29,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",29,22155123531525,22155123567525,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,30,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",30,22155126968111,22155127002911,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,31,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",31,22155127262436,22155127297957,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,32,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",32,22155127538082,22155127572842,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,33,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",33,22155127810727,22155127844648,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,34,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",34,22155128101573,22155128136213,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,35,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",35,22155128381098,22155128415579,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,36,1,"void stream_op<3>(float const*, float const*, float*, unsigned long)",36,22155128657263,22155128691664,0,0,16,0,128,256,1,1,393216,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,827953,37,9,"__amd_rocclr_copyBuffer",37,22155128919068,22155128921628,0,0,16,0,128,1024,1,1,1024,1,1

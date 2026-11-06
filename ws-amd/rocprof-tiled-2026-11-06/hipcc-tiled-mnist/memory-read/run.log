@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-tiled-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc FETCH_SIZE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read -o run -- python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/driver.json --samples 256 --batch 256
+W20261106 04:20:52.177052 139643261323584 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.232222 sec
+W20261106 04:20:52.177207 139643261323584 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261106 04:20:52.223079 139643261323584 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:20:52.851477 139643261323584 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann: 1 epochs, 256 samples, 5566736 ns; profile=False
+W20261106 04:20:54.457025 139643261323584 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend cudann --blas tiled --epochs 1 --out results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/driver.json --samples 256 --batch 256' ::     2.279818 sec
+E20261106 04:20:54.467422 139643261323584 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/run_kernel_trace.csv
+E20261106 04:20:54.476946 139643261323584 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/run_marker_api_trace.csv
+E20261106 04:20:54.487764 139643261323584 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/run_counter_collection.csv
+E20261106 04:20:54.495657 139643261323584 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/run_agent_info.csv
+E20261106 04:20:54.496129 139643261323584 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-tiled-2026-11-06/hipcc-tiled-mnist/memory-read/run_results.json
+W20261106 04:20:54.531926 139643261323584 simple_timer.cpp:55] [rocprofv3] output generation ::     0.072376 sec
+W20261106 04:20:54.532078 139643261323584 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.072588 sec

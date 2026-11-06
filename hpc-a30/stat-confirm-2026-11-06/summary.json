@@ -1,0 +1,568 @@
+[
+  {
+    "configuration": "cudann-cup-default",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {},
+      "repeat": 5,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      3.8236175,
+      3.7821195000000003,
+      3.9840625,
+      3.8572605,
+      3.9599330000000004
+    ],
+    "within_steady_iqr_s": [
+      2.1820999999999993e-05,
+      2.240899999999971e-05,
+      1.3512250000000114e-05,
+      1.0481499999999422e-05,
+      1.938425000000063e-05
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-cup-default/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-cup-default/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-cup-default/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-cup-default/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-cup-default/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-cup-graph",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "Graph",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {
+        "queue": "graph"
+      },
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      1.738013,
+      1.7536375,
+      1.6490615,
+      1.6492375,
+      1.7560275
+    ],
+    "within_steady_iqr_s": [
+      7.681999999999958e-06,
+      4.7607499999999595e-06,
+      6.961250000000075e-06,
+      3.331249999999949e-06,
+      6.4674999999999715e-06
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-cup-graph/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-cup-graph/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-cup-graph/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-cup-graph/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-cup-graph/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-cup-in-order",
+    "conditions": {
+      "batch": 40,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 1,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 5,
+      "layers": [
+        12,
+        64,
+        64,
+        3
+      ],
+      "mode": "train",
+      "n_samples": 1000,
+      "options": {
+        "queue": "in_order"
+      },
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "cup"
+    },
+    "process_medians_ms": [
+      3.291291,
+      3.3565435,
+      3.342302,
+      3.3061534999999997,
+      3.3732694999999997
+    ],
+    "within_steady_iqr_s": [
+      2.4701749999999842e-05,
+      1.5042250000000135e-05,
+      2.4145499999999893e-05,
+      2.1000750000000224e-05,
+      2.8593500000000105e-05
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-cup-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-cup-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-cup-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-cup-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-cup-in-order/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-mnist-b1024",
+    "conditions": {
+      "batch": 1024,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      25.553503999999997,
+      25.31922,
+      25.8161805,
+      25.385865,
+      25.477587
+    ],
+    "within_steady_iqr_s": [
+      0.0014802157499999961,
+      0.00010461625000000169,
+      0.00022822200000000015,
+      0.0045420120000000015,
+      0.0003597627499999992
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-mnist-b1024/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-mnist-b1024/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-mnist-b1024/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-mnist-b1024/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-mnist-b1024/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-mnist-b256",
+    "conditions": {
+      "batch": 256,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "OutOfOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      47.288024,
+      43.9450355,
+      42.532437,
+      43.232651999999995,
+      43.150213
+    ],
+    "within_steady_iqr_s": [
+      0.0022225480000000047,
+      7.647375000000012e-05,
+      0.00010866550000000058,
+      8.607550000000463e-05,
+      7.676350000000026e-05
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-mnist-b256/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-mnist-b256/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-mnist-b256/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-mnist-b256/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-mnist-b256/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "cudann-mnist-b256-in-order",
+    "conditions": {
+      "batch": 256,
+      "blas": "cublas",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "auto",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 1,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"cudann\", \"build_info\": {\"blas_backends\": [\"cublas\", \"tiled\"], \"blas_selectable\": [\"cublas\", \"tiled\"], \"compiler\": \"nvcc 12.9.86 /usr/local/cuda-12.9/bin/nvcc / host GNU 13.3.0\", \"cuda_archs\": \"80\", \"driver_version\": 13030, \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.1.2\", \"onemath\": \"cuBLAS 12.9.86\", \"platform\": \"CUDA\", \"runtime_version\": 12090, \"version\": \"0.1.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_capability\": \"8.0\", \"compute_units\": 56, \"driver\": \"13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": 0, \"name\": \"NVIDIA A30\", \"platform\": \"CUDA runtime 12.9\", \"type\": \"gpu\", \"vendor\": \"NVIDIA\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\"}, \"libs\": [\"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcudart.so.12.9.79\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.1.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {
+        "queue": "in_order"
+      },
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      47.569109999999995,
+      47.4335305,
+      47.428973,
+      47.4527875,
+      47.45276199999999
+    ],
+    "within_steady_iqr_s": [
+      0.00894451625,
+      6.693974999999464e-05,
+      3.476050000000147e-05,
+      0.01097254475,
+      3.4980500000003634e-05
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/cudann-mnist-b256-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/cudann-mnist-b256-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/cudann-mnist-b256-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/cudann-mnist-b256-in-order/cudann.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/cudann-mnist-b256-in-order/cudann.jsonl"
+    ]
+  },
+  {
+    "configuration": "syclnn-mnist-b1024",
+    "conditions": {
+      "batch": 1024,
+      "blas": "auto",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "shared",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"syclnn\", \"build_info\": {\"blas_backends\": [\"mklcpu\", \"netlib\", \"cublas\"], \"blas_selectable\": [\"mklcpu\", \"netlib\", \"tiled\"], \"compiler\": \"Clang 22.1.0 /opt/sycl/bin/clang++\", \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.2.2\", \"onemath\": \"0.5.0 /opt/onemath/lib/cmake/oneMath\", \"sycl_implementation\": \"DPC++ (intel/llvm)\", \"sycl_targets\": \"spir64,nvidia_gpu_sm_80\", \"version\": \"0.2.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_units\": 56, \"driver\": \"CUDA 13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": -1, \"name\": \"NVIDIA A30\", \"platform\": \"NVIDIA CUDA BACKEND\", \"type\": \"gpu\", \"vendor\": \"NVIDIA Corporation\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/oclcpu/x64:/opt/sycl/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\", \"SYCL_CACHE_PERSISTENT\": \"1\", \"SYCL_ROOT\": \"/opt/sycl\"}, \"libs\": [\"/opt/oclcpu/x64/libOpenCL.so.1.0.0\", \"/opt/oclcpu/x64/libintelocl.so.2026.21.6.0\", \"/opt/onemath/lib/libonemath.so.0\", \"/opt/onemath/lib/libonemath_blas_cublas.so.0\", \"/opt/onemath/lib/libonemath_blas_mklcpu.so.0\", \"/opt/onemath/lib/libonemath_blas_netlib.so.0\", \"/opt/sycl/lib/libsycl.so.9.0.0-0\", \"/opt/sycl/lib/libur_adapter_cuda.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero_v2.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_opencl.so.0.12.0\", \"/opt/sycl/lib/libur_loader.so.0.12.0\", \"/opt/venv/lib/libmkl_sycl_blas.so.6\", \"/opt/venv/lib/libtbb.so.12\", \"/opt/venv/lib/libtbbmalloc.so.2\", \"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.2.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      37.3333245,
+      35.636358,
+      35.682964999999996,
+      36.0309715,
+      35.992684999999994
+    ],
+    "within_steady_iqr_s": [
+      0.0012943904999999992,
+      3.7722750000003524e-05,
+      0.0032291547499999976,
+      0.0024082182499999966,
+      0.00356110825
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/syclnn-mnist-b1024/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/syclnn-mnist-b1024/syclnn.jsonl"
+    ]
+  },
+  {
+    "configuration": "syclnn-mnist-b256",
+    "conditions": {
+      "batch": 256,
+      "blas": "auto",
+      "dtype": "float",
+      "effective_options": {
+        "bias_gemv": true,
+        "blas": "auto",
+        "blas_queue": "shared",
+        "derivative_from_output": true,
+        "device": "gpu",
+        "direct_input": true,
+        "fast_math": false,
+        "fine_deps": true,
+        "host_adam_correction": true,
+        "join_kernels": false,
+        "loss_reduction": true,
+        "memory": "Device",
+        "persistent_workspace": true,
+        "pinned_host": false,
+        "profile": false,
+        "queue": "InOrder",
+        "record_history": false,
+        "shuffle": false,
+        "shuffle_seed": 1,
+        "specialized_kernels": true,
+        "streams": 4,
+        "sync_every": 0,
+        "sync_ops": false,
+        "workgroup_size": 0
+      },
+      "environment": "{\"backend\": \"syclnn\", \"build_info\": {\"blas_backends\": [\"mklcpu\", \"netlib\", \"cublas\"], \"blas_selectable\": [\"mklcpu\", \"netlib\", \"tiled\"], \"compiler\": \"Clang 22.1.0 /opt/sycl/bin/clang++\", \"dtypes\": [\"float\", \"double\"], \"flags\": \"-O3 -DNDEBUG\", \"git_sha\": \"v0.2.2\", \"onemath\": \"0.5.0 /opt/onemath/lib/cmake/oneMath\", \"sycl_implementation\": \"DPC++ (intel/llvm)\", \"sycl_targets\": \"spir64,nvidia_gpu_sm_80\", \"version\": \"0.2.2\"}, \"cpu_model\": \"AMD EPYC 7301 16-Core Processor\", \"device\": {\"backend\": \"cuda\", \"compute_units\": 56, \"driver\": \"CUDA 13.3\", \"fp64\": true, \"global_mem_bytes\": 25362432000, \"index\": -1, \"name\": \"NVIDIA A30\", \"platform\": \"NVIDIA CUDA BACKEND\", \"type\": \"gpu\", \"vendor\": \"NVIDIA Corporation\"}, \"env\": {\"CUDA_HOME\": \"/usr/local/cuda-12.9\", \"CUDA_PATH\": \"/usr/local/cuda-12.9\", \"LD_LIBRARY_PATH\": \"/usr/local/cuda/targets/x86_64-linux/lib:/usr/local/lib:/opt/oclcpu/x64:/opt/sycl/lib:/opt/venv/lib:/lib/x86_64-linux-gnu:/lib32:/lib:/.singularity.d/libs\", \"OMP_NUM_THREADS\": \"16\", \"OPENBLAS_ROOT\": \"/opt/openblas-openmp\", \"SYCL_CACHE_PERSISTENT\": \"1\", \"SYCL_ROOT\": \"/opt/sycl\"}, \"libs\": [\"/opt/oclcpu/x64/libOpenCL.so.1.0.0\", \"/opt/oclcpu/x64/libintelocl.so.2026.21.6.0\", \"/opt/onemath/lib/libonemath.so.0\", \"/opt/onemath/lib/libonemath_blas_cublas.so.0\", \"/opt/onemath/lib/libonemath_blas_mklcpu.so.0\", \"/opt/onemath/lib/libonemath_blas_netlib.so.0\", \"/opt/sycl/lib/libsycl.so.9.0.0-0\", \"/opt/sycl/lib/libur_adapter_cuda.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_level_zero_v2.so.0.12.0\", \"/opt/sycl/lib/libur_adapter_opencl.so.0.12.0\", \"/opt/sycl/lib/libur_loader.so.0.12.0\", \"/opt/venv/lib/libmkl_sycl_blas.so.6\", \"/opt/venv/lib/libtbb.so.12\", \"/opt/venv/lib/libtbbmalloc.so.2\", \"/opt/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so\", \"/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublas.so.12.9.2.10\", \"/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcublasLt.so.12.9.2.10\"], \"machine\": \"hpc-a30\", \"numa\": {\"cpus_allowed_list\": \"0-63\", \"mems_allowed_list\": \"0-7\", \"numactl_show\": [\"policy: default\", \"preferred node: current\", \"physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 \", \"cpubind: 0 1 2 3 4 5 6 7 \", \"nodebind: 0 1 2 3 4 5 6 7 \", \"membind: 0 1 2 3 4 5 6 7 \", \"preferred:\"]}, \"package_version\": \"0.2.2\", \"pass\": \"stat-confirm-2026-11-06\", \"threads\": null, \"threads_effective\": 16}",
+      "epochs": 3,
+      "layers": [
+        784,
+        512,
+        256,
+        10
+      ],
+      "mode": "train",
+      "n_samples": 60000,
+      "options": {},
+      "repeat": 3,
+      "seed": 1,
+      "warmup": 1,
+      "workload": "mnist-512-256"
+    },
+    "process_medians_ms": [
+      102.94023,
+      106.62454100000001,
+      104.240388,
+      103.34454600000001,
+      104.0248145
+    ],
+    "within_steady_iqr_s": [
+      0.00015528850000000316,
+      1.3114499999994367e-05,
+      0.0002350932499999986,
+      8.625274999998767e-05,
+      0.00023098175000001164
+    ],
+    "sources": [
+      "results/hpc-a30/stat-confirm-2026-11-06/round-1/syclnn-mnist-b256/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-2/syclnn-mnist-b256/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-3/syclnn-mnist-b256/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-4/syclnn-mnist-b256/syclnn.jsonl",
+      "results/hpc-a30/stat-confirm-2026-11-06/round-5/syclnn-mnist-b256/syclnn.jsonl"
+    ]
+  }
+]

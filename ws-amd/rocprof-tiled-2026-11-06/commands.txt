@@ -1,0 +1,6 @@
+bash scripts/ws-amd-extras.sh check
+rocprofv3 --list-avail
+python scripts/rocprof-counters.py --backend cudann --label hipcc --blas tiled --out results/ws-amd/rocprof-tiled-2026-11-06 
+python scripts/rocprof-counters.py --backend syclnn --label adaptivecpp --blas tiled --out results/ws-amd/rocprof-tiled-2026-11-06 
+python scripts/rocprof-counters.py --backend ompnn --label amdclang --blas tiled --out results/ws-amd/rocprof-tiled-2026-11-06 
+python scripts/rocprof-counters.py --backend cudann --label hipcc --blas auto --out results/ws-amd/rocprof-tiled-2026-11-06 

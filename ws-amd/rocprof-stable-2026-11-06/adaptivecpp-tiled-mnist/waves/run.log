@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc Wavefronts --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves -o run -- python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/driver.json --samples 256 --batch 256
+W20261106 04:26:52.543121 139838856849728 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.232514 sec
+W20261106 04:26:52.543238 139838856849728 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/driver.json --samples 256 --batch 256' ::     0.000000 sec
+W20261106 04:26:52.589410 139838856849728 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:26:53.297066 139838856849728 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+syclnn: 1 epochs, 256 samples, 3174778 ns; profile=False
+W20261106 04:26:55.042506 139838856849728 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/driver.json --samples 256 --batch 256' ::     2.499268 sec
+E20261106 04:26:55.051679 139838856849728 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/run_kernel_trace.csv
+E20261106 04:26:55.063403 139838856849728 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/run_marker_api_trace.csv
+E20261106 04:26:55.075237 139838856849728 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/run_counter_collection.csv
+E20261106 04:26:55.085012 139838856849728 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/run_agent_info.csv
+E20261106 04:26:55.085491 139838856849728 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-mnist/waves/run_results.json
+W20261106 04:26:55.125847 139838856849728 simple_timer.cpp:55] [rocprofv3] output generation ::     0.082500 sec
+W20261106 04:26:55.125918 139838856849728 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.082617 sec

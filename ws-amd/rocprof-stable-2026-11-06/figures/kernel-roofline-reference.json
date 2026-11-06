@@ -1,0 +1,8 @@
+{
+  "counter_boundary": "GL2 external interface",
+  "bandwidth_GB_s": 2148.214448426459,
+  "bandwidth_source": "results/ws-amd/stream-cache-stable-2026-11-06/calibration.json",
+  "peak_GFLOP_s": 21824.528513310976,
+  "peak_source": "results/ws-amd/rocprof-stable-2026-11-06/peaks",
+  "points_source": "results/ws-amd/rocprof-stable-2026-11-06/kernels.json"
+}

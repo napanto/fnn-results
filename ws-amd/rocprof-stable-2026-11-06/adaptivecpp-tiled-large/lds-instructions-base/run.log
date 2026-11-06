@@ -1,0 +1,14 @@
+$ rocprofv3 --extra-counters results/ws-amd/rocprof-stable-2026-11-06/extra-counters.yaml --marker-trace --kernel-trace --pmc FNN_LDS_BASE --kernel-include-regex '.*(gemm|Gemm|GEMM|Cijk).*' --output-format csv json -d results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base -o run -- python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096
+W20261106 04:27:43.992219 140709265336640 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.233680 sec
+W20261106 04:27:43.992330 140709265336640 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     0.000000 sec
+W20261106 04:27:44.038516 140709265336640 tool.cpp:2422] MARKER (ROCTx) version 1.1.0 initialized (instance=0)
+W20261106 04:27:44.651844 140709265336640 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+syclnn: 1 epochs, 4096 samples, 218196059 ns; profile=False
+W20261106 04:27:48.668265 140709265336640 simple_timer.cpp:55] [rocprofv3] 'python scripts/nsys_epoch.py --runtime hip --backend syclnn --blas tiled --epochs 1 --out results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/driver.json --workload sweep-w4096-d2-b4096 --samples 4096 --batch 4096' ::     4.675936 sec
+E20261106 04:27:48.677261 140709265336640 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/run_kernel_trace.csv
+E20261106 04:27:48.687540 140709265336640 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/run_marker_api_trace.csv
+E20261106 04:27:48.698403 140709265336640 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/run_counter_collection.csv
+E20261106 04:27:48.706791 140709265336640 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/run_agent_info.csv
+E20261106 04:27:48.707262 140709265336640 output_stream.cpp:111] Opened result file: results/ws-amd/rocprof-stable-2026-11-06/adaptivecpp-tiled-large/lds-instructions-base/run_results.json
+W20261106 04:27:48.742222 140709265336640 simple_timer.cpp:55] [rocprofv3] output generation ::     0.073084 sec
+W20261106 04:27:48.742283 140709265336640 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.073191 sec
