@@ -1,0 +1,16 @@
+cudann 100 epochs 48.46 48.47 48.46 ms/epoch 2216 samples
+syclnn 50 epochs 102.58 104.56 102.28 ms/epoch 2395 samples
+cudann 100 epochs 48.47 48.48 48.48 ms/epoch 10746 samples
+syclnn 50 epochs 102.16 112.73 101.89 ms/epoch 12341 samples
+cudann 100 epochs 48.45 48.48 48.47 ms/epoch 20240 samples
+syclnn 50 epochs 102.07 122.84 101.76 ms/epoch 25124 samples
+cudann 100 epochs 48.46 49.27 48.47 ms/epoch 37194 samples
+syclnn 50 epochs 101.28 142.33 101.05 ms/epoch 51848 samples
+cudann 100 epochs 48.45 48.47 48.47 ms/epoch 2216 samples
+syclnn 50 epochs 100.84 102.85 100.65 ms/epoch 2353 samples
+cudann 100 epochs 48.48 48.48 48.48 ms/epoch 10755 samples
+syclnn 50 epochs 101.36 111.88 101.27 ms/epoch 12243 samples
+cudann 100 epochs 48.46 48.49 48.48 ms/epoch 20271 samples
+syclnn 50 epochs 103.56 124.57 103.26 ms/epoch 25495 samples
+cudann 100 epochs 48.47 49.30 48.49 ms/epoch 37226 samples
+syclnn 50 epochs 102.21 144.16 102.00 ms/epoch 52564 samples

@@ -1,0 +1,880 @@
+{
+ "clang-spin": {
+  "processes": [
+   {
+    "round": "1",
+    "epoch_ms": 140.42605701833963,
+    "sampled_ms": 142.24140753171272,
+    "n": 4382,
+    "handler_us": 24.87571040620721,
+    "cpu_wall": 0.9985129244634349,
+    "counts": {
+     "wait for the GPU": 2150,
+     "cuBLAS, host side": 651,
+     "driver: launch, cuBLAS": 400,
+     "driver: copies": 387,
+     "OpenMP runtime": 342,
+     "driver: launch, own kernels": 219,
+     "network library": 33,
+     "driver: occupancy query": 22,
+     "driver: events": 73,
+     "CUDA runtime library": 43,
+     "driver: other": 45,
+     "other": 16,
+     "driver: allocate and fill": 1
+    },
+    "through": {
+     "through cuBLAS": 1137
+    },
+    "ms": {
+     "wait for the GPU": 68.89913797111598,
+     "cuBLAS, host side": 20.862018055440235,
+     "driver: launch, cuBLAS": 12.818444273695995,
+     "driver: copies": 12.401844834800876,
+     "OpenMP runtime": 10.959769854010077,
+     "driver: launch, own kernels": 7.018098239848558,
+     "network library": 1.0575216525799196,
+     "driver: occupancy query": 0.7050144350532798,
+     "driver: events": 2.339366079949519,
+     "CUDA runtime library": 1.3779827594223195,
+     "driver: other": 1.4420749807907995,
+     "other": 0.5127377709478398,
+     "driver: allocate and fill": 0.03204611068423999
+    }
+   },
+   {
+    "round": "2",
+    "epoch_ms": 140.12729754405362,
+    "sampled_ms": 142.202383226582,
+    "n": 4388,
+    "handler_us": 21.3902032816773,
+    "cpu_wall": 0.9999408554356143,
+    "counts": {
+     "wait for the GPU": 2161,
+     "cuBLAS, host side": 668,
+     "OpenMP runtime": 372,
+     "driver: launch, cuBLAS": 382,
+     "driver: copies": 394,
+     "driver: launch, own kernels": 189,
+     "network library": 23,
+     "driver: events": 74,
+     "driver: other": 59,
+     "CUDA runtime library": 21,
+     "other": 30,
+     "driver: occupancy query": 15
+    },
+    "through": {
+     "through cuBLAS": 1137
+    },
+    "ms": {
+     "wait for the GPU": 69.00981996187326,
+     "cuBLAS, host side": 21.332049854017278,
+     "OpenMP runtime": 11.879524769003634,
+     "driver: launch, cuBLAS": 12.198866832686528,
+     "driver: copies": 12.582077309106,
+     "driver: launch, own kernels": 6.035565003606685,
+     "network library": 0.7344867464706548,
+     "driver: events": 2.363131271253411,
+     "driver: other": 1.8841181757290708,
+     "CUDA runtime library": 0.6706183337340761,
+     "other": 0.95802619104868,
+     "driver: occupancy query": 0.47901309552434
+    }
+   },
+   {
+    "round": "3",
+    "epoch_ms": 140.41651407522815,
+    "sampled_ms": 142.4545024654695,
+    "n": 4397,
+    "handler_us": 21.64717193541051,
+    "cpu_wall": 0.9999142045286581,
+    "counts": {
+     "wait for the GPU": 2130,
+     "cuBLAS, host side": 705,
+     "driver: launch, cuBLAS": 370,
+     "OpenMP runtime": 346,
+     "driver: launch, own kernels": 241,
+     "driver: copies": 382,
+     "network library": 28,
+     "driver: occupancy query": 21,
+     "driver: events": 71,
+     "driver: other": 50,
+     "CUDA runtime library": 28,
+     "other": 24,
+     "driver: allocate and fill": 1
+    },
+    "through": {
+     "through cuBLAS": 1155
+    },
+    "ms": {
+     "wait for the GPU": 68.02073572441118,
+     "cuBLAS, host side": 22.51390548624877,
+     "driver: launch, cuBLAS": 11.81580855306673,
+     "OpenMP runtime": 11.049377728002943,
+     "driver: launch, own kernels": 7.69624286834887,
+     "driver: copies": 12.199023965598625,
+     "network library": 0.8941692959077526,
+     "driver: occupancy query": 0.6706269719308144,
+     "driver: events": 2.2673578574803726,
+     "driver: other": 1.5967308855495583,
+     "CUDA runtime library": 0.8941692959077526,
+     "other": 0.7664308250637879,
+     "driver: allocate and fill": 0.03193461771099117
+    }
+   }
+  ],
+  "epoch_ms": 140.41651407522815,
+  "layers_ms": {
+   "wait for the GPU": 68.89913797111598,
+   "cuBLAS, host side": 21.332049854017278,
+   "driver: copies": 12.401844834800876,
+   "driver: launch, cuBLAS": 12.198866832686528,
+   "OpenMP runtime": 11.049377728002943,
+   "driver: launch, own kernels": 7.018098239848558,
+   "driver: events": 2.339366079949519,
+   "driver: other": 1.5967308855495583,
+   "CUDA runtime library": 0.8941692959077526,
+   "network library": 0.8941692959077526,
+   "other": 0.7664308250637879,
+   "driver: occupancy query": 0.6706269719308144,
+   "driver: allocate and fill": 0.03193461771099117
+  },
+  "range_ms": {
+   "wait for the GPU": [
+    68.02073572441118,
+    69.00981996187326
+   ],
+   "cuBLAS, host side": [
+    20.862018055440235,
+    22.51390548624877
+   ],
+   "driver: copies": [
+    12.199023965598625,
+    12.582077309106
+   ],
+   "driver: launch, cuBLAS": [
+    11.81580855306673,
+    12.818444273695995
+   ],
+   "OpenMP runtime": [
+    10.959769854010077,
+    11.879524769003634
+   ],
+   "driver: launch, own kernels": [
+    6.035565003606685,
+    7.69624286834887
+   ],
+   "driver: events": [
+    2.2673578574803726,
+    2.363131271253411
+   ],
+   "driver: other": [
+    1.4420749807907995,
+    1.8841181757290708
+   ],
+   "CUDA runtime library": [
+    0.6706183337340761,
+    1.3779827594223195
+   ],
+   "network library": [
+    0.7344867464706548,
+    1.0575216525799196
+   ],
+   "other": [
+    0.5127377709478398,
+    0.95802619104868
+   ],
+   "driver: occupancy query": [
+    0.47901309552434,
+    0.7050144350532798
+   ],
+   "driver: allocate and fill": [
+    0,
+    0.03204611068423999
+   ]
+  },
+  "samples": 13167,
+  "pooled_ms": {
+   "wait for the GPU": 68.68859779437568,
+   "cuBLAS, host side": 21.58449339168085,
+   "driver: copies": 12.402552279903574,
+   "driver: launch, cuBLAS": 12.28524525060096,
+   "OpenMP runtime": 11.304131914615464,
+   "driver: launch, own kernels": 6.921114728854186,
+   "driver: events": 2.3248120352699733,
+   "driver: other": 1.6422984102365865,
+   "CUDA runtime library": 0.9811133359854932,
+   "network library": 0.89579913285632,
+   "other": 0.7464992773802666,
+   "driver: occupancy query": 0.6185279726865066,
+   "driver: allocate and fill": 0.021328550782293332
+  },
+  "inclusive_ms": {
+   "through oneMath": 0.0,
+   "through cuBLAS": 36.56780031624192,
+   "SYCL graph scheduler": 0.0,
+   "SYCL scheduler bypass": 0.0,
+   "buffer release": 0.0
+  },
+  "overhead_pct": 1.2996287997200096
+ },
+ "cuda-inorder": {
+  "processes": [
+   {
+    "round": "1",
+    "epoch_ms": 48.31489369738847,
+    "sampled_ms": 48.313557086512446,
+    "n": 4254,
+    "handler_us": 19.034453220498357,
+    "cpu_wall": 0.999950381390711,
+    "counts": {
+     "wait for the GPU": 798,
+     "cuBLAS, host side": 1543,
+     "driver: launch, cuBLAS": 895,
+     "driver: launch, own kernels": 611,
+     "network library": 110,
+     "driver: occupancy query": 34,
+     "driver: events": 36,
+     "CUDA runtime library": 143,
+     "driver: other": 82,
+     "driver: copies": 1,
+     "Python": 1
+    },
+    "through": {
+     "through cuBLAS": 2576
+    },
+    "ms": {
+     "wait for the GPU": 9.063301638579219,
+     "cuBLAS, host side": 17.524654672089895,
+     "driver: launch, cuBLAS": 10.16498116106316,
+     "driver: launch, own kernels": 6.9394452395637884,
+     "network library": 1.249327293538489,
+     "driver: occupancy query": 0.38615570891189654,
+     "driver: events": 0.40887075061259637,
+     "CUDA runtime library": 1.6241254816000354,
+     "driver: other": 0.9313167097286917,
+     "driver: copies": 0.0113575208503499,
+     "Python": 0.0113575208503499
+    }
+   },
+   {
+    "round": "2",
+    "epoch_ms": 48.35602876730263,
+    "sampled_ms": 48.36037699133158,
+    "n": 4259,
+    "handler_us": 19.124528058229632,
+    "cpu_wall": 0.9999258909554775,
+    "counts": {
+     "wait for the GPU": 794,
+     "cuBLAS, host side": 1583,
+     "driver: launch, cuBLAS": 927,
+     "driver: launch, own kernels": 603,
+     "network library": 88,
+     "driver: occupancy query": 27,
+     "CUDA runtime library": 131,
+     "driver: other": 79,
+     "driver: events": 24,
+     "driver: copies": 1,
+     "driver: allocate and fill": 1,
+     "Python": 1
+    },
+    "through": {
+     "through cuBLAS": 2626
+    },
+    "ms": {
+     "wait for the GPU": 9.014953472936908,
+     "cuBLAS, host side": 17.97313771745482,
+     "driver: launch, cuBLAS": 10.525014948882259,
+     "driver: launch, own kernels": 6.846368947331178,
+     "network library": 0.9991384201743676,
+     "driver: occupancy query": 0.3065538334625901,
+     "CUDA runtime library": 1.4873537845777518,
+     "driver: other": 0.896953809020171,
+     "driver: events": 0.27249229641119116,
+     "driver: copies": 0.011353845683799631,
+     "driver: allocate and fill": 0.011353845683799631,
+     "Python": 0.011353845683799631
+    }
+   },
+   {
+    "round": "3",
+    "epoch_ms": 48.363440837711096,
+    "sampled_ms": 48.3692797832191,
+    "n": 4260,
+    "handler_us": 18.998550938967135,
+    "cpu_wall": 0.9999175337479288,
+    "counts": {
+     "wait for the GPU": 800,
+     "cuBLAS, host side": 1579,
+     "driver: launch, own kernels": 621,
+     "driver: launch, cuBLAS": 854,
+     "network library": 106,
+     "driver: other": 98,
+     "driver: occupancy query": 38,
+     "CUDA runtime library": 135,
+     "driver: events": 28,
+     "Python": 1
+    },
+    "through": {
+     "through cuBLAS": 2590
+    },
+    "ms": {
+     "wait for the GPU": 9.08233630755138,
+     "cuBLAS, host side": 17.926261287029536,
+     "driver: launch, own kernels": 7.050163558736759,
+     "driver: launch, cuBLAS": 9.695394008311098,
+     "network library": 1.2034095607505577,
+     "driver: other": 1.112586197675044,
+     "driver: occupancy query": 0.43141097460869055,
+     "CUDA runtime library": 1.5326442518992953,
+     "driver: events": 0.3178817707642983,
+     "Python": 0.011352920384439224
+    }
+   }
+  ],
+  "epoch_ms": 48.35602876730263,
+  "layers_ms": {
+   "cuBLAS, host side": 17.926261287029536,
+   "driver: launch, cuBLAS": 10.16498116106316,
+   "wait for the GPU": 9.063301638579219,
+   "driver: launch, own kernels": 6.9394452395637884,
+   "CUDA runtime library": 1.5326442518992953,
+   "network library": 1.2034095607505577,
+   "driver: other": 0.9313167097286917,
+   "driver: occupancy query": 0.38615570891189654,
+   "driver: events": 0.3178817707642983,
+   "driver: copies": 0.011353845683799631,
+   "Python": 0.011353845683799631,
+   "driver: allocate and fill": 0
+  },
+  "range_ms": {
+   "cuBLAS, host side": [
+    17.524654672089895,
+    17.97313771745482
+   ],
+   "driver: launch, cuBLAS": [
+    9.695394008311098,
+    10.525014948882259
+   ],
+   "wait for the GPU": [
+    9.014953472936908,
+    9.08233630755138
+   ],
+   "driver: launch, own kernels": [
+    6.846368947331178,
+    7.050163558736759
+   ],
+   "CUDA runtime library": [
+    1.4873537845777518,
+    1.6241254816000354
+   ],
+   "network library": [
+    0.9991384201743676,
+    1.249327293538489
+   ],
+   "driver: other": [
+    0.896953809020171,
+    1.112586197675044
+   ],
+   "driver: occupancy query": [
+    0.3065538334625901,
+    0.43141097460869055
+   ],
+   "driver: events": [
+    0.27249229641119116,
+    0.40887075061259637
+   ],
+   "driver: copies": [
+    0,
+    0.0113575208503499
+   ],
+   "Python": [
+    0.011352920384439224,
+    0.0113575208503499
+   ],
+   "driver: allocate and fill": [
+    0,
+    0.011353845683799631
+   ]
+  },
+  "samples": 12773,
+  "pooled_ms": {
+   "cuBLAS, host side": 17.812190977073428,
+   "driver: launch, cuBLAS": 10.130801924473642,
+   "wait for the GPU": 9.055634605134886,
+   "driver: launch, own kernels": 6.946943771079647,
+   "CUDA runtime library": 1.5483923718646189,
+   "network library": 1.1508833277428951,
+   "driver: other": 0.980522308833585,
+   "driver: occupancy query": 0.3747942416004823,
+   "driver: events": 0.3331504369782065,
+   "driver: copies": 0.007571600840413784,
+   "Python": 0.011357401260620676,
+   "driver: allocate and fill": 0.003785800420206892
+  },
+  "inclusive_ms": {
+   "through oneMath": 0.0,
+   "through cuBLAS": 29.4989568742521,
+   "SYCL graph scheduler": 0.0,
+   "SYCL scheduler bypass": 0.0,
+   "buffer release": 0.0
+  },
+  "overhead_pct": 0.008992103238814053
+ },
+ "dpcpp": {
+  "processes": [
+   {
+    "round": "1",
+    "epoch_ms": 99.90143017843366,
+    "sampled_ms": 102.43705466389656,
+    "n": 4506,
+    "handler_us": 32.30187838437639,
+    "cpu_wall": 0.9975127073427429,
+    "counts": {
+     "cuBLAS, host side": 1016,
+     "UR adapter": 449,
+     "driver: launch, cuBLAS": 558,
+     "driver: launch, own kernels": 413,
+     "driver: occupancy query": 95,
+     "SYCL runtime": 1087,
+     "network library": 139,
+     "driver: allocate and fill": 240,
+     "driver: other": 96,
+     "driver: events": 284,
+     "oneMath": 116,
+     "wait for the GPU": 13
+    },
+    "through": {
+     "through oneMath": 2710,
+     "through cuBLAS": 1685,
+     "SYCL graph scheduler": 2801,
+     "SYCL scheduler bypass": 804,
+     "buffer release": 160
+    },
+    "ms": {
+     "cuBLAS, host side": 22.52548891728553,
+     "UR adapter": 9.954669806950003,
+     "driver: launch, cuBLAS": 12.37128229906036,
+     "driver: launch, own kernels": 9.156522561849334,
+     "driver: occupancy query": 2.1062218967934303,
+     "SYCL runtime": 24.099612650678512,
+     "network library": 3.081735196360914,
+     "driver: allocate and fill": 5.320981634004456,
+     "driver: other": 2.1283926536017823,
+     "driver: events": 6.296494933571939,
+     "oneMath": 2.5718077897688203,
+     "wait for the GPU": 0.2882198385085747
+    }
+   },
+   {
+    "round": "2",
+    "epoch_ms": 102.37327101640403,
+    "sampled_ms": 104.66853316873312,
+    "n": 4629,
+    "handler_us": 26.688844026787642,
+    "cpu_wall": 0.999925130996911,
+    "counts": {
+     "UR adapter": 479,
+     "cuBLAS, host side": 1092,
+     "driver: launch, cuBLAS": 606,
+     "driver: launch, own kernels": 414,
+     "network library": 148,
+     "driver: occupancy query": 90,
+     "SYCL runtime": 985,
+     "driver: allocate and fill": 255,
+     "oneMath": 140,
+     "driver: events": 310,
+     "driver: other": 92,
+     "wait for the GPU": 15,
+     "driver: copies": 3
+    },
+    "through": {
+     "SYCL scheduler bypass": 826,
+     "through oneMath": 2822,
+     "through cuBLAS": 1778,
+     "SYCL graph scheduler": 2905,
+     "buffer release": 144
+    },
+    "ms": {
+     "UR adapter": 10.593388813319839,
+     "cuBLAS, host side": 24.150272618257336,
+     "driver: launch, cuBLAS": 13.402074365076873,
+     "driver: launch, own kernels": 9.155872586042616,
+     "network library": 3.2731138713389063,
+     "driver: occupancy query": 1.9904070839223078,
+     "SYCL runtime": 21.783899751816367,
+     "driver: allocate and fill": 5.6394867377798725,
+     "oneMath": 3.096188797212479,
+     "driver: events": 6.85584662239906,
+     "driver: other": 2.0346383524539147,
+     "wait for the GPU": 0.3317345139870513,
+     "driver: copies": 0.06634690279741026
+    }
+   },
+   {
+    "round": "3",
+    "epoch_ms": 101.7004144191742,
+    "sampled_ms": 103.9871234446764,
+    "n": 4593,
+    "handler_us": 27.048629653821035,
+    "cpu_wall": 0.9998554873509469,
+    "counts": {
+     "UR adapter": 464,
+     "cuBLAS, host side": 1102,
+     "driver: launch, cuBLAS": 547,
+     "network library": 175,
+     "driver: launch, own kernels": 381,
+     "SYCL runtime": 1006,
+     "driver: occupancy query": 81,
+     "driver: allocate and fill": 247,
+     "driver: other": 117,
+     "oneMath": 159,
+     "driver: events": 297,
+     "wait for the GPU": 15,
+     "driver: copies": 1,
+     "Python": 1
+    },
+    "through": {
+     "SYCL scheduler bypass": 747,
+     "through oneMath": 2786,
+     "through cuBLAS": 1770,
+     "SYCL graph scheduler": 2882,
+     "buffer release": 167
+    },
+    "ms": {
+     "UR adapter": 10.274111101784634,
+     "cuBLAS, host side": 24.401013866738506,
+     "driver: launch, cuBLAS": 12.111937010078007,
+     "network library": 3.8749341439920495,
+     "driver: launch, own kernels": 8.436285193491262,
+     "SYCL runtime": 22.27533570774858,
+     "driver: occupancy query": 1.7935409466477488,
+     "driver: allocate and fill": 5.469192763234493,
+     "driver: other": 2.5906702562689703,
+     "oneMath": 3.5206544508270623,
+     "driver: events": 6.576316804375079,
+     "wait for the GPU": 0.3321372123421757,
+     "driver: copies": 0.022142480822811714,
+     "Python": 0.022142480822811714
+    }
+   }
+  ],
+  "epoch_ms": 101.7004144191742,
+  "layers_ms": {
+   "cuBLAS, host side": 24.150272618257336,
+   "SYCL runtime": 22.27533570774858,
+   "driver: launch, cuBLAS": 12.37128229906036,
+   "UR adapter": 10.274111101784634,
+   "driver: launch, own kernels": 9.155872586042616,
+   "driver: events": 6.576316804375079,
+   "driver: allocate and fill": 5.469192763234493,
+   "network library": 3.2731138713389063,
+   "oneMath": 3.096188797212479,
+   "driver: other": 2.1283926536017823,
+   "driver: occupancy query": 1.9904070839223078,
+   "wait for the GPU": 0.3317345139870513,
+   "driver: copies": 0.022142480822811714,
+   "Python": 0
+  },
+  "range_ms": {
+   "cuBLAS, host side": [
+    22.52548891728553,
+    24.401013866738506
+   ],
+   "SYCL runtime": [
+    21.783899751816367,
+    24.099612650678512
+   ],
+   "driver: launch, cuBLAS": [
+    12.111937010078007,
+    13.402074365076873
+   ],
+   "UR adapter": [
+    9.954669806950003,
+    10.593388813319839
+   ],
+   "driver: launch, own kernels": [
+    8.436285193491262,
+    9.156522561849334
+   ],
+   "driver: events": [
+    6.296494933571939,
+    6.85584662239906
+   ],
+   "driver: allocate and fill": [
+    5.320981634004456,
+    5.6394867377798725
+   ],
+   "network library": [
+    3.081735196360914,
+    3.8749341439920495
+   ],
+   "oneMath": [
+    2.5718077897688203,
+    3.5206544508270623
+   ],
+   "driver: other": [
+    2.0346383524539147,
+    2.5906702562689703
+   ],
+   "driver: occupancy query": [
+    1.7935409466477488,
+    2.1062218967934303
+   ],
+   "wait for the GPU": [
+    0.2882198385085747,
+    0.3321372123421757
+   ],
+   "driver: copies": [
+    0,
+    0.06634690279741026
+   ],
+   "Python": [
+    0,
+    0.022142480822811714
+   ]
+  },
+  "samples": 13728,
+  "pooled_ms": {
+   "cuBLAS, host side": 23.78047277721075,
+   "SYCL runtime": 22.802584177026382,
+   "driver: launch, cuBLAS": 12.675510567541306,
+   "UR adapter": 10.312279783762419,
+   "driver: launch, own kernels": 8.949162341081179,
+   "driver: events": 6.600748051244479,
+   "driver: allocate and fill": 5.496919252551519,
+   "network library": 3.4226101006452856,
+   "oneMath": 3.074422493003882,
+   "driver: other": 2.2595153261835756,
+   "driver: occupancy query": 1.970593694310922,
+   "wait for the GPU": 0.3185546197570287,
+   "driver: copies": 0.029632987884374764,
+   "Python": 0.007408246971093691
+  },
+  "inclusive_ms": {
+   "through oneMath": 61.62179830555733,
+   "through cuBLAS": 38.76735639973329,
+   "SYCL graph scheduler": 63.622024987752624,
+   "SYCL scheduler bypass": 17.609403050289703,
+   "buffer release": 3.4892843233851285
+  },
+  "overhead_pct": 2.248475621817203
+ },
+ "nvcpp": {
+  "processes": [
+   {
+    "round": "1",
+    "epoch_ms": 148.57242120695966,
+    "sampled_ms": 151.3517648247736,
+    "n": 4707,
+    "handler_us": 21.23603760356915,
+    "cpu_wall": 0.9998992223998948,
+    "counts": {
+     "wait for the GPU": 1485,
+     "driver: copies": 1234,
+     "cuBLAS, host side": 711,
+     "driver: launch, cuBLAS": 387,
+     "OpenMP runtime": 469,
+     "driver: launch, own kernels": 227,
+     "network library": 31,
+     "driver: events": 26,
+     "driver: allocate and fill": 17,
+     "driver: other": 69,
+     "driver: occupancy query": 26,
+     "CUDA runtime library": 25
+    },
+    "through": {
+     "through cuBLAS": 1189
+    },
+    "ms": {
+     "wait for the GPU": 46.87275238842896,
+     "driver: copies": 38.950152489778674,
+     "cuBLAS, host side": 22.44210568900538,
+     "driver: launch, cuBLAS": 12.21532334971179,
+     "OpenMP runtime": 14.803583077557697,
+     "driver: launch, own kernels": 7.165060466110015,
+     "network library": 0.9784884336978434,
+     "driver: events": 0.8206677185852881,
+     "driver: allocate and fill": 0.5365904313826884,
+     "driver: other": 2.1779258685532645,
+     "driver: occupancy query": 0.8206677185852881,
+     "CUDA runtime library": 0.789103575562777
+    }
+   },
+   {
+    "round": "2",
+    "epoch_ms": 152.4245028250984,
+    "sampled_ms": 155.54960896926266,
+    "n": 4860,
+    "handler_us": 21.527296296296296,
+    "cpu_wall": 0.9999210153822504,
+    "counts": {
+     "wait for the GPU": 1570,
+     "driver: copies": 1204,
+     "cuBLAS, host side": 755,
+     "driver: launch, cuBLAS": 418,
+     "driver: launch, own kernels": 251,
+     "OpenMP runtime": 461,
+     "network library": 37,
+     "driver: allocate and fill": 15,
+     "driver: other": 86,
+     "CUDA runtime library": 23,
+     "driver: occupancy query": 22,
+     "driver: events": 18
+    },
+    "through": {
+     "through cuBLAS": 1269
+    },
+    "ms": {
+     "wait for the GPU": 49.24001428712026,
+     "driver: copies": 37.761131975600506,
+     "cuBLAS, host side": 23.67911515081261,
+     "driver: launch, cuBLAS": 13.109761765615458,
+     "driver: launch, own kernels": 7.872129672654259,
+     "OpenMP runtime": 14.458373621886906,
+     "network library": 1.1604334577219424,
+     "driver: allocate and fill": 0.47044599637376044,
+     "driver: other": 2.6972237125428933,
+     "CUDA runtime library": 0.7213505277730994,
+     "driver: occupancy query": 0.689987461348182,
+     "driver: events": 0.5645351956485125
+    }
+   },
+   {
+    "round": "3",
+    "epoch_ms": 152.398205442088,
+    "sampled_ms": 155.5607988632151,
+    "n": 4862,
+    "handler_us": 20.854917523652816,
+    "cpu_wall": 0.9998979344931206,
+    "counts": {
+     "wait for the GPU": 1577,
+     "driver: copies": 1160,
+     "cuBLAS, host side": 770,
+     "driver: launch, cuBLAS": 455,
+     "driver: launch, own kernels": 244,
+     "OpenMP runtime": 467,
+     "driver: events": 24,
+     "network library": 29,
+     "driver: occupancy query": 25,
+     "driver: other": 64,
+     "driver: allocate and fill": 20,
+     "CUDA runtime library": 26,
+     "Python": 1
+    },
+    "through": {
+     "through cuBLAS": 1305
+    },
+    "ms": {
+     "wait for the GPU": 49.430680786131795,
+     "driver: copies": 36.35991738231635,
+     "cuBLAS, host side": 24.135462400330677,
+     "driver: launch, cuBLAS": 14.261864145649946,
+     "driver: launch, own kernels": 7.64812055283206,
+     "OpenMP runtime": 14.638001222018737,
+     "driver: events": 0.7522741527375796,
+     "network library": 0.9089979345579088,
+     "driver: occupancy query": 0.7836189091016454,
+     "driver: other": 2.006064407300212,
+     "driver: allocate and fill": 0.6268951272813164,
+     "CUDA runtime library": 0.8149636654657112,
+     "Python": 0.031344756364065814
+    }
+   }
+  ],
+  "epoch_ms": 152.398205442088,
+  "layers_ms": {
+   "wait for the GPU": 49.24001428712026,
+   "driver: copies": 37.761131975600506,
+   "cuBLAS, host side": 23.67911515081261,
+   "OpenMP runtime": 14.638001222018737,
+   "driver: launch, cuBLAS": 13.109761765615458,
+   "driver: launch, own kernels": 7.64812055283206,
+   "driver: other": 2.1779258685532645,
+   "network library": 0.9784884336978434,
+   "CUDA runtime library": 0.789103575562777,
+   "driver: occupancy query": 0.7836189091016454,
+   "driver: events": 0.7522741527375796,
+   "driver: allocate and fill": 0.5365904313826884,
+   "Python": 0
+  },
+  "range_ms": {
+   "wait for the GPU": [
+    46.87275238842896,
+    49.430680786131795
+   ],
+   "driver: copies": [
+    36.35991738231635,
+    38.950152489778674
+   ],
+   "cuBLAS, host side": [
+    22.44210568900538,
+    24.135462400330677
+   ],
+   "OpenMP runtime": [
+    14.458373621886906,
+    14.803583077557697
+   ],
+   "driver: launch, cuBLAS": [
+    12.21532334971179,
+    14.261864145649946
+   ],
+   "driver: launch, own kernels": [
+    7.165060466110015,
+    7.872129672654259
+   ],
+   "driver: other": [
+    2.006064407300212,
+    2.6972237125428933
+   ],
+   "network library": [
+    0.9089979345579088,
+    1.1604334577219424
+   ],
+   "CUDA runtime library": [
+    0.7213505277730994,
+    0.8149636654657112
+   ],
+   "driver: occupancy query": [
+    0.689987461348182,
+    0.8206677185852881
+   ],
+   "driver: events": [
+    0.5645351956485125,
+    0.8206677185852881
+   ],
+   "driver: allocate and fill": [
+    0.47044599637376044,
+    0.6268951272813164
+   ],
+   "Python": [
+    0,
+    0.031344756364065814
+   ]
+  },
+  "samples": 14429,
+  "pooled_ms": {
+   "wait for the GPU": 48.92289747090939,
+   "driver: copies": 38.00185343271416,
+   "cuBLAS, host side": 23.616493684143656,
+   "OpenMP runtime": 14.75502758351909,
+   "driver: launch, cuBLAS": 13.308042058148928,
+   "driver: launch, own kernels": 7.625719338082163,
+   "driver: other": 2.3130644529639803,
+   "network library": 1.0245079997146398,
+   "CUDA runtime library": 0.7815834224627147,
+   "driver: occupancy query": 0.7710214843213267,
+   "driver: events": 0.7182117936143866,
+   "driver: allocate and fill": 0.5492207833521779,
+   "Python": 0.010561938141388038
+  },
+  "inclusive_ms": {
+   "through oneMath": 0.0,
+   "through cuBLAS": 39.74457322604319,
+   "SYCL graph scheduler": 0.0,
+   "SYCL scheduler bypass": 0.0,
+   "buffer release": 0.0
+  },
+  "overhead_pct": 2.0678744333195054
+ }
+}

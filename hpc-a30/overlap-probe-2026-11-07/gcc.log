@@ -1,0 +1,9 @@
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1191.75 ms         50346 samples/s      121.2 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1132.43 ms         52983 samples/s      127.6 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1160.86 ms         51686 samples/s      124.4 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1191.52 ms         50356 samples/s      121.2 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1193.58 ms         50269 samples/s      121.0 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1158.74 ms         51780 samples/s      124.7 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1191.90 ms         50340 samples/s      121.2 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1192.10 ms         50331 samples/s      121.2 GFLOP/s(gemm)  check=ok
+ompnn   NVIDIA A30                       mnist-512-256  b=256   float  train epoch    1162.22 ms         51625 samples/s      124.3 GFLOP/s(gemm)  check=ok

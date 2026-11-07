@@ -1,0 +1,2 @@
+clocks.current.graphics [MHz], clocks.current.memory [MHz], pstate
+210 MHz, 1215 MHz, P0

@@ -23,3 +23,5 @@ hpc-a30/sanitizer-2026-11-03/
 # scratch output of the analysis-code checks
 analysis/figures/engineer-check-*/
 analysis/headline-*-engineer-check.md
+# Raw wallprof samples: the symbolised .stacks.json next to them are the record
+*.dump

@@ -1,0 +1,1 @@
+{"backend": "cudann", "workload": "mnist-512-256", "samples": 60000, "batch": 256, "epochs": 200, "options": {"queue": "in_order"}, "period_us": 2000, "delay_ms": 1000, "n_samples": 4259, "before_s": 9.670926719903946, "sampled_s": 9.672075398266315, "after_s": 9.671484787017107, "sampled_thread_cpu_s": 9.67135861}
