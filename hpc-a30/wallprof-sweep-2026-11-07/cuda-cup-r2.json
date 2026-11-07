@@ -1,0 +1,1 @@
+{"backend": "cudann", "workload": "cup", "samples": 1000, "batch": 40, "epochs": 1200, "options": {"queue": "in_order"}, "period_us": 2000, "delay_ms": 1000, "n_samples": 1428, "handler_s": 0.028164463, "before_s": 3.8768402878195047, "sampled_s": 3.9281400963664055, "after_s": 3.874179108068347, "sampled_thread_cpu_s": 3.9276589910000004}

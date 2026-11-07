@@ -1,0 +1,1 @@
+{"backend": "cudann", "workload": "sweep-w256-d4-b256", "samples": 65536, "batch": 256, "epochs": 100, "options": {"queue": "in_order"}, "period_us": 2000, "delay_ms": 1000, "n_samples": 3164, "handler_s": 0.061228078, "before_s": 7.337439047172666, "sampled_s": 7.453613696619868, "after_s": 7.328565182164311, "sampled_thread_cpu_s": 7.452507297999999}

@@ -1,0 +1,1 @@
+{"backend": "syclnn", "workload": "sweep-w1024-d4-b256", "samples": 65536, "batch": 256, "epochs": 25, "options": {}, "period_us": 2000, "delay_ms": 1000, "n_samples": 2870, "handler_s": 0.08678421, "before_s": 6.895052053034306, "sampled_s": 6.8907923344522715, "after_s": 6.907096507027745, "sampled_thread_cpu_s": 6.890059022000001}

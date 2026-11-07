@@ -1,0 +1,28 @@
+{
+ "default-a": {
+  "loss_double": 0.03886368915584759,
+  "accuracy": 0.9567333333333333,
+  "rms_vs_default": 0.0
+ },
+ "default-b": {
+  "loss_double": 0.03886368915584759,
+  "accuracy": 0.9567333333333333,
+  "rms_vs_default": 0.0
+ },
+ "bias": {
+  "loss_double": 0.038043637842102664,
+  "accuracy": 0.95785,
+  "rms_vs_default": 0.004235860972024044
+ },
+ "tuned": {
+  "loss_double": 0.038043637842102664,
+  "accuracy": 0.95785,
+  "rms_vs_default": 0.004235860972024044
+ },
+ "cuda": {
+  "loss_double": 0.03799830546620046,
+  "accuracy": 0.9577166666666667,
+  "rms_vs_default": 0.004611442044062798
+ },
+ "tuned_equals_bias": true
+}

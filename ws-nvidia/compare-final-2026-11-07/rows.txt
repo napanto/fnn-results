@@ -1,0 +1,5 @@
+default-a {"backend": "syclnn", "options": {}, "loss_double": 0.03886368915584759, "accuracy": 0.9567333333333333}
+default-b {"backend": "syclnn", "options": {}, "loss_double": 0.03886368915584759, "accuracy": 0.9567333333333333}
+bias {"backend": "syclnn", "options": {"bias_gemv": false}, "loss_double": 0.038043637842102664, "accuracy": 0.95785}
+tuned {"backend": "syclnn", "options": {"loss_reduction": false, "bias_gemv": false, "workgroup_size": 256}, "loss_double": 0.038043637842102664, "accuracy"
+cuda {"backend": "cudann", "options": {"queue": "in_order"}, "loss_double": 0.03799830546620046, "accuracy": 0.9577166666666667}

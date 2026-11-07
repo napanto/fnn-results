@@ -1,0 +1,1 @@
+{"backend": "syclnn", "workload": "mnist-512-256", "samples": 60000, "batch": 256, "epochs": 40, "options": {}, "period_us": 2000, "delay_ms": 1000, "n_samples": 2067, "handler_s": 0.058675093, "before_s": 5.20868275500834, "sampled_s": 5.275801156996749, "after_s": 5.237623136956245, "sampled_thread_cpu_s": 5.190897625000002}
