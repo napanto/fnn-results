@@ -1,0 +1,20 @@
+{
+ "inorder": {
+  "capture_ms": 136.801208,
+  "compute_ms": 106.706097,
+  "samples": 9548,
+  "gr_active_pct": 97.33368244658567,
+  "sms_active_pct": 59.21082949308756,
+  "sm_issue_pct": 27.025345622119815,
+  "compute_warps_per_cycle": 17.91275659824047
+ },
+ "ooo-s4": {
+  "capture_ms": 133.799615,
+  "compute_ms": 108.467945,
+  "samples": 9171,
+  "gr_active_pct": 94.45120488496347,
+  "sms_active_pct": 58.62261476392978,
+  "sm_issue_pct": 28.10009813542689,
+  "compute_warps_per_cycle": 22.077090829789555
+ }
+}

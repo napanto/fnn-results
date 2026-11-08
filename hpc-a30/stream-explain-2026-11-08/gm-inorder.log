@@ -1,0 +1,8 @@
+GPU 0: General Metrics for NVIDIA GA100
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-8774.qdstrm'
+[1/1] [0%                          ] gm-inorder.nsys-repProcessing events...
+[1/1] [0%                          ] gm-inorder.nsys-rep[1/1] [====26%                     ] gm-inorder.nsys-rep[1/1] [=========44%                ] gm-inorder.nsys-rep[1/1] [==========49%               ] gm-inorder.nsys-rep[1/1] [============55%             ] gm-inorder.nsys-rep[1/1] [========================100%] gm-inorder.nsys-rep[1/1] [========================100%] gm-inorder.nsys-rep
+Generated:
+	/home/a.napolitano11/fnn/fnn-bench/results/hpc-a30/stream-explain-2026-11-08/gm-inorder.nsys-rep

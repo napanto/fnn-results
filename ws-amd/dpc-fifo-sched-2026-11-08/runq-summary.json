@@ -1,0 +1,281 @@
+{
+ "def12-r1": {
+  "main": {
+   "delay_ms": 153.795,
+   "delays_ge_1ms": 0,
+   "migrations": 32,
+   "runnable_switches": {
+    "normal": 7,
+    "rt": 41,
+    "same": 151
+   },
+   "wakeups": 70961
+  },
+  "other": {
+   "delay_ms": 608.741,
+   "delays_ge_1ms": 51,
+   "migrations": 88,
+   "runnable_switches": {
+    "normal": 1047,
+    "rt": 3367,
+    "same": 5022
+   },
+   "wakeups": 48736
+  }
+ },
+ "def12-r2": {
+  "main": {
+   "delay_ms": 176.267,
+   "delays_ge_1ms": 1,
+   "migrations": 133,
+   "runnable_switches": {
+    "normal": 230,
+    "rt": 347
+   },
+   "wakeups": 69625
+  },
+  "other": {
+   "delay_ms": 540.194,
+   "delays_ge_1ms": 49,
+   "migrations": 118,
+   "runnable_switches": {
+    "normal": 1146,
+    "rt": 4023,
+    "same": 5765
+   },
+   "wakeups": 52474
+  }
+ },
+ "def12-r3": {
+  "main": {
+   "delay_ms": 173.454,
+   "delays_ge_1ms": 0,
+   "migrations": 118,
+   "runnable_switches": {
+    "normal": 197,
+    "rt": 515
+   },
+   "wakeups": 70248
+  },
+  "other": {
+   "delay_ms": 424.783,
+   "delays_ge_1ms": 28,
+   "migrations": 95,
+   "runnable_switches": {
+    "normal": 1031,
+    "rt": 3174,
+    "same": 2970
+   },
+   "wakeups": 48897
+  }
+ },
+ "def16-r1": {
+  "main": {
+   "delay_ms": 273.949,
+   "delays_ge_1ms": 0,
+   "migrations": 80,
+   "runnable_switches": {
+    "normal": 97,
+    "rt": 293
+   },
+   "wakeups": 69031
+  },
+  "other": {
+   "delay_ms": 523.095,
+   "delays_ge_1ms": 31,
+   "migrations": 155,
+   "runnable_switches": {
+    "normal": 2034,
+    "rt": 5227,
+    "same": 2
+   },
+   "wakeups": 54973
+  }
+ },
+ "def16-r2": {
+  "main": {
+   "delay_ms": 312.571,
+   "delays_ge_1ms": 1,
+   "migrations": 60,
+   "runnable_switches": {
+    "normal": 56,
+    "rt": 567
+   },
+   "wakeups": 67075
+  },
+  "other": {
+   "delay_ms": 415.517,
+   "delays_ge_1ms": 26,
+   "migrations": 99,
+   "runnable_switches": {
+    "normal": 1777,
+    "rt": 3250,
+    "same": 2
+   },
+   "wakeups": 38925
+  }
+ },
+ "def16-r3": {
+  "main": {
+   "delay_ms": 208.445,
+   "delays_ge_1ms": 0,
+   "migrations": 31,
+   "runnable_switches": {
+    "normal": 14,
+    "rt": 130,
+    "same": 39
+   },
+   "wakeups": 67420
+  },
+  "other": {
+   "delay_ms": 406.149,
+   "delays_ge_1ms": 30,
+   "migrations": 99,
+   "runnable_switches": {
+    "normal": 1763,
+    "rt": 3806,
+    "same": 6624
+   },
+   "wakeups": 43830
+  }
+ },
+ "fifo12-r1": {
+  "main": {
+   "delay_ms": 210.38,
+   "delays_ge_1ms": 1,
+   "migrations": 728,
+   "runnable_switches": {
+    "rt": 560,
+    "same": 1
+   },
+   "wakeups": 60235
+  },
+  "other": {
+   "delay_ms": 408.34,
+   "delays_ge_1ms": 20,
+   "migrations": 104,
+   "runnable_switches": {
+    "normal": 11106,
+    "rt": 392,
+    "same": 6
+   },
+   "wakeups": 64927
+  }
+ },
+ "fifo12-r2": {
+  "main": {
+   "delay_ms": 209.952,
+   "delays_ge_1ms": 0,
+   "migrations": 453,
+   "runnable_switches": {
+    "normal": 975,
+    "rt": 252,
+    "same": 1
+   },
+   "wakeups": 63998
+  },
+  "other": {
+   "delay_ms": 376.776,
+   "delays_ge_1ms": 19,
+   "migrations": 167,
+   "runnable_switches": {
+    "normal": 8617,
+    "rt": 384,
+    "same": 6
+   },
+   "wakeups": 57347
+  }
+ },
+ "fifo12-r3": {
+  "main": {
+   "delay_ms": 291.652,
+   "delays_ge_1ms": 1,
+   "migrations": 406,
+   "runnable_switches": {
+    "normal": 970,
+    "rt": 187
+   },
+   "wakeups": 64741
+  },
+  "other": {
+   "delay_ms": 366.972,
+   "delays_ge_1ms": 18,
+   "migrations": 106,
+   "runnable_switches": {
+    "normal": 10261,
+    "rt": 290,
+    "same": 9
+   },
+   "wakeups": 58320
+  }
+ },
+ "fifo16-r1": {
+  "main": {
+   "delay_ms": 316.761,
+   "delays_ge_1ms": 1,
+   "migrations": 720,
+   "runnable_switches": {
+    "normal": 782,
+    "rt": 437
+   },
+   "wakeups": 70472
+  },
+  "other": {
+   "delay_ms": 449.768,
+   "delays_ge_1ms": 22,
+   "migrations": 147,
+   "runnable_switches": {
+    "normal": 14542,
+    "rt": 1124,
+    "same": 4
+   },
+   "wakeups": 57505
+  }
+ },
+ "fifo16-r2": {
+  "main": {
+   "delay_ms": 282.866,
+   "delays_ge_1ms": 1,
+   "migrations": 736,
+   "runnable_switches": {
+    "rt": 524
+   },
+   "wakeups": 68010
+  },
+  "other": {
+   "delay_ms": 433.42,
+   "delays_ge_1ms": 20,
+   "migrations": 160,
+   "runnable_switches": {
+    "normal": 13218,
+    "rt": 546,
+    "same": 9
+   },
+   "wakeups": 57754
+  }
+ },
+ "fifo16-r3": {
+  "main": {
+   "delay_ms": 344.582,
+   "delays_ge_1ms": 1,
+   "migrations": 950,
+   "runnable_switches": {
+    "normal": 4519,
+    "rt": 654,
+    "same": 1
+   },
+   "wakeups": 74090
+  },
+  "other": {
+   "delay_ms": 400.807,
+   "delays_ge_1ms": 19,
+   "migrations": 100,
+   "runnable_switches": {
+    "normal": 12096,
+    "rt": 725,
+    "same": 5
+   },
+   "wakeups": 52578
+  }
+ }
+}

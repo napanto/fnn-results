@@ -1,0 +1,9 @@
+W20261108 13:13:57.708591 140099587482112 simple_timer.cpp:55] [rocprofv3] tool initialization ::     0.002468 sec
+W20261108 13:13:57.709242 140099587482112 simple_timer.cpp:55] [rocprofv3] 'python -m fnnbench.cli run --backend cudann --device gpu --dtype float --workload mnist-512-256 --batch 256 --epochs 3 --repeat 3 --warmup 1 --seed 1 --samples 60000 --out results/ws-amd/radeon-modes-2026-11-08/trace/round-1' ::     0.000000 sec
+W20261108 13:13:58.507788 140099587482112 tool.cpp:2422] HSA version 8.20.4 initialized (instance=0)
+cudann  AMD Radeon RX 7900 XTX           mnist-512-256  b=256   float  train epoch     137.01 ms        437913 samples/s     1054.2 GFLOP/s(gemm)  check=ok
+W20261108 13:14:02.250188 140099587482112 simple_timer.cpp:55] [rocprofv3] 'python -m fnnbench.cli run --backend cudann --device gpu --dtype float --workload mnist-512-256 --batch 256 --epochs 3 --repeat 3 --warmup 1 --seed 1 --samples 60000 --out results/ws-amd/radeon-modes-2026-11-08/trace/round-1' ::     4.540947 sec
+E20261108 13:14:02.273444 140099587482112 output_stream.cpp:111] Opened result file: /var/home/antonio/Documents/unipi/magistrale/ac/fnn-bench/../.logs/results-private/radeon-modes-2026-11-08/round-1/run_kernel_trace.csv
+E20261108 13:14:02.493839 140099587482112 output_stream.cpp:111] Opened result file: /var/home/antonio/Documents/unipi/magistrale/ac/fnn-bench/../.logs/results-private/radeon-modes-2026-11-08/round-1/run_agent_info.csv
+W20261108 13:14:02.496044 140099587482112 simple_timer.cpp:55] [rocprofv3] output generation ::     0.237229 sec
+W20261108 13:14:02.497322 140099587482112 simple_timer.cpp:55] [rocprofv3] tool finalization ::     0.238606 sec
