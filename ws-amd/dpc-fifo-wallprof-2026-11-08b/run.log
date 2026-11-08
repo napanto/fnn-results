@@ -1,0 +1,31 @@
+syclnn 300 epochs 11.73 11.77 11.84 ms/epoch 1556 samples
+default-r1.dump 1556 samples handler 27.7 us 650 stacks
+syclnn 300 epochs 13.96 14.15 14.63 ms/epoch 1883 samples
+fifo98-r1.dump 1883 samples handler 22.2 us 118 stacks
+syclnn 300 epochs 14.65 14.51 15.15 ms/epoch 1930 samples
+rr98-r1.dump 1930 samples handler 25.0 us 267 stacks
+syclnn 300 epochs 15.37 15.07 14.75 ms/epoch 2006 samples
+fifo98-bt0-r1.dump 2006 samples handler 27.5 us 322 stacks
+syclnn 300 epochs 12.15 12.00 12.16 ms/epoch 1588 samples
+default-bt0-r1.dump 1588 samples handler 27.9 us 679 stacks
+syclnn 300 epochs 12.04 11.91 11.91 ms/epoch 1576 samples
+default-bt0-r2.dump 1576 samples handler 27.8 us 663 stacks
+syclnn 300 epochs 14.48 15.16 14.87 ms/epoch 2010 samples
+fifo98-bt0-r2.dump 2010 samples handler 27.2 us 184 stacks
+syclnn 300 epochs 14.70 15.38 14.89 ms/epoch 2046 samples
+rr98-r2.dump 2046 samples handler 28.4 us 298 stacks
+syclnn 300 epochs 14.59 15.18 14.76 ms/epoch 2022 samples
+fifo98-r2.dump 2022 samples handler 26.6 us 283 stacks
+syclnn 300 epochs 12.76 12.64 13.14 ms/epoch 1678 samples
+default-r2.dump 1678 samples handler 28.3 us 671 stacks
+syclnn 300 epochs 12.72 12.93 12.48 ms/epoch 1715 samples
+default-r3.dump 1715 samples handler 32.2 us 760 stacks
+syclnn 300 epochs 14.67 14.78 14.31 ms/epoch 1964 samples
+fifo98-r3.dump 1964 samples handler 26.7 us 232 stacks
+syclnn 300 epochs 13.51 13.58 13.60 ms/epoch 673 samples
+rr98-r3.dump 673 samples handler 28.2 us 328 stacks
+syclnn 300 epochs 15.29 15.66 14.65 ms/epoch 2077 samples
+fifo98-bt0-r3.dump 2077 samples handler 29.0 us 187 stacks
+syclnn 300 epochs 12.06 12.03 12.00 ms/epoch 1595 samples
+default-bt0-r3.dump 1595 samples handler 27.5 us 629 stacks
+==== [02:24:46] done

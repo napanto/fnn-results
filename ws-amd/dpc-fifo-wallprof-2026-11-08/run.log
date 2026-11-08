@@ -1,0 +1,13 @@
+syclnn 300 epochs 12.28 11.94 11.79 ms/epoch 1571 samples
+default-r1.dump 1571 samples handler 40.9 us 692 stacks
+syclnn 300 epochs 13.70 14.00 13.72 ms/epoch 1859 samples
+fifo98-r1.dump 1859 samples handler 21.9 us 105 stacks
+syclnn 300 epochs 13.68 13.80 13.71 ms/epoch 1832 samples
+fifo98-r2.dump 1832 samples handler 21.7 us 119 stacks
+syclnn 300 epochs 11.90 12.10 12.95 ms/epoch 1605 samples
+default-r2.dump 1605 samples handler 28.2 us 678 stacks
+syclnn 300 epochs 12.17 12.00 11.92 ms/epoch 1588 samples
+default-r3.dump 1588 samples handler 31.4 us 676 stacks
+syclnn 300 epochs 13.72 13.87 13.77 ms/epoch 1842 samples
+fifo98-r3.dump 1842 samples handler 22.1 us 112 stacks
+==== [02:15:26] done

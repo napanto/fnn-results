@@ -1,0 +1,97 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 50K of event 'cycles:u'
+# Event count (approx.): 54790910711
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    34.20%   18740140882  libcuda.so.580.196.07                            
+    16.04%    8787519647  libsycl.so.9.0.0-0                               
+    12.08%    6617464253  libc.so.6                                        
+     8.64%    4733652766  libz.so.1.3                                      
+     6.23%    3416189031  libur_adapter_cuda.so.0.12.0                     
+     3.80%    2081370826  libscipy_openblas64_-61654e39.so                 
+     3.07%    1679946299  libcublasLt.so.12.9.2.10                         
+     2.80%    1535540007  libcublas.so.12.9.2.10                           
+     2.78%    1525677148  _syclnn.cpython-312-x86_64-linux-gnu.so          
+     2.27%    1241877985  libonemath_blas_cublas.so.0                      
+     1.62%     885753107  libur_loader.so.0.12.0                           
+     1.41%     771656354  python3.12                                       
+     1.32%     725444292  libstdc++.so.6.0.33                              
+     0.94%     517645874  ld-linux-x86-64.so.2                             
+     0.88%     482889653  _multiarray_umath.cpython-312-x86_64-linux-gnu.so
+     0.72%     397067694  libumf.so.1.1.0                                  
+
+
+# Samples: 49K of event 'instructions:u'
+# Event count (approx.): 20767342708
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    32.66%    6781906343  libz.so.1.3                                      
+    24.10%    5005547030  libcuda.so.580.196.07                            
+    10.84%    2252092035  libc.so.6                                        
+     9.52%    1976204217  libsycl.so.9.0.0-0                               
+     5.02%    1041774578  libscipy_openblas64_-61654e39.so                 
+     4.48%     930315902  libur_adapter_cuda.so.0.12.0                     
+     2.65%     550994034  python3.12                                       
+     2.10%     436556954  libcublasLt.so.12.9.2.10                         
+     1.72%     357153834  _multiarray_umath.cpython-312-x86_64-linux-gnu.so
+     1.47%     305467891  ld-linux-x86-64.so.2                             
+     1.24%     256836307  libcublas.so.12.9.2.10                           
+     1.20%     249527723  _syclnn.cpython-312-x86_64-linux-gnu.so          
+     0.78%     161763292  libcrypto.so.3                                   
+     0.61%     126578978  libonemath_blas_cublas.so.0                      
+
+
+# Samples: 47K of event 'L1-icache-load-misses'
+# Event count (approx.): 944516424
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    37.76%     356652808  libcuda.so.580.196.07                            
+    24.78%     234060457  libsycl.so.9.0.0-0                               
+    13.02%     123015069  libc.so.6                                        
+     5.03%      47468838  libur_adapter_cuda.so.0.12.0                     
+     4.00%      37822415  libcublasLt.so.12.9.2.10                         
+     3.32%      31356741  _syclnn.cpython-312-x86_64-linux-gnu.so          
+     3.14%      29668914  libcublas.so.12.9.2.10                           
+     2.41%      22723659  libonemath_blas_cublas.so.0                      
+     1.65%      15571725  libur_loader.so.0.12.0                           
+     1.21%      11466262  libstdc++.so.6.0.33                              
+     1.20%      11299831  python3.12                                       
+     0.89%       8417469  ld-linux-x86-64.so.2                             
+     0.79%       7471452  libumf.so.1.1.0                                  
+
+
+# Samples: 44K of event 'iTLB-load-misses'
+# Event count (approx.): 121408302
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    28.87%      35056215  libcuda.so.580.196.07                            
+    24.05%      29198319  libsycl.so.9.0.0-0                               
+     9.99%      12126688  libc.so.6                                        
+     6.03%       7320680  libcublas.so.12.9.2.10                           
+     5.87%       7121825  libur_adapter_cuda.so.0.12.0                     
+     4.94%       5995708  libonemath_blas_cublas.so.0                      
+     4.73%       5738141  libcublasLt.so.12.9.2.10                         
+     4.67%       5673127  _syclnn.cpython-312-x86_64-linux-gnu.so          
+     3.78%       4590057  libur_loader.so.0.12.0                           
+     2.99%       3632269  libstdc++.so.6.0.33                              
+     1.27%       1545626  libumf.so.1.1.0                                  
+     1.17%       1422441  ld-linux-x86-64.so.2                             
+     0.77%        929365  libonemath.so.0                                  
+     0.62%        756234  python3.12                                       
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

@@ -1,0 +1,1 @@
+{"backend": "syclnn", "device": "cpu", "workload": "cup", "samples": 1000, "batch": 40, "epochs": 300, "options": {}, "period_us": 2000, "delay_ms": 300, "n_samples": 2046, "handler_s": 0.058195037, "before_s": 4.409968620995642, "sampled_s": 4.61250503800693, "after_s": 4.467930410988629, "sampled_thread_cpu_s": 3.569283276}

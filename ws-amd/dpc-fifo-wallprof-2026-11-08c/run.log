@@ -1,0 +1,17 @@
+syclnn 300 epochs 12.35 12.26 12.17 ms/epoch 1625 samples
+default-cus12-r1.dump 1625 samples handler 29.0 us 671 stacks
+syclnn 300 epochs 12.33 12.29 12.32 ms/epoch 9 samples
+fifo98-cus12-r1.dump 9 samples handler 58.8 us 9 stacks
+syclnn 300 epochs 13.28 13.51 13.27 ms/epoch 1762 samples
+fifo98-cus12-r2.dump 1762 samples handler 26.2 us 114 stacks
+syclnn 300 epochs 10.75 10.73 10.63 ms/epoch 1412 samples
+default-cus12-r2.dump 1412 samples handler 22.8 us 572 stacks
+syclnn 300 epochs 12.73 12.17 12.15 ms/epoch 1615 samples
+default-cus12-r3.dump 1615 samples handler 27.4 us 670 stacks
+syclnn 300 epochs 12.32 13.85 13.52 ms/epoch 1825 samples
+fifo98-cus12-r3.dump 1825 samples handler 27.2 us 287 stacks
+syclnn 300 epochs 12.53 12.47 12.62 ms/epoch 23 samples
+fifo98-cus12-r4.dump 23 samples handler 43.8 us 17 stacks
+syclnn 300 epochs 12.17 12.15 12.07 ms/epoch 1613 samples
+default-cus12-r4.dump 1613 samples handler 27.2 us 667 stacks
+==== [02:29:15] done

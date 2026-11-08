@@ -1,0 +1,11 @@
+{
+ "cpu": 19,
+ "seconds": 45.0,
+ "busy_share": 0.02503877686682916,
+ "ms_by_task": {
+  "benchmark": 910.0,
+  "other user process": 30.0,
+  "other process": 20.0,
+  "ksoftirqd/19": 10.0
+ }
+}

@@ -1,0 +1,17 @@
+cudann 30 epochs 63.06 63.00 62.99 ms/epoch 419 samples
+mnist-r1.dump 419 samples handler 54.9 us 240 stacks
+cudann 30 epochs 72.59 63.34 63.04 ms/epoch 430 samples
+mnist-r2.dump 430 samples handler 28.2 us 255 stacks
+cudann 30 epochs 75.58 76.03 74.68 ms/epoch 613 samples
+mnist-r3.dump 613 samples handler 26.3 us 302 stacks
+cudann 30 epochs 74.58 77.27 76.86 ms/epoch 632 samples
+mnist-r4.dump 632 samples handler 26.6 us 306 stacks
+cudann 30 epochs 65.84 78.92 73.03 ms/epoch 655 samples
+mnist-r5.dump 655 samples handler 29.8 us 324 stacks
+cudann 30 epochs 74.89 75.05 74.28 ms/epoch 601 samples
+mnist-r6.dump 601 samples handler 26.0 us 304 stacks
+cudann 30 epochs 75.28 75.72 68.73 ms/epoch 610 samples
+mnist-r7.dump 610 samples handler 26.1 us 315 stacks
+cudann 30 epochs 80.01 74.15 65.47 ms/epoch 586 samples
+mnist-r8.dump 586 samples handler 26.8 us 287 stacks
+==== [02:51:13] done

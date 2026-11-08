@@ -1,0 +1,1 @@
+{"backend": "ompnn", "device": "cpu", "workload": "mnist-512-256", "samples": 60000, "batch": 256, "epochs": 2, "options": {}, "period_us": 2000, "delay_ms": 300, "n_samples": 557, "handler_s": 0.014325678, "before_s": 1.4821678157895803, "sampled_s": 1.4874057155102491, "after_s": 1.4696803968399763, "sampled_thread_cpu_s": 1.4795514809999997}

@@ -1,0 +1,12 @@
+{
+ "cpu": 0,
+ "seconds": 40.0,
+ "busy_share": 0.011717776115681875,
+ "ms_by_task": {
+  "other user process": 60.0,
+  "ksoftirqd/0": 50.0,
+  "other process": 20.0,
+  "irq/149-mlx4-28@0000:42:00.0": 10.0,
+  "ktimers/0": 10.0
+ }
+}

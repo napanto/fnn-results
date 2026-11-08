@@ -1,0 +1,1 @@
+{"backend": "cudann", "device": "gpu", "workload": "mnist-512-256", "samples": 60000, "batch": 256, "epochs": 30, "options": {}, "period_us": 2000, "delay_ms": 1000, "n_samples": 419, "handler_s": 0.022989134, "before_s": 1.8916986830008682, "sampled_s": 1.8899657889996888, "after_s": 1.8897307779989205, "sampled_thread_cpu_s": 1.8803465460000002}

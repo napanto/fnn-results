@@ -1,0 +1,1 @@
+syclnn  NVIDIA A30                       mnist-512-256  b=256   float  train epoch     141.61 ms        423713 samples/s     1020.1 GFLOP/s(gemm)  check=ok
