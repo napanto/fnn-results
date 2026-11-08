@@ -1,0 +1,80 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 48K of event 'cycles:u'
+# Event count (approx.): 58587218181
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    57.11%   33461261665  libcuda.so.580.196.07                            
+     9.31%    5456613458  libc.so.6                                        
+     8.14%    4768716275  libz.so.1.3                                      
+     7.05%    4127916624  libcublasLt.so.12.9.2.10                         
+     5.09%    2980882008  libcublas.so.12.9.2.10                           
+     3.58%    2096701487  libscipy_openblas64_-61654e39.so                 
+     3.28%    1924266549  libcudart.so.12.9.79                             
+     2.91%    1702557917  _cudann.cpython-312-x86_64-linux-gnu.so          
+     1.24%     728487636  python3.12                                       
+     0.83%     487015165  _multiarray_umath.cpython-312-x86_64-linux-gnu.so
+     0.53%     310146566  ld-linux-x86-64.so.2                             
+
+
+# Samples: 47K of event 'instructions:u'
+# Event count (approx.): 26791200014
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    45.85%   12283811770  libcuda.so.580.196.07                            
+    25.31%    6780973514  libz.so.1.3                                      
+     7.12%    1908121015  libc.so.6                                        
+     5.46%    1464017175  libcublasLt.so.12.9.2.10                         
+     3.91%    1047454055  libscipy_openblas64_-61654e39.so                 
+     3.29%     882112604  libcublas.so.12.9.2.10                           
+     2.36%     631159808  libcudart.so.12.9.79                             
+     1.98%     529968587  _cudann.cpython-312-x86_64-linux-gnu.so          
+     1.98%     529740046  python3.12                                       
+     1.33%     357394231  _multiarray_umath.cpython-312-x86_64-linux-gnu.so
+     0.64%     172513596  libcrypto.so.3                                   
+     0.51%     137207089  ld-linux-x86-64.so.2                             
+
+
+# Samples: 42K of event 'L1-icache-load-misses'
+# Event count (approx.): 1032902864
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    59.55%     615083214  libcuda.so.580.196.07                            
+    10.54%     108862613  libcublasLt.so.12.9.2.10                         
+    10.00%     103320858  libc.so.6                                        
+     7.90%      81612549  libcublas.so.12.9.2.10                           
+     4.91%      50726519  libcudart.so.12.9.79                             
+     4.57%      47166499  _cudann.cpython-312-x86_64-linux-gnu.so          
+     1.01%      10476982  python3.12                                       
+     0.75%       7702387  ld-linux-x86-64.so.2                             
+
+
+# Samples: 41K of event 'iTLB-load-misses'
+# Event count (approx.): 65135068
+#
+# Overhead        Period  Shared Object                                    
+# ........  ............  .................................................
+#
+    44.83%      29203244  libcuda.so.580.196.07                            
+    15.30%       9968410  libcublas.so.12.9.2.10                           
+    14.48%       9431098  libcublasLt.so.12.9.2.10                         
+    10.16%       6616787  libcudart.so.12.9.79                             
+     7.19%       4681896  _cudann.cpython-312-x86_64-linux-gnu.so          
+     4.68%       3046538  libc.so.6                                        
+     1.17%        760915  libstdc++.so.6.0.33                              
+     1.01%        654989  ld-linux-x86-64.so.2                             
+     0.92%        598316  python3.12                                       
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

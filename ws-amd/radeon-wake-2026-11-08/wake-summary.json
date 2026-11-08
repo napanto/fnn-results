@@ -1,0 +1,62 @@
+{
+ "round-1": {
+  "steady_epoch_ms": 62.226848000000004,
+  "top_thread_wakeups": 1788,
+  "top_thread_mean_latency_us": 2
+ },
+ "round-2": {
+  "steady_epoch_ms": 79.20227599999998,
+  "top_thread_wakeups": 10931,
+  "top_thread_mean_latency_us": 5
+ },
+ "round-3": {
+  "steady_epoch_ms": 76.333386,
+  "top_thread_wakeups": 9117,
+  "top_thread_mean_latency_us": 4
+ },
+ "round-4": {
+  "steady_epoch_ms": 62.149052999999995,
+  "top_thread_wakeups": 2265,
+  "top_thread_mean_latency_us": 6
+ },
+ "round-5": {
+  "steady_epoch_ms": 62.060618,
+  "top_thread_wakeups": 1734,
+  "top_thread_mean_latency_us": 7
+ },
+ "round-6": {
+  "steady_epoch_ms": 75.19355399999999,
+  "top_thread_wakeups": 9114,
+  "top_thread_mean_latency_us": 4
+ },
+ "round-7": {
+  "steady_epoch_ms": 62.20294799999999,
+  "top_thread_wakeups": 2947,
+  "top_thread_mean_latency_us": 3
+ },
+ "round-8": {
+  "steady_epoch_ms": 62.059878,
+  "top_thread_wakeups": 2255,
+  "top_thread_mean_latency_us": 5
+ },
+ "round-9": {
+  "steady_epoch_ms": 76.50887549999999,
+  "top_thread_wakeups": 9839,
+  "top_thread_mean_latency_us": 4
+ },
+ "round-10": {
+  "steady_epoch_ms": 66.645123,
+  "top_thread_wakeups": 7347,
+  "top_thread_mean_latency_us": 5
+ },
+ "round-11": {
+  "steady_epoch_ms": 65.50048699999999,
+  "top_thread_wakeups": 7026,
+  "top_thread_mean_latency_us": 5
+ },
+ "round-12": {
+  "steady_epoch_ms": 76.2188215,
+  "top_thread_wakeups": 9397,
+  "top_thread_mean_latency_us": 4
+ }
+}
