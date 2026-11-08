@@ -1,0 +1,216 @@
+{
+ "prev_state_counts": {
+  "0": 164233,
+  "1": 1312883,
+  "16": 645,
+  "2": 9748,
+  "256": 8141,
+  "32": 75
+ },
+ "runs": {
+  "def12-r1": {
+   "main": {
+    "migrations": 64.0,
+    "run_ms": 4509.69,
+    "run_sibling_busy_ms": 6.837,
+    "runnable_switches": 463.0,
+    "wait_ms": 161.881,
+    "waits": 70453
+   },
+   "other": {
+    "migrations": 142.0,
+    "run_ms": 53817.449,
+    "run_sibling_busy_ms": 420.03,
+    "runnable_switches": 7442.0,
+    "wait_ms": 377.775,
+    "waits": 49568
+   }
+  },
+  "def12-r2": {
+   "main": {
+    "migrations": 29.0,
+    "run_ms": 4550.147,
+    "run_sibling_busy_ms": 611.926,
+    "runnable_switches": 222.0,
+    "wait_ms": 167.419,
+    "waits": 69938
+   },
+   "other": {
+    "migrations": 91.0,
+    "run_ms": 52929.257,
+    "run_sibling_busy_ms": 1724.627,
+    "runnable_switches": 6013.0,
+    "wait_ms": 282.077,
+    "waits": 41323
+   }
+  },
+  "def12-r3": {
+   "main": {
+    "migrations": 124.0,
+    "run_ms": 4280.257,
+    "run_sibling_busy_ms": 230.43,
+    "runnable_switches": 705.0,
+    "wait_ms": 172.263,
+    "waits": 69954
+   },
+   "other": {
+    "migrations": 126.0,
+    "run_ms": 53971.766,
+    "run_sibling_busy_ms": 473.1,
+    "runnable_switches": 7320.0,
+    "wait_ms": 427.553,
+    "waits": 47093
+   }
+  },
+  "def12c-r1": {
+   "main": {
+    "migrations": 68.0,
+    "run_ms": 4460.984,
+    "runnable_switches": 850.0,
+    "wait_ms": 170.93,
+    "waits": 71269
+   },
+   "other": {
+    "migrations": 52.0,
+    "run_ms": 50477.006,
+    "runnable_switches": 21666.0,
+    "wait_ms": 552.94,
+    "waits": 58777
+   }
+  },
+  "def12c-r2": {
+   "main": {
+    "migrations": 37.0,
+    "run_ms": 15534.071,
+    "runnable_switches": 486.0,
+    "wait_ms": 163.917,
+    "waits": 71003
+   },
+   "other": {
+    "migrations": 59.0,
+    "run_ms": 40062.604,
+    "runnable_switches": 21188.0,
+    "wait_ms": 596.399,
+    "waits": 60351
+   }
+  },
+  "def12c-r3": {
+   "main": {
+    "migrations": 48.0,
+    "run_ms": 4447.788,
+    "runnable_switches": 647.0,
+    "wait_ms": 166.284,
+    "waits": 71463
+   },
+   "other": {
+    "migrations": 54.0,
+    "run_ms": 50907.596,
+    "runnable_switches": 19035.0,
+    "wait_ms": 571.048,
+    "waits": 58408
+   }
+  },
+  "fifo12-r1": {
+   "main": {
+    "migrations": 668.0,
+    "run_ms": 5501.74,
+    "run_sibling_busy_ms": 3318.316,
+    "runnable_switches": 543.0,
+    "wait_ms": 214.406,
+    "waits": 59668
+   },
+   "other": {
+    "migrations": 122.0,
+    "run_ms": 63401.635,
+    "run_sibling_busy_ms": 3583.882,
+    "runnable_switches": 11810.0,
+    "wait_ms": 425.348,
+    "waits": 69280
+   }
+  },
+  "fifo12-r2": {
+   "main": {
+    "migrations": 525.0,
+    "run_ms": 5125.589,
+    "run_sibling_busy_ms": 1177.587,
+    "runnable_switches": 391.0,
+    "wait_ms": 206.818,
+    "waits": 64265
+   },
+   "other": {
+    "migrations": 103.0,
+    "run_ms": 61287.762,
+    "run_sibling_busy_ms": 1112.105,
+    "runnable_switches": 10975.0,
+    "wait_ms": 399.159,
+    "waits": 59499
+   }
+  },
+  "fifo12-r3": {
+   "main": {
+    "migrations": 326.0,
+    "run_ms": 4629.112,
+    "run_sibling_busy_ms": 800.09,
+    "runnable_switches": 240.0,
+    "wait_ms": 147.021,
+    "waits": 68712
+   },
+   "other": {
+    "migrations": 197.0,
+    "run_ms": 57305.429,
+    "run_sibling_busy_ms": 2610.731,
+    "runnable_switches": 8394.0,
+    "wait_ms": 306.397,
+    "waits": 49243
+   }
+  },
+  "fifo12c-r1": {
+   "main": {
+    "migrations": 353.0,
+    "run_ms": 4289.567,
+    "runnable_switches": 368.0,
+    "wait_ms": 135.701,
+    "waits": 71659
+   },
+   "other": {
+    "migrations": 328.0,
+    "run_ms": 50639.891,
+    "runnable_switches": 20699.0,
+    "wait_ms": 412.559,
+    "waits": 59877
+   }
+  },
+  "fifo12c-r2": {
+   "main": {
+    "migrations": 115.0,
+    "run_ms": 4500.113,
+    "runnable_switches": 1113.0,
+    "wait_ms": 127.375,
+    "waits": 73153
+   },
+   "other": {
+    "migrations": 210.0,
+    "run_ms": 50025.043,
+    "runnable_switches": 14851.0,
+    "wait_ms": 390.643,
+    "waits": 54228
+   }
+  },
+  "fifo12c-r3": {
+   "main": {
+    "migrations": 411.0,
+    "run_ms": 4018.66,
+    "runnable_switches": 455.0,
+    "wait_ms": 133.379,
+    "waits": 71490
+   },
+   "other": {
+    "migrations": 221.0,
+    "run_ms": 49768.216,
+    "runnable_switches": 16498.0,
+    "wait_ms": 395.033,
+    "waits": 55039
+   }
+  }
+ }
+}

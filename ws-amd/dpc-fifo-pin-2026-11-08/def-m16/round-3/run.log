@@ -1,0 +1,1 @@
+time="2026-11-08T15:23:47+01:00" level=error msg="forwarding signal 15 to container a54895c819f56ab3c87f355b80e887eb0778f0e71d0a281582c72e65cadfe556: sending signal to container a54895c819f56ab3c87f355b80e887eb0778f0e71d0a281582c72e65cadfe556: `/usr/bin/crun kill a54895c819f56ab3c87f355b80e887eb0778f0e71d0a281582c72e65cadfe556 15` failed: signal: terminated"

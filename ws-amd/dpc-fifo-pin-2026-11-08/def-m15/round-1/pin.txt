@@ -1,0 +1,26 @@
+pid 2089579's current affinity list: 0-31
+pid 2089579's new affinity list: 15
+threads 23
+2089579 8000
+2089581 ffffffff
+2089582 ffffffff
+2089583 ffffffff
+2089584 ffffffff
+2089585 ffffffff
+2089586 ffffffff
+2089587 ffffffff
+2089588 ffffffff
+2089589 ffffffff
+2089590 ffffffff
+2089591 ffffffff
+2089608 ffffffff
+2089609 ffffffff
+2089610 ffffffff
+2089611 ffffffff
+2089612 ffffffff
+2089613 ffffffff
+2089614 ffffffff
+2089615 ffffffff
+2089616 ffffffff
+2089617 ffffffff
+2089618 ffffffff

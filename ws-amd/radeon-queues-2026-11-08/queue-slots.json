@@ -1,0 +1,90 @@
+{
+ "round-1": {
+  "steady_epoch_ms": 62.157743,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-2": {
+  "steady_epoch_ms": 65.8038675,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-3": {
+  "steady_epoch_ms": 62.119172999999996,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-4": {
+  "steady_epoch_ms": 62.1893925,
+  "queue_slots_in_creation_order": []
+ },
+ "round-5": {
+  "steady_epoch_ms": 79.1267295,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-6": {
+  "steady_epoch_ms": 80.87933799999999,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-7": {
+  "steady_epoch_ms": 62.1860625,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-8": {
+  "steady_epoch_ms": 72.413809,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-9": {
+  "steady_epoch_ms": 72.63229700000001,
+  "queue_slots_in_creation_order": [
+   "pipe 0 queue 3",
+   "pipe 3 queue 2",
+   "pipe 2 queue 2",
+   "pipe 1 queue 2",
+   "pipe 0 queue 2"
+  ]
+ },
+ "round-10": {
+  "steady_epoch_ms": 63.06774949999999,
+  "queue_slots_in_creation_order": []
+ }
+}

@@ -1,0 +1,201 @@
+Attached 8 probes
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+/var/home/antonio/Documents/unipi/magistrale/ac/.logs/results-private/fifo-sched2-2026-11-08/runq2-330.bt:28:9-27: WARNING: Can't delete map element because it does not exist.
+Additional Info - helper: map_delete_elem, retcode: -2
+        delete(@oncpu, $c);
+        ~~~~~~~~~~~~~~~~~~
+
+
+@involuntary[v-def12-r2, 1]: 222
+@involuntary[v-fifo12-r3, 1]: 240
+@involuntary[v-fifo12c-r1, 1]: 368
+@involuntary[v-fifo12-r2, 1]: 391
+@involuntary[v-fifo12c-r3, 1]: 455
+@involuntary[v-def12-r1, 1]: 463
+@involuntary[v-def12c-r2, 1]: 486
+@involuntary[v-fifo12-r1, 1]: 543
+@involuntary[v-def12c-r3, 1]: 647
+@involuntary[v-def12-r3, 1]: 705
+@involuntary[v-def12c-r1, 1]: 850
+@involuntary[v-fifo12c-r2, 1]: 1113
+@involuntary[v-def12-r2, 0]: 6013
+@involuntary[v-def12-r3, 0]: 7320
+@involuntary[v-def12-r1, 0]: 7442
+@involuntary[v-fifo12-r3, 0]: 8394
+@involuntary[v-fifo12-r2, 0]: 10975
+@involuntary[v-fifo12-r1, 0]: 11810
+@involuntary[v-fifo12c-r2, 0]: 14851
+@involuntary[v-fifo12c-r3, 0]: 16498
+@involuntary[v-def12c-r3, 0]: 19035
+@involuntary[v-fifo12c-r1, 0]: 20699
+@involuntary[v-def12c-r2, 0]: 21188
+@involuntary[v-def12c-r1, 0]: 21666
+@migrations[v-def12-r2, 1]: 29
+@migrations[v-def12c-r2, 1]: 37
+@migrations[v-def12c-r3, 1]: 48
+@migrations[v-def12c-r1, 0]: 52
+@migrations[v-def12c-r3, 0]: 54
+@migrations[v-def12c-r2, 0]: 59
+@migrations[v-def12-r1, 1]: 64
+@migrations[v-def12c-r1, 1]: 68
+@migrations[v-def12-r2, 0]: 91
+@migrations[v-fifo12-r2, 0]: 103
+@migrations[v-fifo12c-r2, 1]: 115
+@migrations[v-fifo12-r1, 0]: 122
+@migrations[v-def12-r3, 1]: 124
+@migrations[v-def12-r3, 0]: 126
+@migrations[v-def12-r1, 0]: 142
+@migrations[v-fifo12-r3, 0]: 197
+@migrations[v-fifo12c-r2, 0]: 210
+@migrations[v-fifo12c-r3, 0]: 221
+@migrations[v-fifo12-r3, 1]: 326
+@migrations[v-fifo12c-r1, 0]: 328
+@migrations[v-fifo12c-r1, 1]: 353
+@migrations[v-fifo12c-r3, 1]: 411
+@migrations[v-fifo12-r2, 1]: 525
+@migrations[v-fifo12-r1, 1]: 668
+@run_sib_us[v-def12-r1, 1]: 6837
+@run_sib_us[v-def12-r3, 1]: 230430
+@run_sib_us[v-def12-r1, 0]: 420030
+@run_sib_us[v-def12-r3, 0]: 473100
+@run_sib_us[v-def12-r2, 1]: 611926
+@run_sib_us[v-fifo12-r3, 1]: 800090
+@run_sib_us[v-fifo12-r2, 0]: 1112105
+@run_sib_us[v-fifo12-r2, 1]: 1177587
+@run_sib_us[v-def12-r2, 0]: 1724627
+@run_sib_us[v-fifo12-r3, 0]: 2610731
+@run_sib_us[v-fifo12-r1, 1]: 3318316
+@run_sib_us[v-fifo12-r1, 0]: 3583882
+@run_us[v-fifo12c-r3, 1]: 4018660
+@run_us[v-def12-r3, 1]: 4280257
+@run_us[v-fifo12c-r1, 1]: 4289567
+@run_us[v-def12c-r3, 1]: 4447788
+@run_us[v-def12c-r1, 1]: 4460984
+@run_us[v-fifo12c-r2, 1]: 4500113
+@run_us[v-def12-r1, 1]: 4509690
+@run_us[v-def12-r2, 1]: 4550147
+@run_us[v-fifo12-r3, 1]: 4629112
+@run_us[v-fifo12-r2, 1]: 5125589
+@run_us[v-fifo12-r1, 1]: 5501740
+@run_us[v-def12c-r2, 1]: 15534071
+@run_us[v-def12c-r2, 0]: 40062604
+@run_us[v-fifo12c-r3, 0]: 49768216
+@run_us[v-fifo12c-r2, 0]: 50025043
+@run_us[v-def12c-r1, 0]: 50477006
+@run_us[v-fifo12c-r1, 0]: 50639891
+@run_us[v-def12c-r3, 0]: 50907596
+@run_us[v-def12-r2, 0]: 52929257
+@run_us[v-def12-r1, 0]: 53817449
+@run_us[v-def12-r3, 0]: 53971766
+@run_us[v-fifo12-r3, 0]: 57305429
+@run_us[v-fifo12-r2, 0]: 61287762
+@run_us[v-fifo12-r1, 0]: 63401635
+@states[32]: 75
+@states[16]: 645
+@states[256]: 8141
+@states[2]: 9748
+@states[0]: 164233
+@states[1]: 1312883
+@switchin_sib[v-def12-r1, 1, 1]: 45
+@switchin_sib[v-def12-r1, 0, 1]: 146
+@switchin_sib[v-fifo12-r2, 0, 1]: 313
+@switchin_sib[v-fifo12-r1, 1, 0]: 506
+@switchin_sib[v-def12-r3, 0, 1]: 617
+@switchin_sib[v-fifo12-r1, 0, 1]: 1297
+@switchin_sib[v-def12-r3, 1, 1]: 3786
+@switchin_sib[v-def12-r2, 0, 1]: 5821
+@switchin_sib[v-fifo12-r3, 0, 1]: 12762
+@switchin_sib[v-def12-r2, 1, 1]: 13401
+@switchin_sib[v-fifo12-r2, 1, 1]: 19661
+@switchin_sib[v-fifo12-r3, 1, 1]: 21121
+@switchin_sib[v-def12-r2, 0, 0]: 35502
+@switchin_sib[v-fifo12-r3, 0, 0]: 36481
+@switchin_sib[v-fifo12-r2, 1, 0]: 44604
+@switchin_sib[v-def12-r3, 0, 0]: 46476
+@switchin_sib[v-fifo12-r3, 1, 0]: 47591
+@switchin_sib[v-def12-r1, 0, 0]: 49422
+@switchin_sib[v-fifo12c-r2, 0, 0]: 54228
+@switchin_sib[v-fifo12c-r3, 0, 0]: 55039
+@switchin_sib[v-def12-r2, 1, 0]: 56537
+@switchin_sib[v-def12c-r3, 0, 0]: 58408
+@switchin_sib[v-def12c-r1, 0, 0]: 58777
+@switchin_sib[v-fifo12-r1, 1, 1]: 59162
+@switchin_sib[v-fifo12-r2, 0, 0]: 59186
+@switchin_sib[v-fifo12c-r1, 0, 0]: 59877
+@switchin_sib[v-def12c-r2, 0, 0]: 60351
+@switchin_sib[v-def12-r3, 1, 0]: 66168
+@switchin_sib[v-fifo12-r1, 0, 0]: 67983
+@switchin_sib[v-def12-r1, 1, 0]: 70408
+@switchin_sib[v-def12c-r2, 1, 0]: 71003
+@switchin_sib[v-def12c-r1, 1, 0]: 71269
+@switchin_sib[v-def12c-r3, 1, 0]: 71463
+@switchin_sib[v-fifo12c-r3, 1, 0]: 71490
+@switchin_sib[v-fifo12c-r1, 1, 0]: 71659
+@switchin_sib[v-fifo12c-r2, 1, 0]: 73153
+@wait_us[v-fifo12c-r2, 1]: { .count = 73153, .average = 1, .total = 127375 }
+@wait_us[v-fifo12c-r1, 1]: { .count = 71659, .average = 1, .total = 135701 }
+@wait_us[v-fifo12c-r3, 1]: { .count = 71490, .average = 1, .total = 133379 }
+@wait_us[v-def12-r2, 1]: { .count = 69938, .average = 2, .total = 167419 }
+@wait_us[v-def12c-r3, 1]: { .count = 71463, .average = 2, .total = 166284 }
+@wait_us[v-def12c-r2, 1]: { .count = 71003, .average = 2, .total = 163917 }
+@wait_us[v-fifo12-r3, 1]: { .count = 68712, .average = 2, .total = 147021 }
+@wait_us[v-def12-r1, 1]: { .count = 70453, .average = 2, .total = 161881 }
+@wait_us[v-def12-r3, 1]: { .count = 69954, .average = 2, .total = 172263 }
+@wait_us[v-def12c-r1, 1]: { .count = 71269, .average = 2, .total = 170930 }
+@wait_us[v-fifo12-r2, 1]: { .count = 64265, .average = 3, .total = 206818 }
+@wait_us[v-fifo12-r1, 1]: { .count = 59668, .average = 3, .total = 214406 }
+@wait_us[v-fifo12-r3, 0]: { .count = 49243, .average = 6, .total = 306397 }
+@wait_us[v-fifo12-r1, 0]: { .count = 69280, .average = 6, .total = 425348 }
+@wait_us[v-fifo12c-r1, 0]: { .count = 59877, .average = 6, .total = 412559 }
+@wait_us[v-fifo12-r2, 0]: { .count = 59499, .average = 6, .total = 399159 }
+@wait_us[v-def12-r2, 0]: { .count = 41323, .average = 6, .total = 282077 }
+@wait_us[v-fifo12c-r3, 0]: { .count = 55039, .average = 7, .total = 395033 }
+@wait_us[v-fifo12c-r2, 0]: { .count = 54228, .average = 7, .total = 390643 }
+@wait_us[v-def12-r1, 0]: { .count = 49568, .average = 7, .total = 377775 }
+@wait_us[v-def12c-r3, 0]: { .count = 58408, .average = 9, .total = 571048 }
+@wait_us[v-def12c-r2, 0]: { .count = 60351, .average = 9, .total = 596399 }
+@wait_us[v-def12c-r1, 0]: { .count = 58777, .average = 9, .total = 552940 }
+@wait_us[v-def12-r3, 0]: { .count = 47093, .average = 9, .total = 427553 }

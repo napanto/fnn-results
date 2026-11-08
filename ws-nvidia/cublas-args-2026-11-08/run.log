@@ -1,0 +1,6 @@
+bash: line 1:    50 Segmentation fault      (core dumped) CUBLAS_ARGS_OUT=results/ws-nvidia/cublas-args-2026-11-08/cuda.csv LD_PRELOAD=/tmp/cublas_args.so python scripts/clock_ramp.py --backend cudann --seconds 10 --out results/ws-nvidia/cublas-args-2026-11-08/cuda.json --option queue=in_order
+syclnn 18 calls
+syclnn 28 calls
+==== done 14:59:24
+cudann 46 calls
+==== done 15:03:30

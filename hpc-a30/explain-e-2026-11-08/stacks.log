@@ -1,0 +1,24 @@
+cudann 60 epochs 48.58 48.63 48.62 ms/epoch 928 samples
+cuda-inorder-r1.dump 928 samples handler 19.8 us 299 stacks
+syclnn 60 epochs 100.32 102.52 100.38 ms/epoch 2508 samples
+dpcpp-default-r1.dump 2508 samples handler 29.7 us 1033 stacks
+syclnn 60 epochs 71.23 72.49 71.29 ms/epoch 1621 samples
+dpcpp-lw-r1.dump 1621 samples handler 27.1 us 692 stacks
+syclnn 60 epochs 60.59 61.67 60.76 ms/epoch 1310 samples
+dpcpp-tuned-r1.dump 1310 samples handler 26.7 us 557 stacks
+cudann 60 epochs 48.62 48.64 48.63 ms/epoch 929 samples
+cuda-inorder-r2.dump 929 samples handler 19.8 us 296 stacks
+syclnn 60 epochs 103.42 104.63 102.67 ms/epoch 2575 samples
+dpcpp-default-r2.dump 2575 samples handler 27.4 us 1017 stacks
+syclnn 60 epochs 71.06 72.38 71.01 ms/epoch 1619 samples
+dpcpp-lw-r2.dump 1619 samples handler 26.9 us 669 stacks
+syclnn 60 epochs 59.38 60.37 59.40 ms/epoch 1272 samples
+dpcpp-tuned-r2.dump 1272 samples handler 26.1 us 522 stacks
+cudann 60 epochs 48.61 48.62 48.63 ms/epoch 928 samples
+cuda-inorder-r3.dump 928 samples handler 19.6 us 294 stacks
+syclnn 60 epochs 104.02 106.07 104.07 ms/epoch 2618 samples
+dpcpp-default-r3.dump 2618 samples handler 27.8 us 1059 stacks
+syclnn 60 epochs 70.68 71.85 70.51 ms/epoch 1605 samples
+dpcpp-lw-r3.dump 1605 samples handler 27.5 us 639 stacks
+syclnn 60 epochs 59.50 60.59 59.55 ms/epoch 1279 samples
+dpcpp-tuned-r3.dump 1279 samples handler 26.7 us 542 stacks

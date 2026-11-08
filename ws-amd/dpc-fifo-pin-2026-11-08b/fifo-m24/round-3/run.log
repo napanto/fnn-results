@@ -1,0 +1,1 @@
+syclnn  AMD Ryzen Threadripper 2950X 16- cup            b=40    float  train epoch      12.87 ms         77704 samples/s        2.2 GFLOP/s(gemm)  check=ok

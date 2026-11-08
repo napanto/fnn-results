@@ -1,0 +1,44 @@
+{
+ "cuda-inorder": {
+  "epoch_ms": 48.616279811701844,
+  "samples": 2785,
+  "ms_per_epoch": {
+   "cublasSetPointerMode_v2|cudann|cublas": 0.017456473900072475,
+   "cublasSgemm_v2|cudann|cublas": 11.13723034824624,
+   "cublasSgemm_v2|cudann|driver": 10.107298388141963,
+   "cublasSgemv_v2|cudann|cublas": 5.900288178224497,
+   "cublasSgemv_v2|cudann|driver": 2.5835581372107264
+  }
+ },
+ "dpcpp-default": {
+  "epoch_ms": 102.48124101716611,
+  "samples": 7701,
+  "ms_per_epoch": {
+   "cublasGetStream_v2|oneMath|cublas": 0.11976771447273017,
+   "cublasSgemm_v2|oneMath|cublas": 16.514637073406462,
+   "cublasSgemm_v2|oneMath|driver": 10.91216954084875,
+   "cublasSgemv_v2|oneMath|cublas": 7.398983249648664,
+   "cublasSgemv_v2|oneMath|driver": 3.3135734337455345
+  }
+ },
+ "dpcpp-lw": {
+  "epoch_ms": 70.96193734970358,
+  "samples": 4845,
+  "ms_per_epoch": {
+   "cublasGetStream_v2|oneMath|cublas": 0.08787856018539142,
+   "cublasSgemm_v2|oneMath|cublas": 14.382791017009062,
+   "cublasSgemm_v2|oneMath|driver": 11.512091384286276,
+   "cublasSgemv_v2|oneMath|cublas": 7.455031189060706,
+   "cublasSgemv_v2|oneMath|driver": 3.0611031797911346
+  }
+ },
+ "dpcpp-tuned": {
+  "epoch_ms": 59.86364159422616,
+  "samples": 3861,
+  "ms_per_epoch": {
+   "cublasGetStream_v2|oneMath|cublas": 0.12403758942082602,
+   "cublasSgemm_v2|oneMath|cublas": 14.171294591329373,
+   "cublasSgemm_v2|oneMath|driver": 11.923113283076901
+  }
+ }
+}
