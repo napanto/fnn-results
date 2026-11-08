@@ -1,0 +1,1 @@
+syclnn  NVIDIA A30                       mnist-512-256  b=4096  float  infer epoch       3.22 ms       1272692 samples/s     1361.9 GFLOP/s(gemm)  check=ok

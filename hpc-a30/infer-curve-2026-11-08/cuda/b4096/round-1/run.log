@@ -1,0 +1,1 @@
+cudann  NVIDIA A30                       mnist-512-256  b=4096  float  infer epoch       3.12 ms       1311322 samples/s     1403.2 GFLOP/s(gemm)  check=ok
